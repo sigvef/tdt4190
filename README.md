@@ -1,2 +1,6 @@
-tdt4190
-=======
+# README
+===
+
+Wow.. such project
+
+Much good
