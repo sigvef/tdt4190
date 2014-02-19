@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+
+\title{Assignment T2. Peer-To-Peer Network Systems \\
+\large TDT4190 - Distributed Systems, spring 2014}
+
+\author{
+    Sigve Sebastian Farstad \\
+    Christoffer Tønnessen
+}
+
+\renewcommand\thesubsection{\alph{subsection})}
+\newcommand{\question}[1]{\subsection{}\textit{#1}}
+
+\begin{document}
+
+\maketitle
+
+\section{Theory}
+
+\question{In a distributed system with high churn, participating nodes leave and join the system all the times. Is peer-to-peer network or client-server best suited to withstand the high churn? Explain your answer.}
+
+\question{Why are searches in structured peer-to-peer networks limited to lookups on key (which is GUID), while searches in unstructured peer-to-peer network can be anything?}
+
+ \section{Practical}
+
+ \question{Takes as a starting point a Pastry Network with 12-bit GUID. Suppose there are 25 peers with the following GUIDs: F9C, F89, BFC, BA0, AAE, A7C, 7D9, 7D7, 7D5, 7D4, 4CC, 4CF, 4C1, 4A7, 48E, 39C, 33F, 371, 328, 1EC, 19E, 11E, 170, 129, 0FB. Create the routing tables of the nodes 4CC and 7D9. Each cell in the routing tables will contain either nothing or GUID of a node}
+
+ \question{Use the routing table from 2a) to show what happens if the node 7D9 wants to perform a lookup on the value 371. Explain what happens. Assume that each node has a leaf node table of size 2 - that is, each node in addition to the routing table only know about their nearest neighbors with higher GUID and nearest neighbor with lower GUID. Describe any other assumptions you make if any.}
+
+ \question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
+
+ \question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
+
+ \end{document}
