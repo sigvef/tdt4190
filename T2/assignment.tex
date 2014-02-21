@@ -21,6 +21,15 @@
 
 \question{In a distributed system with high churn, participating nodes leave and join the system all the times. Is peer-to-peer network or client-server best suited to withstand the high churn? Explain your answer.}
 
+In a peer-to-peer netowrk the role of every node is the same.
+When there is a high churn, every node connects itself to others and it doesn't matter who.
+This makes for an even distribution of the workload.
+In a client-server network all nodes have to connect to the one server.
+When a high churn occurs, the workload on the server will increase.
+This means the server must spend more time on the nodes connecting and disconnecting.
+
+A peer-to-peer network is therefor better than a clint-server network when there is a high churn.
+
 \question{Why are searches in structured peer-to-peer networks limited to lookups on key (which is GUID), while searches in unstructured peer-to-peer network can be anything?}
 
 In structured peer-to-peer networks, the network is organized into a specific topology.
