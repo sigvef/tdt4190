@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{titlesec}
+\usepackage{colortbl}
+\usepackage{tabularx}
 \usepackage[utf8]{inputenc}
 
 \title{Assignment T2. Peer-To-Peer Network Systems \\
@@ -104,6 +106,22 @@ The converted values are as follows:
     0FB         & 003323 \\
     \hline
     \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[ht!]
+    \begin{center}
+        \begin{tabularx}{.75\textwidth}{| >{\centering} X | >{\centering} X | >{\centering\arraybackslash} X |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Routing table for node 103030}} \\
+    \hline
+    332130 & 332021 & 233330 \\
+    \hline
+    133121 & 133113 & 133111 \\
+    \hline
+    102213 & 102032 & \cellcolor[gray]{0.8} - \\
+    \hline
+    \end{tabularx}
     \end{center}
 \end{table}
 
