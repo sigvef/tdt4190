@@ -170,4 +170,12 @@ When this is done the node is a part of the network.
 
 \question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
 
+A node in the Pastry network is considered dead when its immediate neighbors in the node id space can no longer communicate with it.
+When this happens, the network needs to eliminate the node from its records.
+
+When a healthy node discovers that one of the nodes in its leaf set is dead, it replaces the dead node with a node from the leaf set of the live node with the largest index on the side of the failed node.
+
+When a healthy node discovers that one of the nodes in its routing table is dead, it routes the message to a different node, and tries to replace the dead node in its routing table.
+It does this by asking other similar nodes in its routing table for fitting replacements from their routing tables.
+
 \end{document}
