@@ -40,11 +40,74 @@ Unstructured peer-to-peer networks, on the other hand, do not implement any effi
 This means that searches in unstructured peer-to-peer networks need to flood through the network in order to reach as many nodes as possible.
 Since key-based lookup provides no advantage in this case, searches might as well be anything.
 
- \section{Practical}
+\section{Practical}
 
- \question{Takes as a starting point a Pastry Network with 12-bit GUID. Suppose there are 25 peers with the following GUIDs: F9C, F89, BFC, BA0, AAE, A7C, 7D9, 7D7, 7D5, 7D4, 4CC, 4CF, 4C1, 4A7, 48E, 39C, 33F, 371, 328, 1EC, 19E, 11E, 170, 129, 0FB. Create the routing tables of the nodes 4CC and 7D9. Each cell in the routing tables will contain either nothing or GUID of a node}
+\question{Takes as a starting point a Pastry Network with 12-bit GUID. Suppose there are 25 peers with the following GUIDs: F9C, F89, BFC, BA0, AAE, A7C, 7D9, 7D7, 7D5, 7D4, 4CC, 4CF, 4C1, 4A7, 48E, 39C, 33F, 371, 328, 1EC, 19E, 11E, 170, 129, 0FB. Create the routing tables of the nodes 4CC and 7D9. Each cell in the routing tables will contain either nothing or GUID of a node}
 
- \begin{table}[ht!]
+We choose $b = 2$ for this assignment. This means we need to change the numbers into base 4. The benefit of this is that we get a nice 3 by 3 table for the routing table.
+
+The converted values are as follows:
+\begin{table}[ht!]
+    \begin{center}
+    \begin{tabular}{| l | l |}
+    \hline
+    \bf{Hex}  & \bf{Base 4} \\
+    \hline
+    F9C         & 332130 \\
+    \hline
+    F89         & 332021 \\
+    \hline
+    BFC         & 233330 \\
+    \hline
+    BA0         & 232200 \\
+    \hline
+    AAE         & 222232 \\
+    \hline
+    A7C         & 221330 \\
+    \hline
+    7D9         & 133121 \\
+    \hline
+    7D7         & 133113 \\
+    \hline
+    7D5         & 133111 \\
+    \hline
+    7D4         & 133110 \\
+    \hline
+    4CC         & 103030 \\
+    \hline
+    4CF         & 103033 \\
+    \hline
+    4C1         & 103001 \\
+    \hline
+    4A7         & 102213 \\
+    \hline
+    48E         & 102032 \\
+    \hline
+    39C         & 032130 \\
+    \hline
+    33F         & 030333 \\
+    \hline
+    371         & 031301 \\
+    \hline
+    328         & 030220 \\
+    \hline
+    1EC         & 013230 \\
+    \hline
+    19E         & 012132 \\
+    \hline
+    11E         & 010132 \\
+    \hline
+    170         & 011300 \\
+    \hline
+    129         & 010221 \\
+    \hline
+    0FB         & 003323 \\
+    \hline
+    \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[ht!]
     \begin{center}
     \begin{tabular}{| l | l | l |}
     \hline
@@ -60,36 +123,11 @@ Since key-based lookup provides no advantage in this case, searches might as wel
     \end{center}
 \end{table}
 
-F9C => 332130
-F89 => 332021
-BFC => 233330
-BA0 => 232200
-AAE => 222232
-A7C => 221330
-7D9 => 133121
-7D7 => 133113
-7D5 => 133111
-7D4 => 133110
-4CC => 103030
-4CF => 103033
-4C1 => 103001
-4A7 => 102213
-48E => 102032
-39C => 032130
-33F => 030333
-371 => 031301
-328 => 030220
-1EC => 013230
-19E => 012132
-11E => 010132
-170 => 011300
-129 => 010221
-0FB => 003323
 
- \question{Use the routing table from 2a) to show what happens if the node 7D9 wants to perform a lookup on the value 371. Explain what happens. Assume that each node has a leaf node table of size 2 - that is, each node in addition to the routing table only know about their nearest neighbors with higher GUID and nearest neighbor with lower GUID. Describe any other assumptions you make if any.}
+\question{Use the routing table from 2a) to show what happens if the node 7D9 wants to perform a lookup on the value 371. Explain what happens. Assume that each node has a leaf node table of size 2 - that is, each node in addition to the routing table only know about their nearest neighbors with higher GUID and nearest neighbor with lower GUID. Describe any other assumptions you make if any.}
 
- \question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
+\question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
 
- \question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
+\question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
 
- \end{document}
+\end{document}
