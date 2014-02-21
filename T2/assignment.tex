@@ -46,9 +46,10 @@ Since key-based lookup provides no advantage in this case, searches might as wel
 
 \question{Takes as a starting point a Pastry Network with 12-bit GUID. Suppose there are 25 peers with the following GUIDs: F9C, F89, BFC, BA0, AAE, A7C, 7D9, 7D7, 7D5, 7D4, 4CC, 4CF, 4C1, 4A7, 48E, 39C, 33F, 371, 328, 1EC, 19E, 11E, 170, 129, 0FB. Create the routing tables of the nodes 4CC and 7D9. Each cell in the routing tables will contain either nothing or GUID of a node}
 
-We choose $b = 2$ for this assignment. This means we need to change the numbers into base 4. The benefit of this is that we get a nice 3 by 3 table for the routing table.
+We choose $b = 2$ for this assignment. This means we need to change the numbers into base 4. The benefit of this is that we get a nice 3 by 3 table for the routing table. This is done in table \ref{tab:b16b4conv} .
 
-The converted values are as follows:
+The routing table for node 4CC can be found in table \ref{tab:route103030} and for node 7D9 in table \ref{tab:route133121} .
+
 \begin{table}[ht!]
     \begin{center}
     \begin{tabular}{| l | l |}
@@ -106,6 +107,8 @@ The converted values are as follows:
     0FB         & 003323 \\
     \hline
     \end{tabular}
+    \caption{Base 16 to base 4 conversion for node values}
+    \label{tab:b16b4conv}
     \end{center}
 \end{table}
 
@@ -122,6 +125,8 @@ The converted values are as follows:
     10-2-213 & 10-2-032 & \cellcolor[gray]{0.8} - \\
     \hline
     \end{tabularx}
+    \caption{Routing table for node 103030}
+    \label{tab:route103030}
     \end{center}
 \end{table}
 
@@ -138,6 +143,8 @@ The converted values are as follows:
     \cellcolor[gray]{0.8} - & \cellcolor[gray]{0.8} - & \cellcolor[gray]{0.8} - \\
     \hline
     \end{tabularx}
+    \caption{Routing table for node 133121}
+    \label{tab:route133121}
     \end{center}
 \end{table}
 
