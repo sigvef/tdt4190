@@ -162,6 +162,12 @@ Answering 7D9's request, 371 replies to 7D9 using a similar process.
 
 \question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
 
+When a new node wants to join a Pastry network, it's assumed that it knows about at least one other node in the network. The node then asks to join the network.
+The node which asks to join the network is believed to be in a close proximity of the requested node.
+The requested node updates its routing table and if neccessary its leaf node table. It also asks other close nodes to update its tables.
+When this is done the node requesting to join can make its own tables based on the feedback from the other nodes.
+When this is done the node is a part of the network.
+
 \question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
 
 \end{document}
