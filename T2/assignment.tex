@@ -30,7 +30,7 @@ In a client-server network all nodes have to connect to the one server.
 When a high churn occurs, the workload on the server will increase.
 This means the server must spend more time on the nodes connecting and disconnecting.
 
-A peer-to-peer network is therefor better than a clint-server network when there is a high churn.
+A peer-to-peer network is therefor better than a client-server network when there is a high churn.
 
 \question{Why are searches in structured peer-to-peer networks limited to lookups on key (which is GUID), while searches in unstructured peer-to-peer network can be anything?}
 
@@ -38,7 +38,7 @@ In structured peer-to-peer networks, the network is organized into a specific to
 Commonly, this topology is a type of DHT, or Distributed Hash Table.
 As hash tables look up values based on a key, it follows naturally that most structured peer-to-peer networks are limited to lookups on keys.
 
-Unstructured peer-to-peer networks, on the other hand, do not implement any efficient distrubuted global key lookup mechanism.
+Unstructured peer-to-peer networks, on the other hand, do not implement any efficient distributed global key lookup mechanism.
 This means that searches in unstructured peer-to-peer networks need to flood through the network in order to reach as many nodes as possible.
 Since key-based lookup provides no advantage in this case, searches might as well be anything.
 
@@ -147,7 +147,7 @@ First, the node 7D9 checks to see if it can find the destination value 371 in it
 The leaf set of 7D9 contains the nodes A7C and 7D7.
 371 is not in this range.
 Therefore, the node must use its routing table.
-The node tries to look up a destiantion node that shares at least one more common prefix digit with 371 that itself.
+The node tries to look up a destination node that shares at least one more common prefix digit with 371 that itself.
 7D9 ($ 133121_4 $) shares no common prefix digits with 371.
 It is therefore sufficient to find a node in the routing table with one more common prefix digit.
 In this example, node $ 030333_4 $ is selected, and the message is passed on to $ 030333_4 $.
@@ -164,11 +164,11 @@ Answering 7D9's request, 371 replies to 7D9 using a similar process.
 
 When a new node wants to join a Pastry network, it's assumed that it knows about at least one other node in the network. The node then asks to join the network.
 The node which asks to join the network is believed to be in a close proximity of the requested node.
-The requested node updates its routing table and if neccessary its leaf node table. It also asks other close nodes to update its tables.
+The requested node updates its routing table and if necessary its leaf node table. It also asks other close nodes to update its tables.
 When this is done the node requesting to join can make its own tables based on the feedback from the other nodes.
 When this is done the node is a part of the network.
 
-\question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
+\question{A node has lost connectivity to the network (i.e. the node is "dead" and is no longer available). Describe the most important things that will now happen.}
 
 A node in the Pastry network is considered dead when its immediate neighbors in the node id space can no longer communicate with it.
 When this happens, the network needs to eliminate the node from its records.
