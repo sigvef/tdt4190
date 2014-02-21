@@ -23,6 +23,14 @@
 
 \question{Why are searches in structured peer-to-peer networks limited to lookups on key (which is GUID), while searches in unstructured peer-to-peer network can be anything?}
 
+In structured peer-to-peer networks, the network is organized into a specific topology.
+Commonly, this topology is a type of DHT, or Distributed Hash Table.
+As hash tables look up values based on a key, it follows naturally that most structured peer-to-peer networks are limited to lookups on keys.
+
+Unstructured peer-to-peer networks, on the other hand, do not implement any efficient distrubuted global key lookup mechanism.
+This means that searches in unstructured peer-to-peer networks need to flood through the network in order to reach as many nodes as possible.
+Since key-based lookup provides no advantage in this case, searches might as well be anything.
+
  \section{Practical}
 
  \question{Takes as a starting point a Pastry Network with 12-bit GUID. Suppose there are 25 peers with the following GUIDs: F9C, F89, BFC, BA0, AAE, A7C, 7D9, 7D7, 7D5, 7D4, 4CC, 4CF, 4C1, 4A7, 48E, 39C, 33F, 371, 328, 1EC, 19E, 11E, 170, 129, 0FB. Create the routing tables of the nodes 4CC and 7D9. Each cell in the routing tables will contain either nothing or GUID of a node}
