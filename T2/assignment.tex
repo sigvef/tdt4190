@@ -56,55 +56,55 @@ The routing table for node 4CC can be found in table \ref{tab:route103030} and f
     \hline
     \bf{Hex}  & \bf{Base 4} \\
     \hline
-    F9C         & 332130 \\
+    F9C         & $ 332130_4 $ \\
     \hline
-    F89         & 332021 \\
+    F89         & $ 332021_4 $ \\
     \hline
-    BFC         & 233330 \\
+    BFC         & $ 233330_4 $ \\
     \hline
-    BA0         & 232200 \\
+    BA0         & $ 232200_4 $ \\
     \hline
-    AAE         & 222232 \\
+    AAE         & $ 222232_4 $ \\
     \hline
-    A7C         & 221330 \\
+    A7C         & $ 221330_4 $ \\
     \hline
-    7D9         & 133121 \\
+    7D9         & $ 133121_4 $ \\
     \hline
-    7D7         & 133113 \\
+    7D7         & $ 133113_4 $ \\
     \hline
-    7D5         & 133111 \\
+    7D5         & $ 133111_4 $ \\
     \hline
-    7D4         & 133110 \\
+    7D4         & $ 133110_4 $ \\
     \hline
-    4CC         & 103030 \\
+    4CC         & $ 103030_4 $ \\
     \hline
-    4CF         & 103033 \\
+    4CF         & $ 103033_4 $ \\
     \hline
-    4C1         & 103001 \\
+    4C1         & $ 103001_4 $ \\
     \hline
-    4A7         & 102213 \\
+    4A7         & $ 102213_4 $ \\
     \hline
-    48E         & 102032 \\
+    48E         & $ 102032_4 $ \\
     \hline
-    39C         & 032130 \\
+    39C         & $ 032130_4 $ \\
     \hline
-    33F         & 030333 \\
+    33F         & $ 030333_4 $ \\
     \hline
-    371         & 031301 \\
+    371         & $ 031301_4 $ \\
     \hline
-    328         & 030220 \\
+    328         & $ 030220_4 $ \\
     \hline
-    1EC         & 013230 \\
+    1EC         & $ 013230_4 $ \\
     \hline
-    19E         & 012132 \\
+    19E         & $ 012132_4 $ \\
     \hline
-    11E         & 010132 \\
+    11E         & $ 010132_4 $ \\
     \hline
-    170         & 011300 \\
+    170         & $ 011300_4 $ \\
     \hline
-    129         & 010221 \\
+    129         & $ 010221_4 $ \\
     \hline
-    0FB         & 003323 \\
+    0FB         & $ 003323_4 $ \\
     \hline
     \end{tabular}
     \caption{Base 16 to base 4 conversion for node values}
@@ -116,7 +116,7 @@ The routing table for node 4CC can be found in table \ref{tab:route103030} and f
     \begin{center}
         \begin{tabularx}{.75\textwidth}{| >{\centering} X | >{\centering} X | >{\centering\arraybackslash} X |}
     \hline
-    \multicolumn{3}{|c|}{\textbf{Routing table for node 103030}} \\
+    \multicolumn{3}{|c|}{\textbf{Routing table for node $ 103030_4 $}} \\
     \hline
     -3-32130 & -3-32021 & -2-33330 \\
     \hline
@@ -134,7 +134,7 @@ The routing table for node 4CC can be found in table \ref{tab:route103030} and f
     \begin{center}
         \begin{tabularx}{.75\textwidth}{| >{\centering} X | >{\centering} X | >{\centering\arraybackslash} X |}
     \hline
-    \multicolumn{3}{|c|}{\textbf{Routing table for node 133121}} \\
+    \multicolumn{3}{|c|}{\textbf{Routing table for node $ 133121_4 $}} \\
     \hline
     -0-30333 & -2-21330 & -3-32130 \\
     \hline
@@ -150,18 +150,18 @@ The routing table for node 4CC can be found in table \ref{tab:route103030} and f
 
 \question{Use the routing table from 2a) to show what happens if the node 7D9 wants to perform a lookup on the value 371. Explain what happens. Assume that each node has a leaf node table of size 2 - that is, each node in addition to the routing table only know about their nearest neighbors with higher GUID and nearest neighbor with lower GUID. Describe any other assumptions you make if any.}
 
-First, the node 7D9 checks to see if it can find the destination value 371 in its leaf set.
-The leaf set of 7D9 contains the nodes A7C and 7D7.
-371 is not in this range.
+First, the node 7D9 ($ 133121_4 $) checks to see if it can find the destination value 371 ($ 031301_4 $) in its leaf set.
+The leaf set of 7D9 contains the nodes A7C ($ 221330_4 $) and 7D7 ($ 133113_4 $).
+371 ($ 031301_4 $) is not in this range.
 Therefore, the node must use its routing table.
 The node tries to look up a destination node that shares at least one more common prefix digit with 371 that itself.
-7D9 ($ 133121_4 $) shares no common prefix digits with 371.
+7D9 ($ 133121_4 $) shares no common prefix digits with 371 ($ 031301_4 $).
 It is therefore sufficient to find a node in the routing table with one more common prefix digit.
-In this example, node $ 030333_4 $ is selected, and the message is passed on to $ 030333_4 $.
+In this example, node 33F ($ 030333_4 $) is selected, and the message is passed on to it.
 
-Now, node $ 030333_4 $ must continue routing the message to its destination.
+Now, node 33F ($ 030333_4 $) must continue routing the message to its destination.
 It first checks to see if it can find the destination value in its leaf set.
-The leaf set of $ 030333_4 $ contains $ 371 $ and $ 39C $.
+The leaf set of 33F ($ 030333_4 $) contains 371 ($ 031301_4 $) and 39C ($ 032130_4 $).
 $ 371 $ is the destination node, so the message is sent directly to it.
 
 Answering 7D9's request, 371 replies to 7D9 using a similar process.
