@@ -143,6 +143,23 @@ The converted values are as follows:
 
 \question{Use the routing table from 2a) to show what happens if the node 7D9 wants to perform a lookup on the value 371. Explain what happens. Assume that each node has a leaf node table of size 2 - that is, each node in addition to the routing table only know about their nearest neighbors with higher GUID and nearest neighbor with lower GUID. Describe any other assumptions you make if any.}
 
+First, the node 7D9 checks to see if it can find the destination value 371 in its leaf set.
+The leaf set of 7D9 contains the nodes A7C and 7D7.
+371 is not in this range.
+Therefore, the node must use its routing table.
+The node tries to look up a destiantion node that shares at least one more common prefix digit with 371 that itself.
+7D9 ($ 133121_4 $) shares no common prefix digits with 371.
+It is therefore sufficient to find a node in the routing table with one more common prefix digit.
+In this example, node $ 030333_4 $ is selected, and the message is passed on to $ 030333_4 $.
+
+Now, node $ 030333_4 $ must continue routing the message to its destination.
+It first checks to see if it can find the destination value in its leaf set.
+The leaf set of $ 030333_4 $ contains $ 371 $ and $ 39C $.
+$ 371 $ is the destination node, so the message is sent directly to it.
+
+Answering 7D9's request, 371 replies to 7D9 using a similar process.
+
+
 \question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
 
 \question{A node has lost connectivity to the network (ie the node is "dead" and is no longer available). Describe the most important things that will now happen.}
