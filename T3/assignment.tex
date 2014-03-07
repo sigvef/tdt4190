@@ -121,7 +121,9 @@ The vector clock values are given in table \ref{table:vector-clock-values}.
 \question{A client attempts to synchronize with a time server. Timestamps comes from the server, i.e. it is the point in time that the server responds. Round trip time and timestamp are shown in the table below. Which of these timestamps should the client use to set its own clock? What time should the clock be set to? Calculate the accuracy of the new clock value with respect to the server's clock. If it turns out that the time between sending and receiving a message in the system is at least 10ms, are there any changes in your calculation?}
 
 \answer
-TODO
+There is a big uncertanty when we want to know the transmitting time between two nodes. With Christian's Algorithm the time should be set to $timestamp + \frac{RTT}{2}$ (see page 602 in the book).
+With multiple reading one could use the average of these to estimate the correct time. Almost like the Berkeley algorithm.
+The accuracy would be 50 \% as it's half of the RTT.
 
 \section{NTP Synchronization}
 
