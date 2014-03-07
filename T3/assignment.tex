@@ -3,6 +3,7 @@
 \usepackage{colortbl}
 \usepackage{tabularx}
 \usepackage{amsmath}
+\usepackage[]{algorithm2e}
 \usepackage{centernot}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
@@ -182,8 +183,18 @@ Plugging the numbers, the offset is $ \frac{a + b}{2} = 10.045 $ seconds, and th
 
 \section{Snapshot}
 
-\question{Assume two processes A and B (see figure) connected to each other by channels (c1 and c2) and which are sending each other a message m constantly. There are at any given time only one copy of message m in the system. Each process state consists of the number of times it has received message m, i.e., the value of the logical clock. Sending and receiving messages change the logical clock value and thus the state. Now A sends message m which has received state 21. Shortly after, A begins the snapshot algorithm. Explain which steps the algorithm consists of and the possible global state it will find in this case.}
+\question{Assume two processes \textbf{A} and \textbf{B} (see figure) connected to each other by channels ($ c_1 $ and $ c_2 $) and which are sending each other a message m constantly. There are at any given time only one copy of message m in the system. Each process state consists of the number of times it has received message m, i.e., the value of the logical clock. Sending and receiving messages change the logical clock value and thus the state. Now \textbf{A} sends message m which has received state 21. Shortly after, \textbf{A} begins the snapshot algorithm. Explain which steps the algorithm consists of and the possible global state it will find in this case.}
 
 (image)
+
+\begin{enumerate}
+    \item{\textbf{A} records its state (2).}
+    \item{\textbf{A} sends a marker to \textbf{B} over $ c_1 $.}
+    \item{\textbf{B} receives the marker from \textbf{A}.}
+    \item{\textbf{B} records its state (22).}
+    \item{\textbf{B} records the state of $ c_1 $ as null.}
+    \item{\textbf{B} sends a marker to \textbf{A} over $ c2 $.}
+    \item{\textbf{A} records the state of $ c2 $ as all messages received since the last time \textbf{A} recorded its state.}
+\end{enumerate}
 
 \end{document}
