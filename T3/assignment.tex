@@ -39,7 +39,7 @@ This means that physical clocks are vulnerable to desynchronization due to clock
 
 Physical clocks are used when a synchronized, absolute clock is needed.
 
-Synnchronized logical clocks are not synchronized with an external authoritive time source.
+Synchronized logical clocks are not synchronized with an external authoritive time source.
 In a system using logical clocks, the exact time of an event is not important. Rather, only the relative partial temporal ordering of events is of interest.
 
 Logical clocks are used when a synchronized, not-necessarily-absolute clock is needed.
@@ -77,7 +77,7 @@ Using the standard notation $ a \rightarrow b $ to mean $ a $ happened-before $ 
 \end{centering}
 \end{itemize}
 
-\question{Given two events e and f. Assume that the logical (Lamport) clock values L are such that L (e) <L (f). Can we then deduce that e "happened before" f? Why? What happens if one uses vector clocks instead? Explain.}
+\question{Given two events e and f. Assume that the logical (Lamport) clock values L are such that $L (e) < L (f)$. Can we then deduce that e "happened before" f? Why? What happens if one uses vector clocks instead? Explain.}
 
 \answer
 $ e \rightarrow f \implies L(e) < L(f) $. However, $ L(e) < L(f) \centernot\implies e \rightarrow f $.
