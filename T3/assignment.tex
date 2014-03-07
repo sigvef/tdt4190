@@ -77,6 +77,10 @@ Using the standard notation $ a \rightarrow b $ to mean $ a $ happened-before $ 
 \end{centering}
 \end{itemize}
 
+$ a \rightarrow j $ does not have the happened-before property. $a$ happenes before $b$ and $b$ before $k$, but since $j$ also happenes before $b$ we will not be sure that $a \rightarrow j$ has the happened-before property.
+
+$k$ happenes before $l$ and $m$ and $u$ before $m$ so there is no way to tell that $k \rightarrow u$ has the happened-before property.
+
 \question{Given two events e and f. Assume that the logical (Lamport) clock values L are such that $L (e) < L (f)$. Can we then deduce that e "happened before" f? Why? What happens if one uses vector clocks instead? Explain.}
 
 \answer
