@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{titlesec}
 \usepackage{colortbl}
+\usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{amsmath}
 \usepackage[]{algorithm2e}
@@ -20,6 +21,8 @@
 
 \renewcommand\thesubsection{\alph{subsection})}
 \newcommand{\question}[1]{\subsection{}\textit{#1}\bigskip}
+\newcommand{\singlequestion}[1]{\textit{#1}\bigskip}
+\newcommand{\answer}{\paragraph{Answer}}
 
 \begin{document}
 
@@ -29,6 +32,7 @@
 
 \question{Why do we need both physical and logical clocks in distributed systems? Give two examples of the use of physical and logical clocks.}
 
+\answer
 Synchronized physical clocks in a distributed system are clocks that are synchronized with each other, and also with an external authorative absolute time source such as UTC.
 Physical clocks are local to each node in a distributed system, and each physical clock may have a different drift and offset from the absolute time source.
 This means that physical clocks are vulnerable to desynchronization due to clock skew, which can cause problems.
@@ -59,8 +63,9 @@ Two examples of where logical clocks can be used are scheduling, and deadlock pr
 \end{itemize}
 }
 
-(image)
+\includegraphics[width=\textwidth]{images/T3-1.png}
 
+\answer
 Happened-before is a transitive, irreflexible, antisymmetric relation.
 Using the standard notation $ a \rightarrow b $ to mean $ a $ happened-before $ b$, of the four pairs of events, the following have happened-before releations:
 
@@ -74,6 +79,7 @@ Using the standard notation $ a \rightarrow b $ to mean $ a $ happened-before $ 
 
 \question{Given two events e and f. Assume that the logical (Lamport) clock values L are such that L (e) <L (f). Can we then deduce that e "happened before" f? Why? What happens if one uses vector clocks instead? Explain.}
 
+\answer
 $ e \rightarrow f \implies L(e) < L(f) $. However, $ L(e) < L(f) \centernot\implies e \rightarrow f $.
 Therefore, we must conclude that $ e $ and $ f $ are concurrent events.
 
@@ -86,11 +92,12 @@ Therefore, if it is known that $ V(e) < V(f) $, it can be deduced that $ e \righ
 
 \question{The figure below shows three processes and a number of events. Vector clock values are given for some of the events. Give the vector clock values for the remaining events.}
 
-(image)
+\includegraphics[width=\textwidth]{images/T3-2.png}
 
+\answer
 The vector clock values are given in table \ref{table:vector-clock-values}.
 
-\begin{table}
+\begin{table}[H]
     \centering
     \begin{tabular}{c | c}
         Event & Vector clock value \\
@@ -109,12 +116,14 @@ The vector clock values are given in table \ref{table:vector-clock-values}.
 
 \question{A client attempts to synchronize with a time server. Timestamps comes from the server, i.e. it is the point in time that the server responds. Round trip time and timestamp are shown in the table below. Which of these timestamps should the client use to set its own clock? What time should the clock be set to? Calculate the accuracy of the new clock value with respect to the server's clock. If it turns out that the time between sending and receiving a message in the system is at least 10ms, are there any changes in your calculation?}
 
+\answer
 TODO
 
 \section{NTP Synchronization}
 
-\question*{We want to find the difference between A's and B's clocks. B receives a message at 09:14:59.030 from A with timestamp 09:14:48.980. B sends a reply. A receives this reply at 09:15:19.425 with timestamp 09:15:09.385 (as set by B). Estimate the offset between B and A.}
+\singlequestion{We want to find the difference between A's and B's clocks. B receives a message at 09:14:59.030 from A with timestamp 09:14:48.980. B sends a reply. A receives this reply at 09:15:19.425 with timestamp 09:15:09.385 (as set by B). Estimate the offset between B and A.}
 
+\answer
 With $ a $ denoting the timestamp difference between the receive-timestamp of the message received at A and the send-timestamp of that same message, and $ b $ denoting the timestamp difference between the receive-timestamp of the message received at B and the send-timestamp of that same message, the offset can be estimated to be $ \frac{a + b}{2} $, and the error can be estimated to be $ \pm \frac{a - b}{2} $.
 
 a = 10.050
@@ -124,9 +133,12 @@ Plugging the numbers, the offset is $ \frac{a + b}{2} = 10.045 $ seconds, and th
 
 \section{Global State}
 
-\question{The figure below shows the events that occur at two processes P1 and P2. The arrows mean sending of messages. Show the alternative consistent states the system can have had. Start from state $ S_{00} $. ($ S_{xy} $ where $ x $ is p1's state and $ y $ is p2's state)}
+\singlequestion{The figure below shows the events that occur at two processes P1 and P2. The arrows mean sending of messages. Show the alternative consistent states the system can have had. Start from state $ S_{00} $. ($ S_{xy} $ where $ x $ is p1's state and $ y $ is p2's state)}
 
-(image)
+\includegraphics[width=\textwidth]{images/T3-3.png}
+
+\answer
+The alternative consistent states of the system can be seen in figure \ref{figure:alternative-consistent-states}.
 
 \begin{figure}[H]
 \tikzstyle{state} = [circle, draw, text centered]
@@ -174,7 +186,7 @@ Plugging the numbers, the offset is $ \frac{a + b}{2} = 10.045 $ seconds, and th
 \end{tikzpicture}
 }
 \caption{Alternative consistent states.}
-\label{figure:flow}
+\label{figure:alternative-consistent-states}
 \end{figure}
 
                     
@@ -183,10 +195,13 @@ Plugging the numbers, the offset is $ \frac{a + b}{2} = 10.045 $ seconds, and th
 
 \section{Snapshot}
 
-\question{Assume two processes \textbf{A} and \textbf{B} (see figure) connected to each other by channels ($ c_1 $ and $ c_2 $) and which are sending each other a message m constantly. There are at any given time only one copy of message m in the system. Each process state consists of the number of times it has received message m, i.e., the value of the logical clock. Sending and receiving messages change the logical clock value and thus the state. Now \textbf{A} sends message m which has received state 21. Shortly after, \textbf{A} begins the snapshot algorithm. Explain which steps the algorithm consists of and the possible global state it will find in this case.}
+\singlequestion{Assume two processes \textbf{A} and \textbf{B} (see figure) connected to each other by channels ($ c_1 $ and $ c_2 $) and which are sending each other a message m constantly. There are at any given time only one copy of message m in the system. Each process state consists of the number of times it has received message m, i.e., the value of the logical clock. Sending and receiving messages change the logical clock value and thus the state. Now \textbf{A} sends message m which has received state 21. Shortly after, \textbf{A} begins the snapshot algorithm. Explain which steps the algorithm consists of and the possible global state it will find in this case.}
 
-(image)
+\begin{center}
+\includegraphics{images/T3-4.jpg}
+\end{center}
 
+\answer
 \begin{enumerate}
     \item{\textbf{A} records its state (2).}
     \item{\textbf{A} sends a marker to \textbf{B} over $ c_1 $.}
