@@ -6,6 +6,7 @@
 \usepackage{centernot}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
+\usepackage{float}
 \usepackage[utf8]{inputenc}
 
 \title{Assignment T3. Time and Global state \\
@@ -126,31 +127,58 @@ Plugging the numbers, the offset is $ \frac{a + b}{2} = 10.045 $ seconds, and th
 
 (image)
 
-\begin{figure}
+\begin{figure}[H]
 \tikzstyle{state} = [circle, draw, text centered]
 \tikzstyle{line} = [draw, -latex']
+\resizebox{\textwidth}{!}{
 \begin{tikzpicture}[node distance = 1.6cm, auto]
     \tikzstyle{every node}=[font=\small]
     % Place nodes
     \node [state] (s00) {$ S_{00} $};
-    \node [state, right of=s00] (s01) {$ S_{01} $};
+    \node [state, right of=s00] (s10) {$ S_{10} $};
+    \node [state, right of=s10] (s20) {$ S_{20} $};
+    \node [state, right of=s20] (s21) {$ S_{21} $};
+    \node [state, right of=s21] (s22) {$ S_{22} $};
+    \node [state, right of=s22] (s23) {$ S_{23} $};
+    \node [state, right of=s23] (s33) {$ S_{33} $};
+    \node [state, right of=s33] (s34) {$ S_{34} $};
+    \node [state, right of=s34] (s44) {$ S_{44} $};
+
+    \node [state, below of=s10] (s01) {$ S_{01} $};
+    \node [state, below of=s20] (s11) {$ S_{11} $};
+    \node [state, below of=s21] (s30) {$ S_{30} $};
+    \node [state, below of=s22] (s31) {$ S_{31} $};
+    \node [state, below of=s23] (s32) {$ S_{32} $};
+    \node [state, below of=s34] (s43) {$ S_{43} $};
     % Draw edges
+    \path [line] (s00) -- (s10);
     \path [line] (s00) -- (s01);
+    \path [line] (s10) -- (s20);
+    \path [line] (s10) -- (s11);
+    \path [line] (s01) -- (s11);
+    \path [line] (s20) -- (s21);
+    \path [line] (s20) -- (s30);
+    \path [line] (s11) -- (s21);
+    \path [line] (s21) -- (s22);
+    \path [line] (s30) -- (s31);
+    \path [line] (s22) -- (s23);
+    \path [line] (s22) -- (s32);
+    \path [line] (s31) -- (s32);
+    \path [line] (s23) -- (s33);
+    \path [line] (s32) -- (s33);
+    \path [line] (s33) -- (s34);
+    \path [line] (s33) -- (s43);
+    \path [line] (s34) -- (s44);
+    \path [line] (s43) -- (s44);
 \end{tikzpicture}
+}
 \caption{Alternative consistent states.}
 \label{figure:flow}
 \end{figure}
 
-%s_00--->s_10-\->s_20-\->s_30--->s_31--->s_32--->s_33-\->s_43--->s_44
-              %->s_11-\->s_21-/->s_22-/->s_23-/        ->s_34-/
-                      %->s_12-/->s_13-/
-
-%grafen går fra venstre til høyre.      
-%-\-> ned et hakk
-%-/ opp et hakk                 
-%-/-> et hakk opp eller neste til høyre
-%---> neste til høyre   
-%s_22 kan altså bevege seg til s_32 eller s_23, mens s_13 kan bare bevege seg til s_23. 
+                    
+%s00 --> s10 --> s20 --> s21 --> s22 --> s23 --> s33 --> s34 --> s44
+%    \-> s01 -\> s11 /\> s30 --> s31 -\> s32 /       \-> s43 /
 
 \section{Snapshot}
 
