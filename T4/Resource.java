@@ -44,23 +44,20 @@ class Resource
                 if(lockOwner != NOT_LOCKED) return false;
             }
         } else {
-            while(lockOwner != NOT_LOCKED) {
+            if(lockOwner != NOT_LOCKED) {
                 try {
-                    wait((long)(Globals.TIMEOUT_INTERVAL * Math.random()*1000));
-                } catch (InterruptedException ie) { break; }
+                    wait((long)(Globals.TIMEOUT_INTERVAL * Math.random()*1000), 0);
+                } catch (InterruptedException ie) { }
 
-                if(lockOwner == NOT_LOCKED) {
-                    lockOwner = transactionId;
-                    return true;
-                } else {
+
+                if(lockOwner != NOT_LOCKED) {
                     return false;
                 }
             }
         }
 
-        // will never happen, just to satisfy java
-        // i expect a it's happening.gif sometime in the future because of this
-        return false;
+        lockOwner = transactionId;
+        return true;
     }
 
     /**
