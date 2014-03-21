@@ -83,7 +83,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server
      *
      * @param ip The address of the RMI registry to use.
      */
-    public ServerImpl(String ip, String inputfile) throws RemoteException
+    public ServerImpl(String ip, String inputfile, String edgeChasing) throws RemoteException
     {
         servers = new HashMap<Integer, Server>();
         transactionCounter = 0;
@@ -91,6 +91,9 @@ public class ServerImpl extends UnicastRemoteObject implements Server
         activeTransaction = null;
         readGlobalParameters(inputfile);
         resources = new ArrayList<Resource>();
+        if(edgeChasing.equals("true")) {
+            Globals.PROBING_ENABLED = true;
+        }
         for (int i = 0; i < Globals.NOF_RESOURCES_PER_SERVER; i++)
             resources.add(new Resource(this));
 
@@ -588,12 +591,15 @@ public class ServerImpl extends UnicastRemoteObject implements Server
     {
         String registryAddress = "localhost:1111";
         String inputfile = null;
+        String edgeChasing = "false";
         if (args.length > 0)
             registryAddress = args[0];
         if (args.length > 1)
-            inputfile = args[1];
+            edgeChasing = args[1];
+        if(args.length > 2)
+            inputfile = args[2];
         try {
-            new ServerImpl(registryAddress, inputfile);
+            new ServerImpl(registryAddress, inputfile, edgeChasing);
         } catch (RemoteException re) {
             re.printStackTrace();
         }

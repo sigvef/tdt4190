@@ -9,11 +9,11 @@ serve:
 
 .PHONY: run
 run:
-	java ServerImpl localhost:3360
+	java ServerImpl localhost:3360 false
 
 .PHONY: run-probe
 run-probe:
-	java ServerImpl localhost:3360
+	java ServerImpl localhost:3360 true
 
 .PHONY: clean
 clean:
