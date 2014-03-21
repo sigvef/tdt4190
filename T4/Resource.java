@@ -46,7 +46,7 @@ class Resource
         } else {
             while(lockOwner != NOT_LOCKED) {
                 try {
-                    wait((long)Globals.TIMEOUT_INTERVAL);
+                    wait((long)(Globals.TIMEOUT_INTERVAL * Math.random()*1000));
                 } catch (InterruptedException ie) { break; }
 
                 if(lockOwner == NOT_LOCKED) {
