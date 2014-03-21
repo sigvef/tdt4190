@@ -1,0 +1,753 @@
+==================================================================
+574: Server 2 started.
+==================================================================
+620: Server 2 started.
+11231: Server 2 was notified of the arrival of server 3
+16468: Server 2 was notified of the arrival of server 4
+27770: Server 2 started its transactions.
+27842: Transaction 2000 arrived.
+27843: TRANS 2000: Starting transaction 2000.
+27843: TRANS 2000: Trying to claim lock of resource 1 at server 1
+27844: TRANS 2000: Lock claimed. Processing...
+27865: TRANS 2000: Trying to claim lock of resource 7 at server 2
+27865: TRANS 2000: Lock claimed. Processing...
+27966: TRANS 2000: Trying to claim lock of resource 9 at server 4
+251398: Contact with server 4 was lost.
+254300: TRANS 2000: Aborting transaction 2000.
+254300: TRANS 2000: Failed to unlock resource 1 at server 1 due to communication failure.
+254300: TRANS 2000: Unlocked resource 7 at server 2
+254301: TRANS 2000: Transaction 2000 aborted.
+254301: Transaction 2000 ended.
+254553: Transaction 2001 arrived.
+254553: TRANS 2001: Starting transaction 2001.
+254554: TRANS 2001: Trying to claim lock of resource 6 at server 1
+254554: Contact with server 1 was lost.
+254556: TRANS 2001: Aborting transaction 2001.
+254556: TRANS 2001: Transaction 2001 aborted.
+254556: Transaction 2001 ended.
+254701: Transaction 2002 arrived.
+254701: TRANS 2002: Starting transaction 2002.
+254701: TRANS 2002: Trying to claim lock of resource 2 at server 3
+254702: Contact with server 3 was lost.
+254703: TRANS 2002: Aborting transaction 2002.
+254703: TRANS 2002: Transaction 2002 aborted.
+254703: Transaction 2002 ended.
+254987: Transaction 2003 arrived.
+254987: TRANS 2003: Starting transaction 2003.
+254987: TRANS 2003: Trying to claim lock of resource 4 at server 2
+254988: TRANS 2003: Lock claimed. Processing...
+255049: TRANS 2003: Trying to claim lock of resource 2 at server 2
+255049: TRANS 2003: Lock claimed. Processing...
+255144: TRANS 2003: Trying to claim lock of resource 8 at server 2
+255144: TRANS 2003: Lock claimed. Processing...
+255233: TRANS 2003: Trying to claim lock of resource 1 at server 2
+255233: TRANS 2003: Lock claimed. Processing...
+255268: TRANS 2003: Trying to claim lock of resource 3 at server 2
+255268: TRANS 2003: Lock claimed. Processing...
+255351: TRANS 2003: Trying to claim lock of resource 7 at server 2
+255351: TRANS 2003: Lock claimed. Processing...
+255387: TRANS 2003: Committing transaction 2003.
+255388: TRANS 2003: Unlocked resource 4 at server 2
+255388: TRANS 2003: Unlocked resource 2 at server 2
+255388: TRANS 2003: Unlocked resource 8 at server 2
+255388: TRANS 2003: Unlocked resource 1 at server 2
+255388: TRANS 2003: Unlocked resource 3 at server 2
+255389: TRANS 2003: Unlocked resource 7 at server 2
+255389: TRANS 2003: Transaction 2003 committed.
+255389: Transaction 2003 ended.
+255454: Transaction 2004 arrived.
+255454: TRANS 2004: Starting transaction 2004.
+255454: TRANS 2004: Trying to claim lock of resource 1 at server 2
+255455: TRANS 2004: Lock claimed. Processing...
+255519: TRANS 2004: Trying to claim lock of resource 4 at server 2
+255519: TRANS 2004: Lock claimed. Processing...
+255596: TRANS 2004: Trying to claim lock of resource 6 at server 2
+255596: TRANS 2004: Lock claimed. Processing...
+255668: TRANS 2004: Trying to claim lock of resource 5 at server 2
+255668: TRANS 2004: Lock claimed. Processing...
+255725: TRANS 2004: Trying to claim lock of resource 9 at server 2
+255725: TRANS 2004: Lock claimed. Processing...
+255771: TRANS 2004: Committing transaction 2004.
+255771: TRANS 2004: Unlocked resource 1 at server 2
+255771: TRANS 2004: Unlocked resource 4 at server 2
+255771: TRANS 2004: Unlocked resource 6 at server 2
+255771: TRANS 2004: Unlocked resource 5 at server 2
+255771: TRANS 2004: Unlocked resource 9 at server 2
+255772: TRANS 2004: Transaction 2004 committed.
+255772: Transaction 2004 ended.
+255954: Transaction 2005 arrived.
+255954: TRANS 2005: Starting transaction 2005.
+255954: TRANS 2005: Trying to claim lock of resource 2 at server 2
+255954: TRANS 2005: Lock claimed. Processing...
+256039: TRANS 2005: Trying to claim lock of resource 6 at server 2
+256039: TRANS 2005: Lock claimed. Processing...
+256081: TRANS 2005: Trying to claim lock of resource 0 at server 2
+256082: TRANS 2005: Lock claimed. Processing...
+256139: TRANS 2005: Trying to claim lock of resource 9 at server 2
+256139: TRANS 2005: Lock claimed. Processing...
+256192: TRANS 2005: Trying to claim lock of resource 7 at server 2
+256193: TRANS 2005: Lock claimed. Processing...
+256286: TRANS 2005: Trying to claim lock of resource 5 at server 2
+256286: TRANS 2005: Lock claimed. Processing...
+256353: TRANS 2005: Trying to claim lock of resource 8 at server 2
+256353: TRANS 2005: Lock claimed. Processing...
+256416: TRANS 2005: Committing transaction 2005.
+256416: TRANS 2005: Unlocked resource 2 at server 2
+256416: TRANS 2005: Unlocked resource 6 at server 2
+256416: TRANS 2005: Unlocked resource 0 at server 2
+256416: TRANS 2005: Unlocked resource 9 at server 2
+256416: TRANS 2005: Unlocked resource 7 at server 2
+256416: TRANS 2005: Unlocked resource 5 at server 2
+256417: TRANS 2005: Unlocked resource 8 at server 2
+256417: TRANS 2005: Transaction 2005 committed.
+256417: Transaction 2005 ended.
+256618: Transaction 2006 arrived.
+256618: TRANS 2006: Starting transaction 2006.
+256618: TRANS 2006: Trying to claim lock of resource 6 at server 2
+256618: TRANS 2006: Lock claimed. Processing...
+256646: TRANS 2006: Trying to claim lock of resource 8 at server 2
+256646: TRANS 2006: Lock claimed. Processing...
+256715: TRANS 2006: Trying to claim lock of resource 2 at server 2
+256716: TRANS 2006: Lock claimed. Processing...
+256815: TRANS 2006: Trying to claim lock of resource 9 at server 2
+256815: TRANS 2006: Lock claimed. Processing...
+256855: TRANS 2006: Trying to claim lock of resource 4 at server 2
+256856: TRANS 2006: Lock claimed. Processing...
+256942: TRANS 2006: Trying to claim lock of resource 5 at server 2
+256942: TRANS 2006: Lock claimed. Processing...
+257041: TRANS 2006: Trying to claim lock of resource 3 at server 2
+257041: TRANS 2006: Lock claimed. Processing...
+257089: TRANS 2006: Trying to claim lock of resource 7 at server 2
+257089: TRANS 2006: Lock claimed. Processing...
+257126: TRANS 2006: Committing transaction 2006.
+257127: TRANS 2006: Unlocked resource 6 at server 2
+257127: TRANS 2006: Unlocked resource 8 at server 2
+257127: TRANS 2006: Unlocked resource 2 at server 2
+257127: TRANS 2006: Unlocked resource 9 at server 2
+257127: TRANS 2006: Unlocked resource 4 at server 2
+257127: TRANS 2006: Unlocked resource 5 at server 2
+257127: TRANS 2006: Unlocked resource 3 at server 2
+257128: TRANS 2006: Unlocked resource 7 at server 2
+257128: TRANS 2006: Transaction 2006 committed.
+257128: Transaction 2006 ended.
+257241: Transaction 2007 arrived.
+257241: TRANS 2007: Starting transaction 2007.
+257241: TRANS 2007: Trying to claim lock of resource 8 at server 2
+257241: TRANS 2007: Lock claimed. Processing...
+==================================================================
+565: Server 2 started.
+2669: Server 2 was notified of the arrival of server 3
+4740: Server 2 was notified of the arrival of server 4
+6908: Server 2 started its transactions.
+7010: Transaction 2000 arrived.
+7010: TRANS 2000: Starting transaction 2000.
+7010: TRANS 2000: Trying to claim lock of resource 2 at server 4
+7012: TRANS 2000: Aborting transaction 2000.
+7012: TRANS 2000: Transaction 2000 aborted.
+7012: Transaction 2000 ended.
+7201: Transaction 2001 arrived.
+7201: TRANS 2001: Starting transaction 2001.
+7201: TRANS 2001: Trying to claim lock of resource 7 at server 4
+7202: TRANS 2001: Aborting transaction 2001.
+7202: TRANS 2001: Transaction 2001 aborted.
+7202: Transaction 2001 ended.
+7333: Transaction 2002 arrived.
+7333: TRANS 2002: Starting transaction 2002.
+7333: TRANS 2002: Trying to claim lock of resource 5 at server 3
+7334: TRANS 2002: Aborting transaction 2002.
+7334: TRANS 2002: Transaction 2002 aborted.
+7334: Transaction 2002 ended.
+7395: Transaction 2003 arrived.
+7395: TRANS 2003: Starting transaction 2003.
+7395: TRANS 2003: Trying to claim lock of resource 0 at server 2
+7395: TRANS 2003: Aborting transaction 2003.
+7395: TRANS 2003: Transaction 2003 aborted.
+7395: Transaction 2003 ended.
+7663: Transaction 2004 arrived.
+7663: TRANS 2004: Starting transaction 2004.
+7664: TRANS 2004: Trying to claim lock of resource 9 at server 2
+7664: TRANS 2004: Aborting transaction 2004.
+7664: TRANS 2004: Transaction 2004 aborted.
+7664: Transaction 2004 ended.
+7824: Transaction 2005 arrived.
+7825: TRANS 2005: Starting transaction 2005.
+7825: TRANS 2005: Trying to claim lock of resource 5 at server 1
+7826: TRANS 2005: Aborting transaction 2005.
+7826: TRANS 2005: Transaction 2005 aborted.
+7826: Transaction 2005 ended.
+8076: Transaction 2006 arrived.
+8077: TRANS 2006: Starting transaction 2006.
+8077: TRANS 2006: Trying to claim lock of resource 8 at server 4
+8078: TRANS 2006: Aborting transaction 2006.
+8078: TRANS 2006: Transaction 2006 aborted.
+8078: Transaction 2006 ended.
+8158: Transaction 2007 arrived.
+8159: TRANS 2007: Starting transaction 2007.
+8161: TRANS 2007: Trying to claim lock of resource 7 at server 2
+8161: TRANS 2007: Aborting transaction 2007.
+8161: TRANS 2007: Transaction 2007 aborted.
+8161: Transaction 2007 ended.
+8462: Transaction 2008 arrived.
+8463: TRANS 2008: Starting transaction 2008.
+8463: TRANS 2008: Trying to claim lock of resource 9 at server 2
+8463: TRANS 2008: Aborting transaction 2008.
+8463: TRANS 2008: Transaction 2008 aborted.
+8463: Transaction 2008 ended.
+8584: Transaction 2009 arrived.
+8584: TRANS 2009: Starting transaction 2009.
+8584: TRANS 2009: Trying to claim lock of resource 4 at server 4
+8586: TRANS 2009: Aborting transaction 2009.
+8586: TRANS 2009: Transaction 2009 aborted.
+8586: Transaction 2009 ended.
+8781: Transaction 2010 arrived.
+8781: TRANS 2010: Starting transaction 2010.
+8782: TRANS 2010: Trying to claim lock of resource 3 at server 3
+8782: TRANS 2010: Aborting transaction 2010.
+8783: TRANS 2010: Transaction 2010 aborted.
+8783: Transaction 2010 ended.
+9048: Transaction 2011 arrived.
+9048: TRANS 2011: Starting transaction 2011.
+9048: TRANS 2011: Trying to claim lock of resource 0 at server 2
+9048: TRANS 2011: Aborting transaction 2011.
+9048: TRANS 2011: Transaction 2011 aborted.
+9048: Transaction 2011 ended.
+9284: Transaction 2012 arrived.
+9284: TRANS 2012: Starting transaction 2012.
+9284: TRANS 2012: Trying to claim lock of resource 9 at server 3
+9285: TRANS 2012: Aborting transaction 2012.
+9285: TRANS 2012: Transaction 2012 aborted.
+9285: Transaction 2012 ended.
+9433: Transaction 2013 arrived.
+9434: TRANS 2013: Starting transaction 2013.
+9434: TRANS 2013: Trying to claim lock of resource 5 at server 4
+9435: TRANS 2013: Aborting transaction 2013.
+9435: TRANS 2013: Transaction 2013 aborted.
+9436: Transaction 2013 ended.
+9584: Transaction 2014 arrived.
+9584: TRANS 2014: Starting transaction 2014.
+9585: TRANS 2014: Trying to claim lock of resource 0 at server 3
+9586: TRANS 2014: Aborting transaction 2014.
+9586: TRANS 2014: Transaction 2014 aborted.
+9586: Transaction 2014 ended.
+9872: Transaction 2015 arrived.
+9873: TRANS 2015: Starting transaction 2015.
+9873: TRANS 2015: Trying to claim lock of resource 8 at server 4
+9874: TRANS 2015: Aborting transaction 2015.
+9874: TRANS 2015: Transaction 2015 aborted.
+9874: Transaction 2015 ended.
+10096: Transaction 2016 arrived.
+10096: TRANS 2016: Starting transaction 2016.
+10096: TRANS 2016: Trying to claim lock of resource 0 at server 2
+10096: TRANS 2016: Aborting transaction 2016.
+10096: TRANS 2016: Transaction 2016 aborted.
+10096: Transaction 2016 ended.
+10225: Transaction 2017 arrived.
+10225: TRANS 2017: Starting transaction 2017.
+10225: TRANS 2017: Trying to claim lock of resource 2 at server 4
+10227: TRANS 2017: Aborting transaction 2017.
+10227: TRANS 2017: Transaction 2017 aborted.
+10227: Transaction 2017 ended.
+10510: Transaction 2018 arrived.
+10510: TRANS 2018: Starting transaction 2018.
+10510: TRANS 2018: Trying to claim lock of resource 1 at server 2
+10510: TRANS 2018: Aborting transaction 2018.
+10510: TRANS 2018: Transaction 2018 aborted.
+10510: Transaction 2018 ended.
+10665: Transaction 2019 arrived.
+10666: TRANS 2019: Starting transaction 2019.
+10666: TRANS 2019: Trying to claim lock of resource 7 at server 4
+10666: TRANS 2019: Aborting transaction 2019.
+10667: TRANS 2019: Transaction 2019 aborted.
+10667: Transaction 2019 ended.
+10905: Transaction 2020 arrived.
+10906: TRANS 2020: Starting transaction 2020.
+10906: TRANS 2020: Trying to claim lock of resource 4 at server 2
+10906: TRANS 2020: Aborting transaction 2020.
+10906: TRANS 2020: Transaction 2020 aborted.
+10906: Transaction 2020 ended.
+11074: Transaction 2021 arrived.
+11074: TRANS 2021: Starting transaction 2021.
+11074: TRANS 2021: Trying to claim lock of resource 7 at server 2
+11075: TRANS 2021: Aborting transaction 2021.
+11075: TRANS 2021: Transaction 2021 aborted.
+11075: Transaction 2021 ended.
+11233: Transaction 2022 arrived.
+11233: TRANS 2022: Starting transaction 2022.
+11234: TRANS 2022: Trying to claim lock of resource 9 at server 4
+11234: TRANS 2022: Aborting transaction 2022.
+11234: TRANS 2022: Transaction 2022 aborted.
+11235: Transaction 2022 ended.
+11351: Transaction 2023 arrived.
+11351: TRANS 2023: Starting transaction 2023.
+11351: TRANS 2023: Trying to claim lock of resource 0 at server 1
+11352: TRANS 2023: Aborting transaction 2023.
+11352: TRANS 2023: Transaction 2023 aborted.
+11352: Transaction 2023 ended.
+11582: Transaction 2024 arrived.
+11582: TRANS 2024: Starting transaction 2024.
+11582: TRANS 2024: Trying to claim lock of resource 0 at server 2
+11583: TRANS 2024: Aborting transaction 2024.
+11583: TRANS 2024: Transaction 2024 aborted.
+11583: Transaction 2024 ended.
+11852: Transaction 2025 arrived.
+11852: TRANS 2025: Starting transaction 2025.
+11852: TRANS 2025: Trying to claim lock of resource 4 at server 4
+11853: TRANS 2025: Aborting transaction 2025.
+11853: TRANS 2025: Transaction 2025 aborted.
+11853: Transaction 2025 ended.
+12040: Transaction 2026 arrived.
+12040: TRANS 2026: Starting transaction 2026.
+12040: TRANS 2026: Trying to claim lock of resource 7 at server 1
+12041: TRANS 2026: Aborting transaction 2026.
+12041: TRANS 2026: Transaction 2026 aborted.
+12041: Transaction 2026 ended.
+12183: Transaction 2027 arrived.
+12183: TRANS 2027: Starting transaction 2027.
+12183: TRANS 2027: Trying to claim lock of resource 9 at server 3
+12184: TRANS 2027: Aborting transaction 2027.
+12184: TRANS 2027: Transaction 2027 aborted.
+12184: Transaction 2027 ended.
+12350: Transaction 2028 arrived.
+12350: TRANS 2028: Starting transaction 2028.
+12350: TRANS 2028: Trying to claim lock of resource 4 at server 2
+12350: TRANS 2028: Aborting transaction 2028.
+12350: TRANS 2028: Transaction 2028 aborted.
+12350: Transaction 2028 ended.
+12523: Transaction 2029 arrived.
+12524: TRANS 2029: Starting transaction 2029.
+12524: TRANS 2029: Trying to claim lock of resource 6 at server 3
+12525: TRANS 2029: Aborting transaction 2029.
+12525: TRANS 2029: Transaction 2029 aborted.
+12525: Transaction 2029 ended.
+12788: Transaction 2030 arrived.
+12789: TRANS 2030: Starting transaction 2030.
+12789: TRANS 2030: Trying to claim lock of resource 1 at server 3
+12790: TRANS 2030: Aborting transaction 2030.
+12790: TRANS 2030: Transaction 2030 aborted.
+12790: Transaction 2030 ended.
+12932: Transaction 2031 arrived.
+12934: TRANS 2031: Starting transaction 2031.
+12934: TRANS 2031: Trying to claim lock of resource 3 at server 1
+12935: TRANS 2031: Aborting transaction 2031.
+12935: TRANS 2031: Transaction 2031 aborted.
+12935: Transaction 2031 ended.
+13236: Transaction 2032 arrived.
+13237: TRANS 2032: Starting transaction 2032.
+13237: TRANS 2032: Trying to claim lock of resource 8 at server 1
+13237: TRANS 2032: Aborting transaction 2032.
+13237: TRANS 2032: Transaction 2032 aborted.
+13238: Transaction 2032 ended.
+13458: Transaction 2033 arrived.
+13458: TRANS 2033: Starting transaction 2033.
+13458: TRANS 2033: Trying to claim lock of resource 1 at server 3
+13459: TRANS 2033: Aborting transaction 2033.
+13459: TRANS 2033: Transaction 2033 aborted.
+13459: Transaction 2033 ended.
+13690: Transaction 2034 arrived.
+13690: TRANS 2034: Starting transaction 2034.
+13691: TRANS 2034: Trying to claim lock of resource 6 at server 3
+13691: TRANS 2034: Aborting transaction 2034.
+13691: TRANS 2034: Transaction 2034 aborted.
+13692: Transaction 2034 ended.
+13954: Transaction 2035 arrived.
+13954: TRANS 2035: Starting transaction 2035.
+13954: TRANS 2035: Trying to claim lock of resource 7 at server 2
+13955: TRANS 2035: Aborting transaction 2035.
+13955: TRANS 2035: Transaction 2035 aborted.
+13955: Transaction 2035 ended.
+14042: Transaction 2036 arrived.
+14042: TRANS 2036: Starting transaction 2036.
+14042: TRANS 2036: Trying to claim lock of resource 9 at server 2
+14043: TRANS 2036: Aborting transaction 2036.
+14043: TRANS 2036: Transaction 2036 aborted.
+14043: Transaction 2036 ended.
+14147: Transaction 2037 arrived.
+14147: TRANS 2037: Starting transaction 2037.
+14147: TRANS 2037: Trying to claim lock of resource 7 at server 1
+14148: TRANS 2037: Aborting transaction 2037.
+14148: TRANS 2037: Transaction 2037 aborted.
+14148: Transaction 2037 ended.
+14395: Transaction 2038 arrived.
+14395: TRANS 2038: Starting transaction 2038.
+14395: TRANS 2038: Trying to claim lock of resource 4 at server 2
+14395: TRANS 2038: Aborting transaction 2038.
+14395: TRANS 2038: Transaction 2038 aborted.
+14395: Transaction 2038 ended.
+14521: Transaction 2039 arrived.
+14521: TRANS 2039: Starting transaction 2039.
+14521: TRANS 2039: Trying to claim lock of resource 6 at server 4
+14522: TRANS 2039: Aborting transaction 2039.
+14522: TRANS 2039: Transaction 2039 aborted.
+14522: Transaction 2039 ended.
+14580: Transaction 2040 arrived.
+14580: TRANS 2040: Starting transaction 2040.
+14580: TRANS 2040: Trying to claim lock of resource 3 at server 1
+14581: TRANS 2040: Aborting transaction 2040.
+14581: TRANS 2040: Transaction 2040 aborted.
+14581: Transaction 2040 ended.
+14739: Transaction 2041 arrived.
+14740: TRANS 2041: Starting transaction 2041.
+14740: TRANS 2041: Trying to claim lock of resource 4 at server 4
+14740: TRANS 2041: Aborting transaction 2041.
+14740: TRANS 2041: Transaction 2041 aborted.
+14741: Transaction 2041 ended.
+14961: Transaction 2042 arrived.
+14961: TRANS 2042: Starting transaction 2042.
+14962: TRANS 2042: Trying to claim lock of resource 9 at server 4
+14962: TRANS 2042: Aborting transaction 2042.
+14962: TRANS 2042: Transaction 2042 aborted.
+14962: Transaction 2042 ended.
+15153: Transaction 2043 arrived.
+15153: TRANS 2043: Starting transaction 2043.
+15153: TRANS 2043: Trying to claim lock of resource 8 at server 3
+15154: TRANS 2043: Aborting transaction 2043.
+15154: TRANS 2043: Transaction 2043 aborted.
+15154: Transaction 2043 ended.
+15241: Transaction 2044 arrived.
+15241: TRANS 2044: Starting transaction 2044.
+15241: TRANS 2044: Trying to claim lock of resource 9 at server 2
+15242: TRANS 2044: Aborting transaction 2044.
+15242: TRANS 2044: Transaction 2044 aborted.
+15242: Transaction 2044 ended.
+15529: Transaction 2045 arrived.
+15529: TRANS 2045: Starting transaction 2045.
+15529: TRANS 2045: Trying to claim lock of resource 7 at server 3
+15530: TRANS 2045: Aborting transaction 2045.
+15530: TRANS 2045: Transaction 2045 aborted.
+15530: Transaction 2045 ended.
+15705: Transaction 2046 arrived.
+15705: TRANS 2046: Starting transaction 2046.
+15705: TRANS 2046: Trying to claim lock of resource 1 at server 1
+15706: TRANS 2046: Aborting transaction 2046.
+15706: TRANS 2046: Transaction 2046 aborted.
+15706: Transaction 2046 ended.
+16001: Transaction 2047 arrived.
+16001: TRANS 2047: Starting transaction 2047.
+16001: TRANS 2047: Trying to claim lock of resource 8 at server 4
+16002: TRANS 2047: Aborting transaction 2047.
+16002: TRANS 2047: Transaction 2047 aborted.
+16002: Transaction 2047 ended.
+16142: Transaction 2048 arrived.
+16142: TRANS 2048: Starting transaction 2048.
+16142: TRANS 2048: Trying to claim lock of resource 8 at server 2
+16142: TRANS 2048: Aborting transaction 2048.
+16142: TRANS 2048: Transaction 2048 aborted.
+16142: Transaction 2048 ended.
+16309: Transaction 2049 arrived.
+16309: TRANS 2049: Starting transaction 2049.
+16309: TRANS 2049: Trying to claim lock of resource 9 at server 1
+16310: TRANS 2049: Aborting transaction 2049.
+16310: TRANS 2049: Transaction 2049 aborted.
+16310: Transaction 2049 ended.
+16477: Transaction 2050 arrived.
+16477: TRANS 2050: Starting transaction 2050.
+16477: TRANS 2050: Trying to claim lock of resource 1 at server 2
+16477: TRANS 2050: Aborting transaction 2050.
+16477: TRANS 2050: Transaction 2050 aborted.
+16477: Transaction 2050 ended.
+16773: Transaction 2051 arrived.
+16773: TRANS 2051: Starting transaction 2051.
+16773: TRANS 2051: Trying to claim lock of resource 6 at server 4
+16774: TRANS 2051: Aborting transaction 2051.
+16774: TRANS 2051: Transaction 2051 aborted.
+16774: Transaction 2051 ended.
+16914: Transaction 2052 arrived.
+16915: TRANS 2052: Starting transaction 2052.
+16915: TRANS 2052: Trying to claim lock of resource 4 at server 2
+16915: TRANS 2052: Aborting transaction 2052.
+16915: TRANS 2052: Transaction 2052 aborted.
+16915: Transaction 2052 ended.
+17028: Transaction 2053 arrived.
+17028: TRANS 2053: Starting transaction 2053.
+17028: TRANS 2053: Trying to claim lock of resource 8 at server 2
+17029: TRANS 2053: Aborting transaction 2053.
+17029: TRANS 2053: Transaction 2053 aborted.
+17029: Transaction 2053 ended.
+17172: Transaction 2054 arrived.
+17173: TRANS 2054: Starting transaction 2054.
+17173: TRANS 2054: Trying to claim lock of resource 4 at server 3
+17174: TRANS 2054: Aborting transaction 2054.
+17174: TRANS 2054: Transaction 2054 aborted.
+17174: Transaction 2054 ended.
+17360: Transaction 2055 arrived.
+17360: TRANS 2055: Starting transaction 2055.
+17360: TRANS 2055: Trying to claim lock of resource 6 at server 2
+17360: TRANS 2055: Aborting transaction 2055.
+17360: TRANS 2055: Transaction 2055 aborted.
+17360: Transaction 2055 ended.
+17448: Transaction 2056 arrived.
+17448: TRANS 2056: Starting transaction 2056.
+17448: TRANS 2056: Trying to claim lock of resource 5 at server 1
+17449: TRANS 2056: Aborting transaction 2056.
+17449: TRANS 2056: Transaction 2056 aborted.
+17449: Transaction 2056 ended.
+17655: Transaction 2057 arrived.
+17656: TRANS 2057: Starting transaction 2057.
+17656: TRANS 2057: Trying to claim lock of resource 9 at server 4
+17656: TRANS 2057: Aborting transaction 2057.
+17656: TRANS 2057: Transaction 2057 aborted.
+17656: Transaction 2057 ended.
+17746: Transaction 2058 arrived.
+17746: TRANS 2058: Starting transaction 2058.
+17746: TRANS 2058: Trying to claim lock of resource 2 at server 4
+17747: TRANS 2058: Aborting transaction 2058.
+17747: TRANS 2058: Transaction 2058 aborted.
+17747: Transaction 2058 ended.
+18010: Transaction 2059 arrived.
+18010: TRANS 2059: Starting transaction 2059.
+18010: TRANS 2059: Trying to claim lock of resource 1 at server 3
+18011: TRANS 2059: Aborting transaction 2059.
+18011: TRANS 2059: Transaction 2059 aborted.
+18011: Transaction 2059 ended.
+18305: Transaction 2060 arrived.
+18305: TRANS 2060: Starting transaction 2060.
+18305: TRANS 2060: Trying to claim lock of resource 3 at server 3
+18306: TRANS 2060: Aborting transaction 2060.
+18306: TRANS 2060: Transaction 2060 aborted.
+18306: Transaction 2060 ended.
+18379: Transaction 2061 arrived.
+18379: TRANS 2061: Starting transaction 2061.
+18379: TRANS 2061: Trying to claim lock of resource 5 at server 2
+18380: TRANS 2061: Aborting transaction 2061.
+18380: TRANS 2061: Transaction 2061 aborted.
+18380: Transaction 2061 ended.
+18505: Transaction 2062 arrived.
+18506: TRANS 2062: Starting transaction 2062.
+18506: TRANS 2062: Trying to claim lock of resource 9 at server 4
+18506: TRANS 2062: Aborting transaction 2062.
+18506: TRANS 2062: Transaction 2062 aborted.
+18506: Transaction 2062 ended.
+18804: Transaction 2063 arrived.
+18804: TRANS 2063: Starting transaction 2063.
+18805: TRANS 2063: Trying to claim lock of resource 8 at server 3
+18805: TRANS 2063: Aborting transaction 2063.
+18805: TRANS 2063: Transaction 2063 aborted.
+18805: Transaction 2063 ended.
+18896: Transaction 2064 arrived.
+18896: TRANS 2064: Starting transaction 2064.
+18896: TRANS 2064: Trying to claim lock of resource 2 at server 3
+18897: TRANS 2064: Aborting transaction 2064.
+18897: TRANS 2064: Transaction 2064 aborted.
+18897: Transaction 2064 ended.
+19081: Transaction 2065 arrived.
+19082: TRANS 2065: Starting transaction 2065.
+19082: TRANS 2065: Trying to claim lock of resource 5 at server 4
+19082: TRANS 2065: Aborting transaction 2065.
+19082: TRANS 2065: Transaction 2065 aborted.
+19082: Transaction 2065 ended.
+19223: Transaction 2066 arrived.
+19223: TRANS 2066: Starting transaction 2066.
+19223: TRANS 2066: Trying to claim lock of resource 7 at server 4
+19224: TRANS 2066: Aborting transaction 2066.
+19224: TRANS 2066: Transaction 2066 aborted.
+19224: Transaction 2066 ended.
+19493: Transaction 2067 arrived.
+19493: TRANS 2067: Starting transaction 2067.
+19493: TRANS 2067: Trying to claim lock of resource 3 at server 1
+19494: TRANS 2067: Aborting transaction 2067.
+19494: TRANS 2067: Transaction 2067 aborted.
+19494: Transaction 2067 ended.
+19678: Transaction 2068 arrived.
+19678: TRANS 2068: Starting transaction 2068.
+19678: TRANS 2068: Trying to claim lock of resource 7 at server 2
+19678: TRANS 2068: Aborting transaction 2068.
+19678: TRANS 2068: Transaction 2068 aborted.
+19678: Transaction 2068 ended.
+19744: Transaction 2069 arrived.
+19744: TRANS 2069: Starting transaction 2069.
+19744: TRANS 2069: Trying to claim lock of resource 4 at server 3
+19745: TRANS 2069: Aborting transaction 2069.
+19745: TRANS 2069: Transaction 2069 aborted.
+19745: Transaction 2069 ended.
+19859: Transaction 2070 arrived.
+19859: TRANS 2070: Starting transaction 2070.
+19859: TRANS 2070: Trying to claim lock of resource 8 at server 2
+19859: TRANS 2070: Aborting transaction 2070.
+19859: TRANS 2070: Transaction 2070 aborted.
+19859: Transaction 2070 ended.
+19912: Transaction 2071 arrived.
+19912: TRANS 2071: Starting transaction 2071.
+19912: TRANS 2071: Trying to claim lock of resource 6 at server 1
+19913: TRANS 2071: Aborting transaction 2071.
+19913: TRANS 2071: Transaction 2071 aborted.
+19913: Transaction 2071 ended.
+20158: Transaction 2072 arrived.
+20158: TRANS 2072: Starting transaction 2072.
+20158: TRANS 2072: Trying to claim lock of resource 3 at server 3
+20159: TRANS 2072: Aborting transaction 2072.
+20159: TRANS 2072: Transaction 2072 aborted.
+20159: Transaction 2072 ended.
+20439: Transaction 2073 arrived.
+20439: TRANS 2073: Starting transaction 2073.
+20439: TRANS 2073: Trying to claim lock of resource 6 at server 3
+20439: TRANS 2073: Aborting transaction 2073.
+20439: TRANS 2073: Transaction 2073 aborted.
+20440: Transaction 2073 ended.
+20699: Transaction 2074 arrived.
+20699: TRANS 2074: Starting transaction 2074.
+20699: TRANS 2074: Trying to claim lock of resource 8 at server 4
+20700: TRANS 2074: Aborting transaction 2074.
+20700: TRANS 2074: Transaction 2074 aborted.
+20700: Transaction 2074 ended.
+20936: Transaction 2075 arrived.
+20936: TRANS 2075: Starting transaction 2075.
+20936: TRANS 2075: Trying to claim lock of resource 8 at server 4
+20937: TRANS 2075: Aborting transaction 2075.
+20937: TRANS 2075: Transaction 2075 aborted.
+20937: Transaction 2075 ended.
+21036: Transaction 2076 arrived.
+21036: TRANS 2076: Starting transaction 2076.
+21036: TRANS 2076: Trying to claim lock of resource 1 at server 2
+21037: TRANS 2076: Aborting transaction 2076.
+21037: TRANS 2076: Transaction 2076 aborted.
+21037: Transaction 2076 ended.
+21327: Transaction 2077 arrived.
+21327: TRANS 2077: Starting transaction 2077.
+21327: TRANS 2077: Trying to claim lock of resource 5 at server 2
+21327: TRANS 2077: Aborting transaction 2077.
+21327: TRANS 2077: Transaction 2077 aborted.
+21327: Transaction 2077 ended.
+21394: Transaction 2078 arrived.
+21394: TRANS 2078: Starting transaction 2078.
+21394: TRANS 2078: Trying to claim lock of resource 9 at server 4
+21395: TRANS 2078: Aborting transaction 2078.
+21395: TRANS 2078: Transaction 2078 aborted.
+21395: Transaction 2078 ended.
+21479: Transaction 2079 arrived.
+21480: TRANS 2079: Starting transaction 2079.
+21480: TRANS 2079: Trying to claim lock of resource 8 at server 1
+21481: TRANS 2079: Aborting transaction 2079.
+21481: TRANS 2079: Transaction 2079 aborted.
+21481: Transaction 2079 ended.
+21662: Transaction 2080 arrived.
+21662: TRANS 2080: Starting transaction 2080.
+21662: TRANS 2080: Trying to claim lock of resource 4 at server 3
+21662: TRANS 2080: Aborting transaction 2080.
+21663: TRANS 2080: Transaction 2080 aborted.
+21663: Transaction 2080 ended.
+21792: Transaction 2081 arrived.
+21792: TRANS 2081: Starting transaction 2081.
+21792: TRANS 2081: Trying to claim lock of resource 7 at server 1
+21793: TRANS 2081: Aborting transaction 2081.
+21793: TRANS 2081: Transaction 2081 aborted.
+21793: Transaction 2081 ended.
+21975: Transaction 2082 arrived.
+21975: TRANS 2082: Starting transaction 2082.
+21976: TRANS 2082: Trying to claim lock of resource 5 at server 3
+21976: TRANS 2082: Aborting transaction 2082.
+21976: TRANS 2082: Transaction 2082 aborted.
+21976: Transaction 2082 ended.
+22126: Transaction 2083 arrived.
+22126: TRANS 2083: Starting transaction 2083.
+22126: TRANS 2083: Trying to claim lock of resource 9 at server 2
+22130: TRANS 2083: Aborting transaction 2083.
+22130: TRANS 2083: Transaction 2083 aborted.
+22130: Transaction 2083 ended.
+22233: Transaction 2084 arrived.
+22233: TRANS 2084: Starting transaction 2084.
+22233: TRANS 2084: Trying to claim lock of resource 5 at server 3
+22234: TRANS 2084: Aborting transaction 2084.
+22234: TRANS 2084: Transaction 2084 aborted.
+22234: Transaction 2084 ended.
+22428: Transaction 2085 arrived.
+22428: TRANS 2085: Starting transaction 2085.
+22428: TRANS 2085: Trying to claim lock of resource 5 at server 1
+22429: TRANS 2085: Aborting transaction 2085.
+22429: TRANS 2085: Transaction 2085 aborted.
+22429: Transaction 2085 ended.
+22621: Transaction 2086 arrived.
+22621: TRANS 2086: Starting transaction 2086.
+22621: TRANS 2086: Trying to claim lock of resource 4 at server 3
+22621: TRANS 2086: Aborting transaction 2086.
+22621: TRANS 2086: Transaction 2086 aborted.
+22621: Transaction 2086 ended.
+22679: Transaction 2087 arrived.
+22680: TRANS 2087: Starting transaction 2087.
+22680: TRANS 2087: Trying to claim lock of resource 1 at server 1
+22680: TRANS 2087: Aborting transaction 2087.
+22680: TRANS 2087: Transaction 2087 aborted.
+22680: Transaction 2087 ended.
+22885: Transaction 2088 arrived.
+22885: TRANS 2088: Starting transaction 2088.
+22885: TRANS 2088: Trying to claim lock of resource 2 at server 1
+22885: TRANS 2088: Aborting transaction 2088.
+22885: TRANS 2088: Transaction 2088 aborted.
+22886: Transaction 2088 ended.
+22949: Transaction 2089 arrived.
+22949: TRANS 2089: Starting transaction 2089.
+22949: TRANS 2089: Trying to claim lock of resource 3 at server 4
+22950: TRANS 2089: Aborting transaction 2089.
+22950: TRANS 2089: Transaction 2089 aborted.
+22950: Transaction 2089 ended.
+23183: Transaction 2090 arrived.
+23183: TRANS 2090: Starting transaction 2090.
+23183: TRANS 2090: Trying to claim lock of resource 2 at server 3
+23184: TRANS 2090: Aborting transaction 2090.
+23184: TRANS 2090: Transaction 2090 aborted.
+23184: Transaction 2090 ended.
+23338: Transaction 2091 arrived.
+23338: TRANS 2091: Starting transaction 2091.
+23338: TRANS 2091: Trying to claim lock of resource 2 at server 3
+23338: TRANS 2091: Aborting transaction 2091.
+23339: TRANS 2091: Transaction 2091 aborted.
+23339: Transaction 2091 ended.
+23574: Transaction 2092 arrived.
+23574: TRANS 2092: Starting transaction 2092.
+23574: TRANS 2092: Trying to claim lock of resource 3 at server 4
+23575: TRANS 2092: Aborting transaction 2092.
+23575: TRANS 2092: Transaction 2092 aborted.
+23575: Transaction 2092 ended.
+23815: Transaction 2093 arrived.
+23815: TRANS 2093: Starting transaction 2093.
+23815: TRANS 2093: Trying to claim lock of resource 6 at server 4
+23816: TRANS 2093: Aborting transaction 2093.
+23816: TRANS 2093: Transaction 2093 aborted.
+23816: Transaction 2093 ended.
+24088: Transaction 2094 arrived.
+24088: TRANS 2094: Starting transaction 2094.
+24088: TRANS 2094: Trying to claim lock of resource 0 at server 3
+24089: TRANS 2094: Aborting transaction 2094.
+24089: TRANS 2094: Transaction 2094 aborted.
+24089: Transaction 2094 ended.
+24182: Transaction 2095 arrived.
+24186: TRANS 2095: Starting transaction 2095.
+24186: TRANS 2095: Trying to claim lock of resource 9 at server 4
+24186: TRANS 2095: Aborting transaction 2095.
+24186: TRANS 2095: Transaction 2095 aborted.
+24186: Transaction 2095 ended.
+24460: Transaction 2096 arrived.
+24460: TRANS 2096: Starting transaction 2096.
+24460: TRANS 2096: Trying to claim lock of resource 8 at server 3
+24461: TRANS 2096: Aborting transaction 2096.
+24461: TRANS 2096: Transaction 2096 aborted.
+24461: Transaction 2096 ended.
+24594: Transaction 2097 arrived.
+24595: TRANS 2097: Starting transaction 2097.
+24595: TRANS 2097: Trying to claim lock of resource 0 at server 3
+24595: TRANS 2097: Aborting transaction 2097.
+24595: TRANS 2097: Transaction 2097 aborted.
+24595: Transaction 2097 ended.
+24787: Transaction 2098 arrived.
+24787: TRANS 2098: Starting transaction 2098.
+24787: TRANS 2098: Trying to claim lock of resource 8 at server 2
+24787: TRANS 2098: Aborting transaction 2098.
+24787: TRANS 2098: Transaction 2098 aborted.
+24787: Transaction 2098 ended.
+25055: Transaction 2099 arrived.
+25056: TRANS 2099: Starting transaction 2099.
+25056: TRANS 2099: Trying to claim lock of resource 4 at server 2
+25056: TRANS 2099: Aborting transaction 2099.
+25056: TRANS 2099: Transaction 2099 aborted.
+25056: Transaction 2099 ended.
+25314: Transaction 2100 arrived.
+25314: TRANS 2100: Starting transaction 2100.
+25314: TRANS 2100: Trying to claim lock of resource 8 at server 4
+25315: TRANS 2100: Aborting transaction 2100.
+25315: TRANS 2100: Transaction 2100 aborted.
+25315: Transaction 2100 ended.
+25539: Transaction 2101 arrived.
+25540: TRANS 2101: Starting transaction 2101.
+25540: TRANS 2101: Trying to claim lock of resource 0 at server 1
+25540: TRANS 2101: Aborting transaction 2101.
+25540: TRANS 2101: Transaction 2101 aborted.
+25540: Transaction 2101 ended.

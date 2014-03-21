@@ -1,0 +1,711 @@
+==================================================================
+583: Server 4 started.
+11297: Server 4 started its transactions.
+11377: Transaction 4000 arrived.
+11377: TRANS 4000: Starting transaction 4000.
+11377: TRANS 4000: Trying to claim lock of resource 8 at server 4
+11378: TRANS 4000: Lock claimed. Processing...
+11434: TRANS 4000: Trying to claim lock of resource 8 at server 2
+11435: TRANS 4000: Lock claimed. Processing...
+11489: TRANS 4000: Trying to claim lock of resource 7 at server 3
+11490: TRANS 4000: Lock claimed. Processing...
+11590: TRANS 4000: Trying to claim lock of resource 1 at server 4
+11591: TRANS 4000: Lock claimed. Processing...
+11673: TRANS 4000: Trying to claim lock of resource 3 at server 3
+11674: TRANS 4000: Lock claimed. Processing...
+11758: TRANS 4000: Trying to claim lock of resource 8 at server 1
+11759: TRANS 4000: Lock claimed. Processing...
+11852: TRANS 4000: Trying to claim lock of resource 6 at server 1
+==================================================================
+586: Server 4 started.
+2166: Server 4 started its transactions.
+2198: Transaction 4000 arrived.
+2198: TRANS 4000: Starting transaction 4000.
+2199: TRANS 4000: Trying to claim lock of resource 5 at server 4
+2199: TRANS 4000: Aborting transaction 4000.
+2199: TRANS 4000: Transaction 4000 aborted.
+2199: Transaction 4000 ended.
+2337: Transaction 4001 arrived.
+2337: TRANS 4001: Starting transaction 4001.
+2337: TRANS 4001: Trying to claim lock of resource 0 at server 3
+2338: TRANS 4001: Aborting transaction 4001.
+2338: TRANS 4001: Transaction 4001 aborted.
+2339: Transaction 4001 ended.
+2561: Transaction 4002 arrived.
+2561: TRANS 4002: Starting transaction 4002.
+2562: TRANS 4002: Trying to claim lock of resource 2 at server 1
+2562: TRANS 4002: Aborting transaction 4002.
+2563: TRANS 4002: Transaction 4002 aborted.
+2563: Transaction 4002 ended.
+2771: Transaction 4003 arrived.
+2772: TRANS 4003: Starting transaction 4003.
+2772: TRANS 4003: Trying to claim lock of resource 8 at server 1
+2773: TRANS 4003: Aborting transaction 4003.
+2773: TRANS 4003: Transaction 4003 aborted.
+2773: Transaction 4003 ended.
+2905: Transaction 4004 arrived.
+2905: TRANS 4004: Starting transaction 4004.
+2906: TRANS 4004: Trying to claim lock of resource 3 at server 4
+2906: TRANS 4004: Aborting transaction 4004.
+2906: TRANS 4004: Transaction 4004 aborted.
+2906: Transaction 4004 ended.
+2984: Transaction 4005 arrived.
+2984: TRANS 4005: Starting transaction 4005.
+2984: TRANS 4005: Trying to claim lock of resource 0 at server 1
+2985: TRANS 4005: Aborting transaction 4005.
+2985: TRANS 4005: Transaction 4005 aborted.
+2985: Transaction 4005 ended.
+3046: Transaction 4006 arrived.
+3046: TRANS 4006: Starting transaction 4006.
+3046: TRANS 4006: Trying to claim lock of resource 0 at server 1
+3047: TRANS 4006: Aborting transaction 4006.
+3047: TRANS 4006: Transaction 4006 aborted.
+3047: Transaction 4006 ended.
+3113: Transaction 4007 arrived.
+3114: TRANS 4007: Starting transaction 4007.
+3114: TRANS 4007: Trying to claim lock of resource 4 at server 3
+3114: TRANS 4007: Aborting transaction 4007.
+3114: TRANS 4007: Transaction 4007 aborted.
+3115: Transaction 4007 ended.
+3211: Transaction 4008 arrived.
+3211: TRANS 4008: Starting transaction 4008.
+3211: TRANS 4008: Trying to claim lock of resource 6 at server 1
+3212: TRANS 4008: Aborting transaction 4008.
+3212: TRANS 4008: Transaction 4008 aborted.
+3212: Transaction 4008 ended.
+3443: Transaction 4009 arrived.
+3443: TRANS 4009: Starting transaction 4009.
+3443: TRANS 4009: Trying to claim lock of resource 1 at server 4
+3443: TRANS 4009: Aborting transaction 4009.
+3443: TRANS 4009: Transaction 4009 aborted.
+3443: Transaction 4009 ended.
+3737: Transaction 4010 arrived.
+3737: TRANS 4010: Starting transaction 4010.
+3737: TRANS 4010: Trying to claim lock of resource 4 at server 2
+3738: TRANS 4010: Aborting transaction 4010.
+3738: TRANS 4010: Transaction 4010 aborted.
+3738: Transaction 4010 ended.
+3970: Transaction 4011 arrived.
+3970: TRANS 4011: Starting transaction 4011.
+3970: TRANS 4011: Trying to claim lock of resource 5 at server 4
+3970: TRANS 4011: Aborting transaction 4011.
+3970: TRANS 4011: Transaction 4011 aborted.
+3971: Transaction 4011 ended.
+4213: Transaction 4012 arrived.
+4213: TRANS 4012: Starting transaction 4012.
+4213: TRANS 4012: Trying to claim lock of resource 1 at server 4
+4213: TRANS 4012: Aborting transaction 4012.
+4214: TRANS 4012: Transaction 4012 aborted.
+4214: Transaction 4012 ended.
+4471: Transaction 4013 arrived.
+4471: TRANS 4013: Starting transaction 4013.
+4471: TRANS 4013: Trying to claim lock of resource 0 at server 1
+4472: TRANS 4013: Aborting transaction 4013.
+4472: TRANS 4013: Transaction 4013 aborted.
+4472: Transaction 4013 ended.
+4671: Transaction 4014 arrived.
+4671: TRANS 4014: Starting transaction 4014.
+4671: TRANS 4014: Trying to claim lock of resource 1 at server 3
+4672: TRANS 4014: Aborting transaction 4014.
+4672: TRANS 4014: Transaction 4014 aborted.
+4672: Transaction 4014 ended.
+4838: Transaction 4015 arrived.
+4839: TRANS 4015: Starting transaction 4015.
+4839: TRANS 4015: Trying to claim lock of resource 4 at server 4
+4839: TRANS 4015: Aborting transaction 4015.
+4839: TRANS 4015: Transaction 4015 aborted.
+4839: Transaction 4015 ended.
+5040: Transaction 4016 arrived.
+5040: TRANS 4016: Starting transaction 4016.
+5040: TRANS 4016: Trying to claim lock of resource 7 at server 1
+5041: TRANS 4016: Aborting transaction 4016.
+5041: TRANS 4016: Transaction 4016 aborted.
+5041: Transaction 4016 ended.
+5313: Transaction 4017 arrived.
+5313: TRANS 4017: Starting transaction 4017.
+5313: TRANS 4017: Trying to claim lock of resource 6 at server 4
+5313: TRANS 4017: Aborting transaction 4017.
+5313: TRANS 4017: Transaction 4017 aborted.
+5313: Transaction 4017 ended.
+5502: Transaction 4018 arrived.
+5502: TRANS 4018: Starting transaction 4018.
+5502: TRANS 4018: Trying to claim lock of resource 6 at server 3
+5504: TRANS 4018: Aborting transaction 4018.
+5504: TRANS 4018: Transaction 4018 aborted.
+5504: Transaction 4018 ended.
+5612: Transaction 4019 arrived.
+5612: TRANS 4019: Starting transaction 4019.
+5612: TRANS 4019: Trying to claim lock of resource 3 at server 2
+5613: TRANS 4019: Aborting transaction 4019.
+5613: TRANS 4019: Transaction 4019 aborted.
+5613: Transaction 4019 ended.
+5784: Transaction 4020 arrived.
+5784: TRANS 4020: Starting transaction 4020.
+5784: TRANS 4020: Trying to claim lock of resource 9 at server 3
+5785: TRANS 4020: Aborting transaction 4020.
+5785: TRANS 4020: Transaction 4020 aborted.
+5785: Transaction 4020 ended.
+6019: Transaction 4021 arrived.
+6019: TRANS 4021: Starting transaction 4021.
+6019: TRANS 4021: Trying to claim lock of resource 0 at server 1
+6020: TRANS 4021: Aborting transaction 4021.
+6020: TRANS 4021: Transaction 4021 aborted.
+6020: Transaction 4021 ended.
+6105: Transaction 4022 arrived.
+6105: TRANS 4022: Starting transaction 4022.
+6105: TRANS 4022: Trying to claim lock of resource 9 at server 3
+6106: TRANS 4022: Aborting transaction 4022.
+6106: TRANS 4022: Transaction 4022 aborted.
+6106: Transaction 4022 ended.
+6349: Transaction 4023 arrived.
+6350: TRANS 4023: Starting transaction 4023.
+6350: TRANS 4023: Trying to claim lock of resource 7 at server 2
+6351: TRANS 4023: Aborting transaction 4023.
+6351: TRANS 4023: Transaction 4023 aborted.
+6351: Transaction 4023 ended.
+6627: Transaction 4024 arrived.
+6627: TRANS 4024: Starting transaction 4024.
+6628: TRANS 4024: Trying to claim lock of resource 8 at server 1
+6628: TRANS 4024: Aborting transaction 4024.
+6629: TRANS 4024: Transaction 4024 aborted.
+6629: Transaction 4024 ended.
+6842: Transaction 4025 arrived.
+6842: TRANS 4025: Starting transaction 4025.
+6842: TRANS 4025: Trying to claim lock of resource 1 at server 1
+6843: TRANS 4025: Aborting transaction 4025.
+6843: TRANS 4025: Transaction 4025 aborted.
+6843: Transaction 4025 ended.
+6931: Transaction 4026 arrived.
+6932: TRANS 4026: Starting transaction 4026.
+6932: TRANS 4026: Trying to claim lock of resource 5 at server 4
+6932: TRANS 4026: Aborting transaction 4026.
+6932: TRANS 4026: Transaction 4026 aborted.
+6932: Transaction 4026 ended.
+7033: Transaction 4027 arrived.
+7034: TRANS 4027: Starting transaction 4027.
+7034: TRANS 4027: Trying to claim lock of resource 3 at server 3
+7035: TRANS 4027: Aborting transaction 4027.
+7035: TRANS 4027: Transaction 4027 aborted.
+7035: Transaction 4027 ended.
+7195: Transaction 4028 arrived.
+7195: TRANS 4028: Starting transaction 4028.
+7195: TRANS 4028: Trying to claim lock of resource 0 at server 4
+7196: TRANS 4028: Aborting transaction 4028.
+7196: TRANS 4028: Transaction 4028 aborted.
+7196: Transaction 4028 ended.
+7395: Transaction 4029 arrived.
+7396: TRANS 4029: Starting transaction 4029.
+7396: TRANS 4029: Trying to claim lock of resource 4 at server 3
+7397: TRANS 4029: Aborting transaction 4029.
+7397: TRANS 4029: Transaction 4029 aborted.
+7397: Transaction 4029 ended.
+7670: Transaction 4030 arrived.
+7670: TRANS 4030: Starting transaction 4030.
+7670: TRANS 4030: Trying to claim lock of resource 5 at server 1
+7671: TRANS 4030: Aborting transaction 4030.
+7671: TRANS 4030: Transaction 4030 aborted.
+7671: Transaction 4030 ended.
+7969: Transaction 4031 arrived.
+7970: TRANS 4031: Starting transaction 4031.
+7970: TRANS 4031: Trying to claim lock of resource 0 at server 1
+7971: TRANS 4031: Aborting transaction 4031.
+7971: TRANS 4031: Transaction 4031 aborted.
+7971: Transaction 4031 ended.
+8165: Transaction 4032 arrived.
+8165: TRANS 4032: Starting transaction 4032.
+8165: TRANS 4032: Trying to claim lock of resource 6 at server 1
+8166: TRANS 4032: Aborting transaction 4032.
+8166: TRANS 4032: Transaction 4032 aborted.
+8166: Transaction 4032 ended.
+8456: Transaction 4033 arrived.
+8457: TRANS 4033: Starting transaction 4033.
+8457: TRANS 4033: Trying to claim lock of resource 6 at server 2
+8457: TRANS 4033: Aborting transaction 4033.
+8458: TRANS 4033: Transaction 4033 aborted.
+8458: Transaction 4033 ended.
+8748: Transaction 4034 arrived.
+8749: TRANS 4034: Starting transaction 4034.
+8749: TRANS 4034: Trying to claim lock of resource 8 at server 2
+8750: TRANS 4034: Aborting transaction 4034.
+8750: TRANS 4034: Transaction 4034 aborted.
+8750: Transaction 4034 ended.
+8972: Transaction 4035 arrived.
+8972: TRANS 4035: Starting transaction 4035.
+8972: TRANS 4035: Trying to claim lock of resource 6 at server 1
+8973: TRANS 4035: Aborting transaction 4035.
+8973: TRANS 4035: Transaction 4035 aborted.
+8974: Transaction 4035 ended.
+9161: Transaction 4036 arrived.
+9161: TRANS 4036: Starting transaction 4036.
+9161: TRANS 4036: Trying to claim lock of resource 1 at server 1
+9162: TRANS 4036: Aborting transaction 4036.
+9162: TRANS 4036: Transaction 4036 aborted.
+9162: Transaction 4036 ended.
+9338: Transaction 4037 arrived.
+9339: TRANS 4037: Starting transaction 4037.
+9339: TRANS 4037: Trying to claim lock of resource 8 at server 2
+9340: TRANS 4037: Aborting transaction 4037.
+9340: TRANS 4037: Transaction 4037 aborted.
+9340: Transaction 4037 ended.
+9469: Transaction 4038 arrived.
+9469: TRANS 4038: Starting transaction 4038.
+9469: TRANS 4038: Trying to claim lock of resource 0 at server 3
+9470: TRANS 4038: Aborting transaction 4038.
+9470: TRANS 4038: Transaction 4038 aborted.
+9470: Transaction 4038 ended.
+9555: Transaction 4039 arrived.
+9555: TRANS 4039: Starting transaction 4039.
+9556: TRANS 4039: Trying to claim lock of resource 0 at server 1
+9556: TRANS 4039: Aborting transaction 4039.
+9556: TRANS 4039: Transaction 4039 aborted.
+9556: Transaction 4039 ended.
+9775: Transaction 4040 arrived.
+9776: TRANS 4040: Starting transaction 4040.
+9776: TRANS 4040: Trying to claim lock of resource 6 at server 3
+9776: TRANS 4040: Aborting transaction 4040.
+9776: TRANS 4040: Transaction 4040 aborted.
+9776: Transaction 4040 ended.
+10043: Transaction 4041 arrived.
+10043: TRANS 4041: Starting transaction 4041.
+10043: TRANS 4041: Trying to claim lock of resource 3 at server 2
+10044: TRANS 4041: Aborting transaction 4041.
+10044: TRANS 4041: Transaction 4041 aborted.
+10044: Transaction 4041 ended.
+10329: Transaction 4042 arrived.
+10329: TRANS 4042: Starting transaction 4042.
+10330: TRANS 4042: Trying to claim lock of resource 3 at server 2
+10331: TRANS 4042: Aborting transaction 4042.
+10331: TRANS 4042: Transaction 4042 aborted.
+10331: Transaction 4042 ended.
+10480: Transaction 4043 arrived.
+10480: TRANS 4043: Starting transaction 4043.
+10480: TRANS 4043: Trying to claim lock of resource 9 at server 4
+10480: TRANS 4043: Aborting transaction 4043.
+10480: TRANS 4043: Transaction 4043 aborted.
+10480: Transaction 4043 ended.
+10673: Transaction 4044 arrived.
+10674: TRANS 4044: Starting transaction 4044.
+10674: TRANS 4044: Trying to claim lock of resource 9 at server 3
+10674: TRANS 4044: Aborting transaction 4044.
+10675: TRANS 4044: Transaction 4044 aborted.
+10675: Transaction 4044 ended.
+10750: Transaction 4045 arrived.
+10750: TRANS 4045: Starting transaction 4045.
+10750: TRANS 4045: Trying to claim lock of resource 8 at server 4
+10750: TRANS 4045: Aborting transaction 4045.
+10750: TRANS 4045: Transaction 4045 aborted.
+10750: Transaction 4045 ended.
+10992: Transaction 4046 arrived.
+10993: TRANS 4046: Starting transaction 4046.
+10993: TRANS 4046: Trying to claim lock of resource 6 at server 2
+10993: TRANS 4046: Aborting transaction 4046.
+10993: TRANS 4046: Transaction 4046 aborted.
+10994: Transaction 4046 ended.
+11061: Transaction 4047 arrived.
+11061: TRANS 4047: Starting transaction 4047.
+11062: TRANS 4047: Trying to claim lock of resource 8 at server 3
+11062: TRANS 4047: Aborting transaction 4047.
+11062: TRANS 4047: Transaction 4047 aborted.
+11063: Transaction 4047 ended.
+11348: Transaction 4048 arrived.
+11348: TRANS 4048: Starting transaction 4048.
+11349: TRANS 4048: Trying to claim lock of resource 7 at server 1
+11349: TRANS 4048: Aborting transaction 4048.
+11349: TRANS 4048: Transaction 4048 aborted.
+11349: Transaction 4048 ended.
+11631: Transaction 4049 arrived.
+11631: TRANS 4049: Starting transaction 4049.
+11631: TRANS 4049: Trying to claim lock of resource 3 at server 4
+11631: TRANS 4049: Aborting transaction 4049.
+11631: TRANS 4049: Transaction 4049 aborted.
+11631: Transaction 4049 ended.
+11787: Transaction 4050 arrived.
+11787: TRANS 4050: Starting transaction 4050.
+11787: TRANS 4050: Trying to claim lock of resource 5 at server 3
+11788: TRANS 4050: Aborting transaction 4050.
+11788: TRANS 4050: Transaction 4050 aborted.
+11788: Transaction 4050 ended.
+11969: Transaction 4051 arrived.
+11969: TRANS 4051: Starting transaction 4051.
+11969: TRANS 4051: Trying to claim lock of resource 8 at server 2
+11970: TRANS 4051: Aborting transaction 4051.
+11970: TRANS 4051: Transaction 4051 aborted.
+11970: Transaction 4051 ended.
+12086: Transaction 4052 arrived.
+12086: TRANS 4052: Starting transaction 4052.
+12086: TRANS 4052: Trying to claim lock of resource 3 at server 1
+12087: TRANS 4052: Aborting transaction 4052.
+12087: TRANS 4052: Transaction 4052 aborted.
+12087: Transaction 4052 ended.
+12377: Transaction 4053 arrived.
+12377: TRANS 4053: Starting transaction 4053.
+12377: TRANS 4053: Trying to claim lock of resource 3 at server 3
+12378: TRANS 4053: Aborting transaction 4053.
+12378: TRANS 4053: Transaction 4053 aborted.
+12378: Transaction 4053 ended.
+12435: Transaction 4054 arrived.
+12435: TRANS 4054: Starting transaction 4054.
+12435: TRANS 4054: Trying to claim lock of resource 1 at server 3
+12435: TRANS 4054: Aborting transaction 4054.
+12435: TRANS 4054: Transaction 4054 aborted.
+12435: Transaction 4054 ended.
+12579: Transaction 4055 arrived.
+12580: TRANS 4055: Starting transaction 4055.
+12580: TRANS 4055: Trying to claim lock of resource 6 at server 3
+12580: TRANS 4055: Aborting transaction 4055.
+12581: TRANS 4055: Transaction 4055 aborted.
+12581: Transaction 4055 ended.
+12878: Transaction 4056 arrived.
+12878: TRANS 4056: Starting transaction 4056.
+12879: TRANS 4056: Trying to claim lock of resource 9 at server 1
+12879: TRANS 4056: Aborting transaction 4056.
+12879: TRANS 4056: Transaction 4056 aborted.
+12879: Transaction 4056 ended.
+13093: Transaction 4057 arrived.
+13093: TRANS 4057: Starting transaction 4057.
+13093: TRANS 4057: Trying to claim lock of resource 2 at server 2
+13094: TRANS 4057: Aborting transaction 4057.
+13094: TRANS 4057: Transaction 4057 aborted.
+13094: Transaction 4057 ended.
+13375: Transaction 4058 arrived.
+13376: TRANS 4058: Starting transaction 4058.
+13376: TRANS 4058: Trying to claim lock of resource 5 at server 2
+13377: TRANS 4058: Aborting transaction 4058.
+13377: TRANS 4058: Transaction 4058 aborted.
+13377: Transaction 4058 ended.
+13650: Transaction 4059 arrived.
+13651: TRANS 4059: Starting transaction 4059.
+13651: TRANS 4059: Trying to claim lock of resource 8 at server 3
+13651: TRANS 4059: Aborting transaction 4059.
+13651: TRANS 4059: Transaction 4059 aborted.
+13651: Transaction 4059 ended.
+13885: Transaction 4060 arrived.
+13885: TRANS 4060: Starting transaction 4060.
+13885: TRANS 4060: Trying to claim lock of resource 4 at server 2
+13886: TRANS 4060: Aborting transaction 4060.
+13886: TRANS 4060: Transaction 4060 aborted.
+13886: Transaction 4060 ended.
+14001: Transaction 4061 arrived.
+14001: TRANS 4061: Starting transaction 4061.
+14001: TRANS 4061: Trying to claim lock of resource 5 at server 2
+14002: TRANS 4061: Aborting transaction 4061.
+14002: TRANS 4061: Transaction 4061 aborted.
+14002: Transaction 4061 ended.
+14150: Transaction 4062 arrived.
+14150: TRANS 4062: Starting transaction 4062.
+14150: TRANS 4062: Trying to claim lock of resource 3 at server 2
+14152: TRANS 4062: Aborting transaction 4062.
+14152: TRANS 4062: Transaction 4062 aborted.
+14152: Transaction 4062 ended.
+14372: Transaction 4063 arrived.
+14372: TRANS 4063: Starting transaction 4063.
+14372: TRANS 4063: Trying to claim lock of resource 5 at server 2
+14373: TRANS 4063: Aborting transaction 4063.
+14373: TRANS 4063: Transaction 4063 aborted.
+14373: Transaction 4063 ended.
+14640: Transaction 4064 arrived.
+14640: TRANS 4064: Starting transaction 4064.
+14640: TRANS 4064: Trying to claim lock of resource 7 at server 4
+14641: TRANS 4064: Aborting transaction 4064.
+14641: TRANS 4064: Transaction 4064 aborted.
+14641: Transaction 4064 ended.
+14787: Transaction 4065 arrived.
+14787: TRANS 4065: Starting transaction 4065.
+14787: TRANS 4065: Trying to claim lock of resource 0 at server 4
+14787: TRANS 4065: Aborting transaction 4065.
+14787: TRANS 4065: Transaction 4065 aborted.
+14787: Transaction 4065 ended.
+14901: Transaction 4066 arrived.
+14901: TRANS 4066: Starting transaction 4066.
+14901: TRANS 4066: Trying to claim lock of resource 3 at server 1
+14902: TRANS 4066: Aborting transaction 4066.
+14902: TRANS 4066: Transaction 4066 aborted.
+14902: Transaction 4066 ended.
+15023: Transaction 4067 arrived.
+15023: TRANS 4067: Starting transaction 4067.
+15023: TRANS 4067: Trying to claim lock of resource 7 at server 4
+15023: TRANS 4067: Aborting transaction 4067.
+15023: TRANS 4067: Transaction 4067 aborted.
+15023: Transaction 4067 ended.
+15105: Transaction 4068 arrived.
+15105: TRANS 4068: Starting transaction 4068.
+15105: TRANS 4068: Trying to claim lock of resource 3 at server 2
+15106: TRANS 4068: Aborting transaction 4068.
+15106: TRANS 4068: Transaction 4068 aborted.
+15106: Transaction 4068 ended.
+15338: Transaction 4069 arrived.
+15338: TRANS 4069: Starting transaction 4069.
+15338: TRANS 4069: Trying to claim lock of resource 6 at server 1
+15339: TRANS 4069: Aborting transaction 4069.
+15339: TRANS 4069: Transaction 4069 aborted.
+15339: Transaction 4069 ended.
+15572: Transaction 4070 arrived.
+15573: TRANS 4070: Starting transaction 4070.
+15573: TRANS 4070: Trying to claim lock of resource 1 at server 4
+15573: TRANS 4070: Aborting transaction 4070.
+15573: TRANS 4070: Transaction 4070 aborted.
+15573: Transaction 4070 ended.
+15646: Transaction 4071 arrived.
+15647: TRANS 4071: Starting transaction 4071.
+15647: TRANS 4071: Trying to claim lock of resource 7 at server 3
+15648: TRANS 4071: Aborting transaction 4071.
+15648: TRANS 4071: Transaction 4071 aborted.
+15648: Transaction 4071 ended.
+15890: Transaction 4072 arrived.
+15891: TRANS 4072: Starting transaction 4072.
+15891: TRANS 4072: Trying to claim lock of resource 7 at server 4
+15891: TRANS 4072: Aborting transaction 4072.
+15891: TRANS 4072: Transaction 4072 aborted.
+15891: Transaction 4072 ended.
+16012: Transaction 4073 arrived.
+16012: TRANS 4073: Starting transaction 4073.
+16012: TRANS 4073: Trying to claim lock of resource 4 at server 4
+16012: TRANS 4073: Aborting transaction 4073.
+16013: TRANS 4073: Transaction 4073 aborted.
+16013: Transaction 4073 ended.
+16265: Transaction 4074 arrived.
+16265: TRANS 4074: Starting transaction 4074.
+16266: TRANS 4074: Trying to claim lock of resource 9 at server 1
+16266: TRANS 4074: Aborting transaction 4074.
+16266: TRANS 4074: Transaction 4074 aborted.
+16266: Transaction 4074 ended.
+16335: Transaction 4075 arrived.
+16335: TRANS 4075: Starting transaction 4075.
+16335: TRANS 4075: Trying to claim lock of resource 6 at server 1
+16335: TRANS 4075: Aborting transaction 4075.
+16335: TRANS 4075: Transaction 4075 aborted.
+16336: Transaction 4075 ended.
+16512: Transaction 4076 arrived.
+16512: TRANS 4076: Starting transaction 4076.
+16512: TRANS 4076: Trying to claim lock of resource 5 at server 2
+16513: TRANS 4076: Aborting transaction 4076.
+16513: TRANS 4076: Transaction 4076 aborted.
+16513: Transaction 4076 ended.
+16761: Transaction 4077 arrived.
+16762: TRANS 4077: Starting transaction 4077.
+16762: TRANS 4077: Trying to claim lock of resource 6 at server 3
+16762: TRANS 4077: Aborting transaction 4077.
+16762: TRANS 4077: Transaction 4077 aborted.
+16762: Transaction 4077 ended.
+16836: Transaction 4078 arrived.
+16836: TRANS 4078: Starting transaction 4078.
+16836: TRANS 4078: Trying to claim lock of resource 8 at server 1
+16836: TRANS 4078: Aborting transaction 4078.
+16836: TRANS 4078: Transaction 4078 aborted.
+16836: Transaction 4078 ended.
+17123: Transaction 4079 arrived.
+17123: TRANS 4079: Starting transaction 4079.
+17123: TRANS 4079: Trying to claim lock of resource 6 at server 2
+17124: TRANS 4079: Aborting transaction 4079.
+17124: TRANS 4079: Transaction 4079 aborted.
+17124: Transaction 4079 ended.
+17206: Transaction 4080 arrived.
+17207: TRANS 4080: Starting transaction 4080.
+17207: TRANS 4080: Trying to claim lock of resource 9 at server 2
+17208: TRANS 4080: Aborting transaction 4080.
+17208: TRANS 4080: Transaction 4080 aborted.
+17208: Transaction 4080 ended.
+17422: Transaction 4081 arrived.
+17423: TRANS 4081: Starting transaction 4081.
+17423: TRANS 4081: Trying to claim lock of resource 8 at server 3
+17428: TRANS 4081: Aborting transaction 4081.
+17428: TRANS 4081: Transaction 4081 aborted.
+17428: Transaction 4081 ended.
+17520: Transaction 4082 arrived.
+17520: TRANS 4082: Starting transaction 4082.
+17520: TRANS 4082: Trying to claim lock of resource 8 at server 3
+17520: TRANS 4082: Aborting transaction 4082.
+17520: TRANS 4082: Transaction 4082 aborted.
+17521: Transaction 4082 ended.
+17588: Transaction 4083 arrived.
+17588: TRANS 4083: Starting transaction 4083.
+17588: TRANS 4083: Trying to claim lock of resource 6 at server 2
+17589: TRANS 4083: Aborting transaction 4083.
+17589: TRANS 4083: Transaction 4083 aborted.
+17589: Transaction 4083 ended.
+17878: Transaction 4084 arrived.
+17878: TRANS 4084: Starting transaction 4084.
+17878: TRANS 4084: Trying to claim lock of resource 5 at server 1
+17879: TRANS 4084: Aborting transaction 4084.
+17879: TRANS 4084: Transaction 4084 aborted.
+17879: Transaction 4084 ended.
+17937: Transaction 4085 arrived.
+17937: TRANS 4085: Starting transaction 4085.
+17937: TRANS 4085: Trying to claim lock of resource 1 at server 3
+17938: TRANS 4085: Aborting transaction 4085.
+17938: TRANS 4085: Transaction 4085 aborted.
+17938: Transaction 4085 ended.
+18070: Transaction 4086 arrived.
+18070: TRANS 4086: Starting transaction 4086.
+18070: TRANS 4086: Trying to claim lock of resource 8 at server 2
+18071: TRANS 4086: Aborting transaction 4086.
+18071: TRANS 4086: Transaction 4086 aborted.
+18071: Transaction 4086 ended.
+18323: Transaction 4087 arrived.
+18323: TRANS 4087: Starting transaction 4087.
+18323: TRANS 4087: Trying to claim lock of resource 5 at server 2
+18324: TRANS 4087: Aborting transaction 4087.
+18324: TRANS 4087: Transaction 4087 aborted.
+18324: Transaction 4087 ended.
+18582: Transaction 4088 arrived.
+18582: TRANS 4088: Starting transaction 4088.
+18582: TRANS 4088: Trying to claim lock of resource 1 at server 1
+18583: TRANS 4088: Aborting transaction 4088.
+18583: TRANS 4088: Transaction 4088 aborted.
+18583: Transaction 4088 ended.
+18760: Transaction 4089 arrived.
+18761: TRANS 4089: Starting transaction 4089.
+18761: TRANS 4089: Trying to claim lock of resource 6 at server 1
+18762: TRANS 4089: Aborting transaction 4089.
+18762: TRANS 4089: Transaction 4089 aborted.
+18762: Transaction 4089 ended.
+19042: Transaction 4090 arrived.
+19042: TRANS 4090: Starting transaction 4090.
+19042: TRANS 4090: Trying to claim lock of resource 7 at server 2
+19043: TRANS 4090: Aborting transaction 4090.
+19043: TRANS 4090: Transaction 4090 aborted.
+19043: Transaction 4090 ended.
+19251: Transaction 4091 arrived.
+19251: TRANS 4091: Starting transaction 4091.
+19251: TRANS 4091: Trying to claim lock of resource 4 at server 3
+19252: TRANS 4091: Aborting transaction 4091.
+19252: TRANS 4091: Transaction 4091 aborted.
+19252: Transaction 4091 ended.
+19311: Transaction 4092 arrived.
+19311: TRANS 4092: Starting transaction 4092.
+19311: TRANS 4092: Trying to claim lock of resource 1 at server 3
+19312: TRANS 4092: Aborting transaction 4092.
+19312: TRANS 4092: Transaction 4092 aborted.
+19312: Transaction 4092 ended.
+19569: Transaction 4093 arrived.
+19569: TRANS 4093: Starting transaction 4093.
+19569: TRANS 4093: Trying to claim lock of resource 1 at server 3
+19570: TRANS 4093: Aborting transaction 4093.
+19570: TRANS 4093: Transaction 4093 aborted.
+19570: Transaction 4093 ended.
+19626: Transaction 4094 arrived.
+19626: TRANS 4094: Starting transaction 4094.
+19626: TRANS 4094: Trying to claim lock of resource 4 at server 3
+19627: TRANS 4094: Aborting transaction 4094.
+19627: TRANS 4094: Transaction 4094 aborted.
+19627: Transaction 4094 ended.
+19846: Transaction 4095 arrived.
+19846: TRANS 4095: Starting transaction 4095.
+19846: TRANS 4095: Trying to claim lock of resource 0 at server 2
+19847: TRANS 4095: Aborting transaction 4095.
+19847: TRANS 4095: Transaction 4095 aborted.
+19847: Transaction 4095 ended.
+20083: Transaction 4096 arrived.
+20083: TRANS 4096: Starting transaction 4096.
+20083: TRANS 4096: Trying to claim lock of resource 0 at server 1
+20083: TRANS 4096: Aborting transaction 4096.
+20083: TRANS 4096: Transaction 4096 aborted.
+20084: Transaction 4096 ended.
+20211: Transaction 4097 arrived.
+20211: TRANS 4097: Starting transaction 4097.
+20211: TRANS 4097: Trying to claim lock of resource 4 at server 1
+20212: TRANS 4097: Aborting transaction 4097.
+20212: TRANS 4097: Transaction 4097 aborted.
+20212: Transaction 4097 ended.
+20447: Transaction 4098 arrived.
+20447: TRANS 4098: Starting transaction 4098.
+20447: TRANS 4098: Trying to claim lock of resource 2 at server 4
+20447: TRANS 4098: Aborting transaction 4098.
+20447: TRANS 4098: Transaction 4098 aborted.
+20447: Transaction 4098 ended.
+20506: Transaction 4099 arrived.
+20506: TRANS 4099: Starting transaction 4099.
+20506: TRANS 4099: Trying to claim lock of resource 2 at server 2
+20507: TRANS 4099: Aborting transaction 4099.
+20507: TRANS 4099: Transaction 4099 aborted.
+20507: Transaction 4099 ended.
+20649: Transaction 4100 arrived.
+20649: TRANS 4100: Starting transaction 4100.
+20649: TRANS 4100: Trying to claim lock of resource 0 at server 4
+20649: TRANS 4100: Aborting transaction 4100.
+20649: TRANS 4100: Transaction 4100 aborted.
+20649: Transaction 4100 ended.
+20765: Transaction 4101 arrived.
+20765: TRANS 4101: Starting transaction 4101.
+20765: TRANS 4101: Trying to claim lock of resource 9 at server 1
+20766: TRANS 4101: Aborting transaction 4101.
+20766: TRANS 4101: Transaction 4101 aborted.
+20766: Transaction 4101 ended.
+21009: Transaction 4102 arrived.
+21009: TRANS 4102: Starting transaction 4102.
+21009: TRANS 4102: Trying to claim lock of resource 8 at server 4
+21009: TRANS 4102: Aborting transaction 4102.
+21009: TRANS 4102: Transaction 4102 aborted.
+21009: Transaction 4102 ended.
+21183: Transaction 4103 arrived.
+21183: TRANS 4103: Starting transaction 4103.
+21183: TRANS 4103: Trying to claim lock of resource 0 at server 1
+21184: TRANS 4103: Aborting transaction 4103.
+21184: TRANS 4103: Transaction 4103 aborted.
+21184: Transaction 4103 ended.
+21351: Transaction 4104 arrived.
+21351: TRANS 4104: Starting transaction 4104.
+21351: TRANS 4104: Trying to claim lock of resource 3 at server 4
+21352: TRANS 4104: Aborting transaction 4104.
+21352: TRANS 4104: Transaction 4104 aborted.
+21352: Transaction 4104 ended.
+21368: Server 4 was notified of the departure of server 2 by server 1.
+21426: Transaction 4105 arrived.
+21426: TRANS 4105: Starting transaction 4105.
+21426: TRANS 4105: Trying to claim lock of resource 9 at server 1
+21427: TRANS 4105: Aborting transaction 4105.
+21427: TRANS 4105: Transaction 4105 aborted.
+21427: Transaction 4105 ended.
+21655: Transaction 4106 arrived.
+21656: TRANS 4106: Starting transaction 4106.
+21656: TRANS 4106: Trying to claim lock of resource 4 at server 3
+21656: TRANS 4106: Aborting transaction 4106.
+21656: TRANS 4106: Transaction 4106 aborted.
+21656: Transaction 4106 ended.
+21726: Transaction 4107 arrived.
+21726: TRANS 4107: Starting transaction 4107.
+21726: TRANS 4107: Trying to claim lock of resource 1 at server 1
+21727: TRANS 4107: Aborting transaction 4107.
+21727: TRANS 4107: Transaction 4107 aborted.
+21727: Transaction 4107 ended.
+21918: Transaction 4108 arrived.
+21918: TRANS 4108: Starting transaction 4108.
+21918: TRANS 4108: Trying to claim lock of resource 7 at server 1
+21918: TRANS 4108: Aborting transaction 4108.
+21918: TRANS 4108: Transaction 4108 aborted.
+21918: Transaction 4108 ended.
+22061: Transaction 4109 arrived.
+22061: TRANS 4109: Starting transaction 4109.
+22061: TRANS 4109: Trying to claim lock of resource 4 at server 1
+22061: TRANS 4109: Aborting transaction 4109.
+22061: TRANS 4109: Transaction 4109 aborted.
+22061: Transaction 4109 ended.
+22251: Transaction 4110 arrived.
+22251: TRANS 4110: Starting transaction 4110.
+22251: TRANS 4110: Trying to claim lock of resource 2 at server 3
+22252: TRANS 4110: Aborting transaction 4110.
+22252: TRANS 4110: Transaction 4110 aborted.
+22252: Transaction 4110 ended.
+22528: Transaction 4111 arrived.
+22528: TRANS 4111: Starting transaction 4111.
+22528: TRANS 4111: Trying to claim lock of resource 0 at server 4
+22528: TRANS 4111: Aborting transaction 4111.
+22528: TRANS 4111: Transaction 4111 aborted.
+22528: Transaction 4111 ended.
+22682: Transaction 4112 arrived.
+22682: TRANS 4112: Starting transaction 4112.
+22682: TRANS 4112: Trying to claim lock of resource 2 at server 4
+22682: TRANS 4112: Aborting transaction 4112.
+22682: TRANS 4112: Transaction 4112 aborted.
+22682: Transaction 4112 ended.
+22906: Transaction 4113 arrived.
+22907: TRANS 4113: Starting transaction 4113.
+22907: TRANS 4113: Trying to claim lock of resource 7 at server 4
+22907: TRANS 4113: Aborting transaction 4113.
+22907: TRANS 4113: Transaction 4113 aborted.
+22907: Transaction 4113 ended.
+23191: Transaction 4114 arrived.
+23191: TRANS 4114: Starting transaction 4114.
+23191: TRANS 4114: Trying to claim lock of resource 3 at server 3
+23487: Contact with server 3 was lost.
+23488: Server 4 was notified of the departure of server 3 by server 1.
