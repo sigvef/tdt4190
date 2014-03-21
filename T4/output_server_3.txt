@@ -1,680 +1,1334 @@
 ==================================================================
-567: Server 3 started.
-5241: Server 3 was notified of the arrival of server 4
-16539: Server 3 started its transactions.
-16600: Transaction 3000 arrived.
-16601: TRANS 3000: Starting transaction 3000.
-16601: TRANS 3000: Trying to claim lock of resource 8 at server 3
-16602: TRANS 3000: Lock claimed. Processing...
-16679: TRANS 3000: Trying to claim lock of resource 2 at server 2
-16680: TRANS 3000: Lock claimed. Processing...
-16773: TRANS 3000: Trying to claim lock of resource 6 at server 1
-16774: TRANS 3000: Lock claimed. Processing...
-16834: TRANS 3000: Trying to claim lock of resource 0 at server 1
-16835: TRANS 3000: Lock claimed. Processing...
-16931: TRANS 3000: Trying to claim lock of resource 8 at server 4
+604: Server 3 started.
+2366: Server 3 was notified of the arrival of server 4
+3947: Server 3 started its transactions.
+4036: Transaction 3000 arrived.
+4037: TRANS 3000: Starting transaction 3000.
+4037: TRANS 3000: Trying to claim lock of resource 7 at server 4
+4038: TRANS 3000: Aborting transaction 3000.
+4038: TRANS 3000: Transaction 3000 aborted.
+4038: Transaction 3000 ended.
+4236: Transaction 3001 arrived.
+4236: TRANS 3001: Starting transaction 3001.
+4236: TRANS 3001: Trying to claim lock of resource 7 at server 2
+4237: TRANS 3001: Aborting transaction 3001.
+4238: TRANS 3001: Transaction 3001 aborted.
+4238: Transaction 3001 ended.
+4401: Transaction 3002 arrived.
+4402: TRANS 3002: Starting transaction 3002.
+4402: TRANS 3002: Trying to claim lock of resource 8 at server 1
+4405: TRANS 3002: Aborting transaction 3002.
+4405: TRANS 3002: Transaction 3002 aborted.
+4405: Transaction 3002 ended.
+4486: Transaction 3003 arrived.
+4486: TRANS 3003: Starting transaction 3003.
+4487: TRANS 3003: Trying to claim lock of resource 9 at server 2
+4487: TRANS 3003: Aborting transaction 3003.
+4488: TRANS 3003: Transaction 3003 aborted.
+4488: Transaction 3003 ended.
+4578: Transaction 3004 arrived.
+4578: TRANS 3004: Starting transaction 3004.
+4578: TRANS 3004: Trying to claim lock of resource 4 at server 3
+4578: TRANS 3004: Aborting transaction 3004.
+4578: TRANS 3004: Transaction 3004 aborted.
+4579: Transaction 3004 ended.
+4851: Transaction 3005 arrived.
+4852: TRANS 3005: Starting transaction 3005.
+4852: TRANS 3005: Trying to claim lock of resource 7 at server 2
+4853: TRANS 3005: Aborting transaction 3005.
+4853: TRANS 3005: Transaction 3005 aborted.
+4853: Transaction 3005 ended.
+4950: Transaction 3006 arrived.
+4950: TRANS 3006: Starting transaction 3006.
+4950: TRANS 3006: Trying to claim lock of resource 5 at server 1
+4951: TRANS 3006: Aborting transaction 3006.
+4952: TRANS 3006: Transaction 3006 aborted.
+4952: Transaction 3006 ended.
+5044: Transaction 3007 arrived.
+5045: TRANS 3007: Starting transaction 3007.
+5045: TRANS 3007: Trying to claim lock of resource 8 at server 2
+5045: TRANS 3007: Aborting transaction 3007.
+5045: TRANS 3007: Transaction 3007 aborted.
+5045: Transaction 3007 ended.
+5130: Transaction 3008 arrived.
+5130: TRANS 3008: Starting transaction 3008.
+5130: TRANS 3008: Trying to claim lock of resource 4 at server 2
+5131: TRANS 3008: Aborting transaction 3008.
+5131: TRANS 3008: Transaction 3008 aborted.
+5132: Transaction 3008 ended.
+5266: Transaction 3009 arrived.
+5266: TRANS 3009: Starting transaction 3009.
+5266: TRANS 3009: Trying to claim lock of resource 3 at server 1
+5266: TRANS 3009: Aborting transaction 3009.
+5267: TRANS 3009: Transaction 3009 aborted.
+5267: Transaction 3009 ended.
+5455: Transaction 3010 arrived.
+5456: TRANS 3010: Starting transaction 3010.
+5456: TRANS 3010: Trying to claim lock of resource 6 at server 4
+5456: TRANS 3010: Aborting transaction 3010.
+5457: TRANS 3010: Transaction 3010 aborted.
+5457: Transaction 3010 ended.
+5755: Transaction 3011 arrived.
+5755: TRANS 3011: Starting transaction 3011.
+5755: TRANS 3011: Trying to claim lock of resource 8 at server 4
+5756: TRANS 3011: Aborting transaction 3011.
+5756: TRANS 3011: Transaction 3011 aborted.
+5757: Transaction 3011 ended.
+5819: Transaction 3012 arrived.
+5819: TRANS 3012: Starting transaction 3012.
+5819: TRANS 3012: Trying to claim lock of resource 7 at server 1
+5820: TRANS 3012: Aborting transaction 3012.
+5820: TRANS 3012: Transaction 3012 aborted.
+5820: Transaction 3012 ended.
+6030: Transaction 3013 arrived.
+6030: TRANS 3013: Starting transaction 3013.
+6031: TRANS 3013: Trying to claim lock of resource 0 at server 3
+6031: TRANS 3013: Aborting transaction 3013.
+6031: TRANS 3013: Transaction 3013 aborted.
+6031: Transaction 3013 ended.
+6168: Transaction 3014 arrived.
+6169: TRANS 3014: Starting transaction 3014.
+6169: TRANS 3014: Trying to claim lock of resource 6 at server 4
+6170: TRANS 3014: Aborting transaction 3014.
+6170: TRANS 3014: Transaction 3014 aborted.
+6170: Transaction 3014 ended.
+6275: Transaction 3015 arrived.
+6275: TRANS 3015: Starting transaction 3015.
+6275: TRANS 3015: Trying to claim lock of resource 1 at server 4
+6276: TRANS 3015: Aborting transaction 3015.
+6276: TRANS 3015: Transaction 3015 aborted.
+6276: Transaction 3015 ended.
+6485: Transaction 3016 arrived.
+6485: TRANS 3016: Starting transaction 3016.
+6485: TRANS 3016: Trying to claim lock of resource 5 at server 2
+6485: TRANS 3016: Aborting transaction 3016.
+6486: TRANS 3016: Transaction 3016 aborted.
+6486: Transaction 3016 ended.
+6776: Transaction 3017 arrived.
+6776: TRANS 3017: Starting transaction 3017.
+6776: TRANS 3017: Trying to claim lock of resource 0 at server 3
+6776: TRANS 3017: Aborting transaction 3017.
+6776: TRANS 3017: Transaction 3017 aborted.
+6776: Transaction 3017 ended.
+7055: Transaction 3018 arrived.
+7055: TRANS 3018: Starting transaction 3018.
+7055: TRANS 3018: Trying to claim lock of resource 0 at server 4
+7056: TRANS 3018: Aborting transaction 3018.
+7056: TRANS 3018: Transaction 3018 aborted.
+7056: Transaction 3018 ended.
+7214: Transaction 3019 arrived.
+7214: TRANS 3019: Starting transaction 3019.
+7214: TRANS 3019: Trying to claim lock of resource 0 at server 1
+7215: TRANS 3019: Aborting transaction 3019.
+7215: TRANS 3019: Transaction 3019 aborted.
+7216: Transaction 3019 ended.
+7344: Transaction 3020 arrived.
+7344: TRANS 3020: Starting transaction 3020.
+7344: TRANS 3020: Trying to claim lock of resource 4 at server 3
+7344: TRANS 3020: Aborting transaction 3020.
+7344: TRANS 3020: Transaction 3020 aborted.
+7344: Transaction 3020 ended.
+7624: Transaction 3021 arrived.
+7624: TRANS 3021: Starting transaction 3021.
+7624: TRANS 3021: Trying to claim lock of resource 0 at server 2
+7625: TRANS 3021: Aborting transaction 3021.
+7625: TRANS 3021: Transaction 3021 aborted.
+7625: Transaction 3021 ended.
+7813: Transaction 3022 arrived.
+7813: TRANS 3022: Starting transaction 3022.
+7814: TRANS 3022: Trying to claim lock of resource 5 at server 4
+7814: TRANS 3022: Aborting transaction 3022.
+7815: TRANS 3022: Transaction 3022 aborted.
+7815: Transaction 3022 ended.
+7952: Transaction 3023 arrived.
+7953: TRANS 3023: Starting transaction 3023.
+7953: TRANS 3023: Trying to claim lock of resource 7 at server 2
+7954: TRANS 3023: Aborting transaction 3023.
+7954: TRANS 3023: Transaction 3023 aborted.
+7954: Transaction 3023 ended.
+8245: Transaction 3024 arrived.
+8246: TRANS 3024: Starting transaction 3024.
+8246: TRANS 3024: Trying to claim lock of resource 0 at server 3
+8246: TRANS 3024: Aborting transaction 3024.
+8246: TRANS 3024: Transaction 3024 aborted.
+8246: Transaction 3024 ended.
+8384: Transaction 3025 arrived.
+8385: TRANS 3025: Starting transaction 3025.
+8385: TRANS 3025: Trying to claim lock of resource 7 at server 1
+8386: TRANS 3025: Aborting transaction 3025.
+8386: TRANS 3025: Transaction 3025 aborted.
+8386: Transaction 3025 ended.
+8639: Transaction 3026 arrived.
+8640: TRANS 3026: Starting transaction 3026.
+8640: TRANS 3026: Trying to claim lock of resource 7 at server 3
+8640: TRANS 3026: Aborting transaction 3026.
+8640: TRANS 3026: Transaction 3026 aborted.
+8640: Transaction 3026 ended.
+8762: Transaction 3027 arrived.
+8762: TRANS 3027: Starting transaction 3027.
+8762: TRANS 3027: Trying to claim lock of resource 9 at server 2
+8763: TRANS 3027: Aborting transaction 3027.
+8763: TRANS 3027: Transaction 3027 aborted.
+8763: Transaction 3027 ended.
+9025: Transaction 3028 arrived.
+9025: TRANS 3028: Starting transaction 3028.
+9025: TRANS 3028: Trying to claim lock of resource 6 at server 2
+9026: TRANS 3028: Aborting transaction 3028.
+9026: TRANS 3028: Transaction 3028 aborted.
+9026: Transaction 3028 ended.
+9166: Transaction 3029 arrived.
+9167: TRANS 3029: Starting transaction 3029.
+9167: TRANS 3029: Trying to claim lock of resource 4 at server 2
+9168: TRANS 3029: Aborting transaction 3029.
+9168: TRANS 3029: Transaction 3029 aborted.
+9168: Transaction 3029 ended.
+9268: Transaction 3030 arrived.
+9269: TRANS 3030: Starting transaction 3030.
+9269: TRANS 3030: Trying to claim lock of resource 0 at server 2
+9270: TRANS 3030: Aborting transaction 3030.
+9270: TRANS 3030: Transaction 3030 aborted.
+9270: Transaction 3030 ended.
+9565: Transaction 3031 arrived.
+9566: TRANS 3031: Starting transaction 3031.
+9566: TRANS 3031: Trying to claim lock of resource 2 at server 2
+9567: TRANS 3031: Aborting transaction 3031.
+9567: TRANS 3031: Transaction 3031 aborted.
+9567: Transaction 3031 ended.
+9670: Transaction 3032 arrived.
+9670: TRANS 3032: Starting transaction 3032.
+9670: TRANS 3032: Trying to claim lock of resource 6 at server 3
+9671: TRANS 3032: Aborting transaction 3032.
+9671: TRANS 3032: Transaction 3032 aborted.
+9671: Transaction 3032 ended.
+9756: Transaction 3033 arrived.
+9757: TRANS 3033: Starting transaction 3033.
+9757: TRANS 3033: Trying to claim lock of resource 6 at server 3
+9757: TRANS 3033: Aborting transaction 3033.
+9757: TRANS 3033: Transaction 3033 aborted.
+9757: Transaction 3033 ended.
+9996: Transaction 3034 arrived.
+9997: TRANS 3034: Starting transaction 3034.
+9997: TRANS 3034: Trying to claim lock of resource 0 at server 2
+9998: TRANS 3034: Aborting transaction 3034.
+9998: TRANS 3034: Transaction 3034 aborted.
+9998: Transaction 3034 ended.
+10168: Transaction 3035 arrived.
+10169: TRANS 3035: Starting transaction 3035.
+10169: TRANS 3035: Trying to claim lock of resource 5 at server 2
+10169: TRANS 3035: Aborting transaction 3035.
+10170: TRANS 3035: Transaction 3035 aborted.
+10170: Transaction 3035 ended.
+10228: Transaction 3036 arrived.
+10228: TRANS 3036: Starting transaction 3036.
+10228: TRANS 3036: Trying to claim lock of resource 4 at server 3
+10228: TRANS 3036: Aborting transaction 3036.
+10228: TRANS 3036: Transaction 3036 aborted.
+10228: Transaction 3036 ended.
+10310: Transaction 3037 arrived.
+10310: TRANS 3037: Starting transaction 3037.
+10310: TRANS 3037: Trying to claim lock of resource 5 at server 4
+10311: TRANS 3037: Aborting transaction 3037.
+10311: TRANS 3037: Transaction 3037 aborted.
+10311: Transaction 3037 ended.
+10388: Transaction 3038 arrived.
+10389: TRANS 3038: Starting transaction 3038.
+10389: TRANS 3038: Trying to claim lock of resource 6 at server 1
+10390: TRANS 3038: Aborting transaction 3038.
+10390: TRANS 3038: Transaction 3038 aborted.
+10390: Transaction 3038 ended.
+10612: Transaction 3039 arrived.
+10613: TRANS 3039: Starting transaction 3039.
+10613: TRANS 3039: Trying to claim lock of resource 1 at server 1
+10614: TRANS 3039: Aborting transaction 3039.
+10614: TRANS 3039: Transaction 3039 aborted.
+10614: Transaction 3039 ended.
+10777: Transaction 3040 arrived.
+10777: TRANS 3040: Starting transaction 3040.
+10777: TRANS 3040: Trying to claim lock of resource 6 at server 4
+10778: TRANS 3040: Aborting transaction 3040.
+10778: TRANS 3040: Transaction 3040 aborted.
+10778: Transaction 3040 ended.
+11051: Transaction 3041 arrived.
+11052: TRANS 3041: Starting transaction 3041.
+11052: TRANS 3041: Trying to claim lock of resource 0 at server 3
+11052: TRANS 3041: Aborting transaction 3041.
+11052: TRANS 3041: Transaction 3041 aborted.
+11052: Transaction 3041 ended.
+11201: Transaction 3042 arrived.
+11202: TRANS 3042: Starting transaction 3042.
+11202: TRANS 3042: Trying to claim lock of resource 8 at server 2
+11203: TRANS 3042: Aborting transaction 3042.
+11203: TRANS 3042: Transaction 3042 aborted.
+11203: Transaction 3042 ended.
+11444: Transaction 3043 arrived.
+11445: TRANS 3043: Starting transaction 3043.
+11445: TRANS 3043: Trying to claim lock of resource 1 at server 1
+11446: TRANS 3043: Aborting transaction 3043.
+11446: TRANS 3043: Transaction 3043 aborted.
+11446: Transaction 3043 ended.
+11573: Transaction 3044 arrived.
+11574: TRANS 3044: Starting transaction 3044.
+11574: TRANS 3044: Trying to claim lock of resource 7 at server 1
+11574: TRANS 3044: Aborting transaction 3044.
+11575: TRANS 3044: Transaction 3044 aborted.
+11575: Transaction 3044 ended.
+11705: Transaction 3045 arrived.
+11706: TRANS 3045: Starting transaction 3045.
+11706: TRANS 3045: Trying to claim lock of resource 3 at server 4
+11706: TRANS 3045: Aborting transaction 3045.
+11706: TRANS 3045: Transaction 3045 aborted.
+11706: Transaction 3045 ended.
+11915: Transaction 3046 arrived.
+11915: TRANS 3046: Starting transaction 3046.
+11915: TRANS 3046: Trying to claim lock of resource 1 at server 3
+11915: TRANS 3046: Aborting transaction 3046.
+11915: TRANS 3046: Transaction 3046 aborted.
+11915: Transaction 3046 ended.
+12012: Transaction 3047 arrived.
+12012: TRANS 3047: Starting transaction 3047.
+12012: TRANS 3047: Trying to claim lock of resource 3 at server 3
+12012: TRANS 3047: Aborting transaction 3047.
+12013: TRANS 3047: Transaction 3047 aborted.
+12013: Transaction 3047 ended.
+12171: Transaction 3048 arrived.
+12171: TRANS 3048: Starting transaction 3048.
+12171: TRANS 3048: Trying to claim lock of resource 6 at server 2
+12172: TRANS 3048: Aborting transaction 3048.
+12172: TRANS 3048: Transaction 3048 aborted.
+12172: Transaction 3048 ended.
+12374: Transaction 3049 arrived.
+12374: TRANS 3049: Starting transaction 3049.
+12374: TRANS 3049: Trying to claim lock of resource 9 at server 3
+12374: TRANS 3049: Aborting transaction 3049.
+12375: TRANS 3049: Transaction 3049 aborted.
+12375: Transaction 3049 ended.
+12648: Transaction 3050 arrived.
+12648: TRANS 3050: Starting transaction 3050.
+12648: TRANS 3050: Trying to claim lock of resource 4 at server 3
+12648: TRANS 3050: Aborting transaction 3050.
+12648: TRANS 3050: Transaction 3050 aborted.
+12648: Transaction 3050 ended.
+12894: Transaction 3051 arrived.
+12894: TRANS 3051: Starting transaction 3051.
+12894: TRANS 3051: Trying to claim lock of resource 6 at server 1
+12895: TRANS 3051: Aborting transaction 3051.
+12895: TRANS 3051: Transaction 3051 aborted.
+12895: Transaction 3051 ended.
+13186: Transaction 3052 arrived.
+13186: TRANS 3052: Starting transaction 3052.
+13186: TRANS 3052: Trying to claim lock of resource 0 at server 1
+13188: TRANS 3052: Aborting transaction 3052.
+13188: TRANS 3052: Transaction 3052 aborted.
+13188: Transaction 3052 ended.
+13363: Transaction 3053 arrived.
+13363: TRANS 3053: Starting transaction 3053.
+13364: TRANS 3053: Trying to claim lock of resource 6 at server 1
+13365: TRANS 3053: Aborting transaction 3053.
+13365: TRANS 3053: Transaction 3053 aborted.
+13365: Transaction 3053 ended.
+13427: Transaction 3054 arrived.
+13428: TRANS 3054: Starting transaction 3054.
+13428: TRANS 3054: Trying to claim lock of resource 8 at server 1
+13428: TRANS 3054: Aborting transaction 3054.
+13428: TRANS 3054: Transaction 3054 aborted.
+13428: Transaction 3054 ended.
+13570: Transaction 3055 arrived.
+13570: TRANS 3055: Starting transaction 3055.
+13571: TRANS 3055: Trying to claim lock of resource 3 at server 3
+13571: TRANS 3055: Aborting transaction 3055.
+13571: TRANS 3055: Transaction 3055 aborted.
+13571: Transaction 3055 ended.
+13744: Transaction 3056 arrived.
+13744: TRANS 3056: Starting transaction 3056.
+13745: TRANS 3056: Trying to claim lock of resource 5 at server 1
+13745: TRANS 3056: Aborting transaction 3056.
+13745: TRANS 3056: Transaction 3056 aborted.
+13745: Transaction 3056 ended.
+13890: Transaction 3057 arrived.
+13890: TRANS 3057: Starting transaction 3057.
+13890: TRANS 3057: Trying to claim lock of resource 8 at server 2
+13891: TRANS 3057: Aborting transaction 3057.
+13891: TRANS 3057: Transaction 3057 aborted.
+13891: Transaction 3057 ended.
+14017: Transaction 3058 arrived.
+14017: TRANS 3058: Starting transaction 3058.
+14017: TRANS 3058: Trying to claim lock of resource 6 at server 1
+14018: TRANS 3058: Aborting transaction 3058.
+14018: TRANS 3058: Transaction 3058 aborted.
+14018: Transaction 3058 ended.
+14155: Transaction 3059 arrived.
+14156: TRANS 3059: Starting transaction 3059.
+14156: TRANS 3059: Trying to claim lock of resource 1 at server 4
+14157: TRANS 3059: Aborting transaction 3059.
+14157: TRANS 3059: Transaction 3059 aborted.
+14157: Transaction 3059 ended.
+14260: Transaction 3060 arrived.
+14261: TRANS 3060: Starting transaction 3060.
+14261: TRANS 3060: Trying to claim lock of resource 5 at server 3
+14261: TRANS 3060: Aborting transaction 3060.
+14261: TRANS 3060: Transaction 3060 aborted.
+14261: Transaction 3060 ended.
+14454: Transaction 3061 arrived.
+14454: TRANS 3061: Starting transaction 3061.
+14454: TRANS 3061: Trying to claim lock of resource 5 at server 4
+14455: TRANS 3061: Aborting transaction 3061.
+14455: TRANS 3061: Transaction 3061 aborted.
+14455: Transaction 3061 ended.
+14548: Transaction 3062 arrived.
+14548: TRANS 3062: Starting transaction 3062.
+14548: TRANS 3062: Trying to claim lock of resource 7 at server 4
+14549: TRANS 3062: Aborting transaction 3062.
+14549: TRANS 3062: Transaction 3062 aborted.
+14549: Transaction 3062 ended.
+14813: Transaction 3063 arrived.
+14813: TRANS 3063: Starting transaction 3063.
+14813: TRANS 3063: Trying to claim lock of resource 0 at server 3
+14813: TRANS 3063: Aborting transaction 3063.
+14813: TRANS 3063: Transaction 3063 aborted.
+14813: Transaction 3063 ended.
+15065: Transaction 3064 arrived.
+15066: TRANS 3064: Starting transaction 3064.
+15066: TRANS 3064: Trying to claim lock of resource 0 at server 1
+15067: TRANS 3064: Aborting transaction 3064.
+15067: TRANS 3064: Transaction 3064 aborted.
+15067: Transaction 3064 ended.
+15232: Transaction 3065 arrived.
+15232: TRANS 3065: Starting transaction 3065.
+15232: TRANS 3065: Trying to claim lock of resource 3 at server 1
+15232: TRANS 3065: Aborting transaction 3065.
+15232: TRANS 3065: Transaction 3065 aborted.
+15232: Transaction 3065 ended.
+15383: Transaction 3066 arrived.
+15383: TRANS 3066: Starting transaction 3066.
+15383: TRANS 3066: Trying to claim lock of resource 2 at server 1
+15384: TRANS 3066: Aborting transaction 3066.
+15384: TRANS 3066: Transaction 3066 aborted.
+15384: Transaction 3066 ended.
+15680: Transaction 3067 arrived.
+15680: TRANS 3067: Starting transaction 3067.
+15680: TRANS 3067: Trying to claim lock of resource 7 at server 2
+15681: TRANS 3067: Aborting transaction 3067.
+15681: TRANS 3067: Transaction 3067 aborted.
+15681: Transaction 3067 ended.
+15856: Transaction 3068 arrived.
+15856: TRANS 3068: Starting transaction 3068.
+15856: TRANS 3068: Trying to claim lock of resource 2 at server 4
+15857: TRANS 3068: Aborting transaction 3068.
+15857: TRANS 3068: Transaction 3068 aborted.
+15857: Transaction 3068 ended.
+16132: Transaction 3069 arrived.
+16132: TRANS 3069: Starting transaction 3069.
+16132: TRANS 3069: Trying to claim lock of resource 7 at server 4
+16133: TRANS 3069: Aborting transaction 3069.
+16133: TRANS 3069: Transaction 3069 aborted.
+16133: Transaction 3069 ended.
+16240: Transaction 3070 arrived.
+16240: TRANS 3070: Starting transaction 3070.
+16240: TRANS 3070: Trying to claim lock of resource 2 at server 3
+16240: TRANS 3070: Aborting transaction 3070.
+16240: TRANS 3070: Transaction 3070 aborted.
+16240: Transaction 3070 ended.
+16415: Transaction 3071 arrived.
+16416: TRANS 3071: Starting transaction 3071.
+16416: TRANS 3071: Trying to claim lock of resource 3 at server 2
+16416: TRANS 3071: Aborting transaction 3071.
+16417: TRANS 3071: Transaction 3071 aborted.
+16417: Transaction 3071 ended.
+16653: Transaction 3072 arrived.
+16653: TRANS 3072: Starting transaction 3072.
+16653: TRANS 3072: Trying to claim lock of resource 5 at server 1
+16654: TRANS 3072: Aborting transaction 3072.
+16654: TRANS 3072: Transaction 3072 aborted.
+16654: Transaction 3072 ended.
+16803: Transaction 3073 arrived.
+16803: TRANS 3073: Starting transaction 3073.
+16803: TRANS 3073: Trying to claim lock of resource 2 at server 4
+16804: TRANS 3073: Aborting transaction 3073.
+16804: TRANS 3073: Transaction 3073 aborted.
+16804: Transaction 3073 ended.
+17015: Transaction 3074 arrived.
+17015: TRANS 3074: Starting transaction 3074.
+17015: TRANS 3074: Trying to claim lock of resource 9 at server 1
+17015: TRANS 3074: Aborting transaction 3074.
+17015: TRANS 3074: Transaction 3074 aborted.
+17016: Transaction 3074 ended.
+17232: Transaction 3075 arrived.
+17232: TRANS 3075: Starting transaction 3075.
+17232: TRANS 3075: Trying to claim lock of resource 4 at server 3
+17232: TRANS 3075: Aborting transaction 3075.
+17232: TRANS 3075: Transaction 3075 aborted.
+17232: Transaction 3075 ended.
+17302: Transaction 3076 arrived.
+17302: TRANS 3076: Starting transaction 3076.
+17302: TRANS 3076: Trying to claim lock of resource 9 at server 4
+17303: TRANS 3076: Aborting transaction 3076.
+17303: TRANS 3076: Transaction 3076 aborted.
+17303: Transaction 3076 ended.
+17502: Transaction 3077 arrived.
+17502: TRANS 3077: Starting transaction 3077.
+17502: TRANS 3077: Trying to claim lock of resource 1 at server 1
+17502: TRANS 3077: Aborting transaction 3077.
+17502: TRANS 3077: Transaction 3077 aborted.
+17503: Transaction 3077 ended.
+17798: Transaction 3078 arrived.
+17798: TRANS 3078: Starting transaction 3078.
+17798: TRANS 3078: Trying to claim lock of resource 3 at server 4
+17798: TRANS 3078: Aborting transaction 3078.
+17799: TRANS 3078: Transaction 3078 aborted.
+17799: Transaction 3078 ended.
+17958: Transaction 3079 arrived.
+17958: TRANS 3079: Starting transaction 3079.
+17958: TRANS 3079: Trying to claim lock of resource 6 at server 3
+17958: TRANS 3079: Aborting transaction 3079.
+17958: TRANS 3079: Transaction 3079 aborted.
+17958: Transaction 3079 ended.
+18167: Transaction 3080 arrived.
+18167: TRANS 3080: Starting transaction 3080.
+18167: TRANS 3080: Trying to claim lock of resource 0 at server 2
+18168: TRANS 3080: Aborting transaction 3080.
+18168: TRANS 3080: Transaction 3080 aborted.
+18168: Transaction 3080 ended.
+18350: Transaction 3081 arrived.
+18351: TRANS 3081: Starting transaction 3081.
+18351: TRANS 3081: Trying to claim lock of resource 4 at server 4
+18352: TRANS 3081: Aborting transaction 3081.
+18352: TRANS 3081: Transaction 3081 aborted.
+18352: Transaction 3081 ended.
+18516: Transaction 3082 arrived.
+18517: TRANS 3082: Starting transaction 3082.
+18517: TRANS 3082: Trying to claim lock of resource 5 at server 4
+18517: TRANS 3082: Aborting transaction 3082.
+18517: TRANS 3082: Transaction 3082 aborted.
+18517: Transaction 3082 ended.
+18573: Server 3 was notified of the departure of server 2 by server 1.
+18800: Transaction 3083 arrived.
+18800: TRANS 3083: Starting transaction 3083.
+18800: TRANS 3083: Trying to claim lock of resource 7 at server 3
+18800: TRANS 3083: Aborting transaction 3083.
+18800: TRANS 3083: Transaction 3083 aborted.
+18800: Transaction 3083 ended.
+19055: Transaction 3084 arrived.
+19056: TRANS 3084: Starting transaction 3084.
+19056: TRANS 3084: Trying to claim lock of resource 3 at server 1
+19056: TRANS 3084: Aborting transaction 3084.
+19057: TRANS 3084: Transaction 3084 aborted.
+19057: Transaction 3084 ended.
+19147: Transaction 3085 arrived.
+19147: TRANS 3085: Starting transaction 3085.
+19147: TRANS 3085: Trying to claim lock of resource 5 at server 1
+19148: TRANS 3085: Aborting transaction 3085.
+19148: TRANS 3085: Transaction 3085 aborted.
+19148: Transaction 3085 ended.
+19229: Transaction 3086 arrived.
+19229: TRANS 3086: Starting transaction 3086.
+19229: TRANS 3086: Trying to claim lock of resource 9 at server 4
+19230: TRANS 3086: Aborting transaction 3086.
+19230: TRANS 3086: Transaction 3086 aborted.
+19230: Transaction 3086 ended.
+19310: Transaction 3087 arrived.
+19310: TRANS 3087: Starting transaction 3087.
+19310: TRANS 3087: Trying to claim lock of resource 8 at server 4
+19311: TRANS 3087: Aborting transaction 3087.
+19311: TRANS 3087: Transaction 3087 aborted.
+19311: Transaction 3087 ended.
+19523: Transaction 3088 arrived.
+19523: TRANS 3088: Starting transaction 3088.
+19523: TRANS 3088: Trying to claim lock of resource 2 at server 1
+19524: TRANS 3088: Aborting transaction 3088.
+19524: TRANS 3088: Transaction 3088 aborted.
+19524: Transaction 3088 ended.
 ==================================================================
-534: Server 3 started.
-2074: Server 3 was notified of the arrival of server 4
-4239: Server 3 started its transactions.
-4263: Transaction 3000 arrived.
-4264: TRANS 3000: Starting transaction 3000.
-4264: TRANS 3000: Trying to claim lock of resource 7 at server 2
-4265: TRANS 3000: Aborting transaction 3000.
-4266: TRANS 3000: Transaction 3000 aborted.
-4266: Transaction 3000 ended.
-4378: Transaction 3001 arrived.
-4379: TRANS 3001: Starting transaction 3001.
-4379: TRANS 3001: Trying to claim lock of resource 9 at server 4
-4380: TRANS 3001: Aborting transaction 3001.
-4380: TRANS 3001: Transaction 3001 aborted.
-4380: Transaction 3001 ended.
-4565: Transaction 3002 arrived.
-4565: TRANS 3002: Starting transaction 3002.
-4565: TRANS 3002: Trying to claim lock of resource 6 at server 1
-4566: TRANS 3002: Aborting transaction 3002.
-4566: TRANS 3002: Transaction 3002 aborted.
-4566: Transaction 3002 ended.
-4716: Transaction 3003 arrived.
-4716: TRANS 3003: Starting transaction 3003.
-4717: TRANS 3003: Trying to claim lock of resource 8 at server 4
-4717: TRANS 3003: Aborting transaction 3003.
-4718: TRANS 3003: Transaction 3003 aborted.
-4718: Transaction 3003 ended.
-4914: Transaction 3004 arrived.
-4914: TRANS 3004: Starting transaction 3004.
-4914: TRANS 3004: Trying to claim lock of resource 1 at server 3
-4914: TRANS 3004: Aborting transaction 3004.
-4914: TRANS 3004: Transaction 3004 aborted.
-4915: Transaction 3004 ended.
-4991: Transaction 3005 arrived.
-4991: TRANS 3005: Starting transaction 3005.
-4991: TRANS 3005: Trying to claim lock of resource 9 at server 2
-4992: TRANS 3005: Aborting transaction 3005.
-4993: TRANS 3005: Transaction 3005 aborted.
-4993: Transaction 3005 ended.
-5154: Transaction 3006 arrived.
-5154: TRANS 3006: Starting transaction 3006.
-5155: TRANS 3006: Trying to claim lock of resource 2 at server 4
-5155: TRANS 3006: Aborting transaction 3006.
-5155: TRANS 3006: Transaction 3006 aborted.
-5155: Transaction 3006 ended.
-5368: Transaction 3007 arrived.
-5368: TRANS 3007: Starting transaction 3007.
-5369: TRANS 3007: Trying to claim lock of resource 8 at server 1
-5370: TRANS 3007: Aborting transaction 3007.
-5370: TRANS 3007: Transaction 3007 aborted.
-5370: Transaction 3007 ended.
-5429: Transaction 3008 arrived.
-5429: TRANS 3008: Starting transaction 3008.
-5429: TRANS 3008: Trying to claim lock of resource 8 at server 4
-5431: TRANS 3008: Aborting transaction 3008.
-5431: TRANS 3008: Transaction 3008 aborted.
-5431: Transaction 3008 ended.
-5726: Transaction 3009 arrived.
-5726: TRANS 3009: Starting transaction 3009.
-5726: TRANS 3009: Trying to claim lock of resource 3 at server 4
-5727: TRANS 3009: Aborting transaction 3009.
-5727: TRANS 3009: Transaction 3009 aborted.
-5727: Transaction 3009 ended.
-5997: Transaction 3010 arrived.
-5997: TRANS 3010: Starting transaction 3010.
-5997: TRANS 3010: Trying to claim lock of resource 1 at server 2
-5998: TRANS 3010: Aborting transaction 3010.
-5998: TRANS 3010: Transaction 3010 aborted.
-5999: Transaction 3010 ended.
-6237: Transaction 3011 arrived.
-6237: TRANS 3011: Starting transaction 3011.
-6237: TRANS 3011: Trying to claim lock of resource 2 at server 4
-6238: TRANS 3011: Aborting transaction 3011.
-6238: TRANS 3011: Transaction 3011 aborted.
-6238: Transaction 3011 ended.
-6510: Transaction 3012 arrived.
-6511: TRANS 3012: Starting transaction 3012.
-6511: TRANS 3012: Trying to claim lock of resource 1 at server 3
-6512: TRANS 3012: Aborting transaction 3012.
-6513: TRANS 3012: Transaction 3012 aborted.
-6513: Transaction 3012 ended.
-6737: Transaction 3013 arrived.
-6737: TRANS 3013: Starting transaction 3013.
-6737: TRANS 3013: Trying to claim lock of resource 8 at server 2
-6738: TRANS 3013: Aborting transaction 3013.
-6739: TRANS 3013: Transaction 3013 aborted.
-6739: Transaction 3013 ended.
-7025: Transaction 3014 arrived.
-7025: TRANS 3014: Starting transaction 3014.
-7025: TRANS 3014: Trying to claim lock of resource 6 at server 4
-7026: TRANS 3014: Aborting transaction 3014.
-7026: TRANS 3014: Transaction 3014 aborted.
-7026: Transaction 3014 ended.
-7234: Transaction 3015 arrived.
-7235: TRANS 3015: Starting transaction 3015.
-7235: TRANS 3015: Trying to claim lock of resource 6 at server 2
-7236: TRANS 3015: Aborting transaction 3015.
-7236: TRANS 3015: Transaction 3015 aborted.
-7236: Transaction 3015 ended.
-7293: Transaction 3016 arrived.
-7293: TRANS 3016: Starting transaction 3016.
-7294: TRANS 3016: Trying to claim lock of resource 2 at server 3
-7294: TRANS 3016: Aborting transaction 3016.
-7294: TRANS 3016: Transaction 3016 aborted.
-7294: Transaction 3016 ended.
-7492: Transaction 3017 arrived.
-7493: TRANS 3017: Starting transaction 3017.
-7493: TRANS 3017: Trying to claim lock of resource 0 at server 1
-7493: TRANS 3017: Aborting transaction 3017.
-7493: TRANS 3017: Transaction 3017 aborted.
-7494: Transaction 3017 ended.
-7764: Transaction 3018 arrived.
-7764: TRANS 3018: Starting transaction 3018.
-7764: TRANS 3018: Trying to claim lock of resource 7 at server 3
-7764: TRANS 3018: Aborting transaction 3018.
-7764: TRANS 3018: Transaction 3018 aborted.
-7764: Transaction 3018 ended.
-7959: Transaction 3019 arrived.
-7959: TRANS 3019: Starting transaction 3019.
-7959: TRANS 3019: Trying to claim lock of resource 4 at server 4
-7960: TRANS 3019: Aborting transaction 3019.
-7960: TRANS 3019: Transaction 3019 aborted.
-7960: Transaction 3019 ended.
-8165: Transaction 3020 arrived.
-8165: TRANS 3020: Starting transaction 3020.
-8165: TRANS 3020: Trying to claim lock of resource 2 at server 4
-8166: TRANS 3020: Aborting transaction 3020.
-8166: TRANS 3020: Transaction 3020 aborted.
-8167: Transaction 3020 ended.
-8448: Transaction 3021 arrived.
-8449: TRANS 3021: Starting transaction 3021.
-8449: TRANS 3021: Trying to claim lock of resource 3 at server 2
-8450: TRANS 3021: Aborting transaction 3021.
-8450: TRANS 3021: Transaction 3021 aborted.
-8450: Transaction 3021 ended.
-8676: Transaction 3022 arrived.
-8676: TRANS 3022: Starting transaction 3022.
-8676: TRANS 3022: Trying to claim lock of resource 7 at server 3
-8677: TRANS 3022: Aborting transaction 3022.
-8677: TRANS 3022: Transaction 3022 aborted.
-8677: Transaction 3022 ended.
-8855: Transaction 3023 arrived.
-8855: TRANS 3023: Starting transaction 3023.
-8856: TRANS 3023: Trying to claim lock of resource 5 at server 4
-8856: TRANS 3023: Aborting transaction 3023.
-8857: TRANS 3023: Transaction 3023 aborted.
-8857: Transaction 3023 ended.
-8942: Transaction 3024 arrived.
-8942: TRANS 3024: Starting transaction 3024.
-8942: TRANS 3024: Trying to claim lock of resource 3 at server 2
-8943: TRANS 3024: Aborting transaction 3024.
-8943: TRANS 3024: Transaction 3024 aborted.
-8943: Transaction 3024 ended.
-9010: Transaction 3025 arrived.
-9010: TRANS 3025: Starting transaction 3025.
-9011: TRANS 3025: Trying to claim lock of resource 8 at server 1
-9012: TRANS 3025: Aborting transaction 3025.
-9012: TRANS 3025: Transaction 3025 aborted.
-9012: Transaction 3025 ended.
-9284: Transaction 3026 arrived.
-9284: TRANS 3026: Starting transaction 3026.
-9284: TRANS 3026: Trying to claim lock of resource 8 at server 1
-9285: TRANS 3026: Aborting transaction 3026.
-9285: TRANS 3026: Transaction 3026 aborted.
-9285: Transaction 3026 ended.
-9427: Transaction 3027 arrived.
-9427: TRANS 3027: Starting transaction 3027.
-9427: TRANS 3027: Trying to claim lock of resource 8 at server 3
-9428: TRANS 3027: Aborting transaction 3027.
-9428: TRANS 3027: Transaction 3027 aborted.
-9428: Transaction 3027 ended.
-9679: Transaction 3028 arrived.
-9679: TRANS 3028: Starting transaction 3028.
-9679: TRANS 3028: Trying to claim lock of resource 1 at server 2
-9680: TRANS 3028: Aborting transaction 3028.
-9680: TRANS 3028: Transaction 3028 aborted.
-9680: Transaction 3028 ended.
-9775: Transaction 3029 arrived.
-9775: TRANS 3029: Starting transaction 3029.
-9776: TRANS 3029: Trying to claim lock of resource 7 at server 3
-9776: TRANS 3029: Aborting transaction 3029.
-9776: TRANS 3029: Transaction 3029 aborted.
-9776: Transaction 3029 ended.
-9969: Transaction 3030 arrived.
-9969: TRANS 3030: Starting transaction 3030.
-9969: TRANS 3030: Trying to claim lock of resource 3 at server 4
-9970: TRANS 3030: Aborting transaction 3030.
-9970: TRANS 3030: Transaction 3030 aborted.
-9970: Transaction 3030 ended.
-10043: Transaction 3031 arrived.
-10043: TRANS 3031: Starting transaction 3031.
-10043: TRANS 3031: Trying to claim lock of resource 6 at server 4
-10044: TRANS 3031: Aborting transaction 3031.
-10044: TRANS 3031: Transaction 3031 aborted.
-10044: Transaction 3031 ended.
-10249: Transaction 3032 arrived.
-10250: TRANS 3032: Starting transaction 3032.
-10250: TRANS 3032: Trying to claim lock of resource 6 at server 1
-10250: TRANS 3032: Aborting transaction 3032.
-10250: TRANS 3032: Transaction 3032 aborted.
-10250: Transaction 3032 ended.
-10479: Transaction 3033 arrived.
-10480: TRANS 3033: Starting transaction 3033.
-10480: TRANS 3033: Trying to claim lock of resource 8 at server 2
-10480: TRANS 3033: Aborting transaction 3033.
-10480: TRANS 3033: Transaction 3033 aborted.
-10480: Transaction 3033 ended.
-10707: Transaction 3034 arrived.
-10708: TRANS 3034: Starting transaction 3034.
-10708: TRANS 3034: Trying to claim lock of resource 2 at server 2
-10709: TRANS 3034: Aborting transaction 3034.
-10709: TRANS 3034: Transaction 3034 aborted.
-10709: Transaction 3034 ended.
-10957: Transaction 3035 arrived.
-10957: TRANS 3035: Starting transaction 3035.
-10958: TRANS 3035: Trying to claim lock of resource 8 at server 3
-10958: TRANS 3035: Aborting transaction 3035.
-10958: TRANS 3035: Transaction 3035 aborted.
-10958: Transaction 3035 ended.
-11220: Transaction 3036 arrived.
-11220: TRANS 3036: Starting transaction 3036.
-11220: TRANS 3036: Trying to claim lock of resource 1 at server 1
-11221: TRANS 3036: Aborting transaction 3036.
-11222: TRANS 3036: Transaction 3036 aborted.
-11222: Transaction 3036 ended.
-11345: Transaction 3037 arrived.
-11346: TRANS 3037: Starting transaction 3037.
-11346: TRANS 3037: Trying to claim lock of resource 0 at server 4
-11346: TRANS 3037: Aborting transaction 3037.
-11347: TRANS 3037: Transaction 3037 aborted.
-11347: Transaction 3037 ended.
-11591: Transaction 3038 arrived.
-11591: TRANS 3038: Starting transaction 3038.
-11591: TRANS 3038: Trying to claim lock of resource 3 at server 3
-11591: TRANS 3038: Aborting transaction 3038.
-11591: TRANS 3038: Transaction 3038 aborted.
-11591: Transaction 3038 ended.
-11762: Transaction 3039 arrived.
-11763: TRANS 3039: Starting transaction 3039.
-11763: TRANS 3039: Trying to claim lock of resource 1 at server 4
-11764: TRANS 3039: Aborting transaction 3039.
-11764: TRANS 3039: Transaction 3039 aborted.
-11764: Transaction 3039 ended.
-11824: Transaction 3040 arrived.
-11825: TRANS 3040: Starting transaction 3040.
-11825: TRANS 3040: Trying to claim lock of resource 6 at server 2
-11826: TRANS 3040: Aborting transaction 3040.
-11826: TRANS 3040: Transaction 3040 aborted.
-11826: Transaction 3040 ended.
-11999: Transaction 3041 arrived.
-12000: TRANS 3041: Starting transaction 3041.
-12000: TRANS 3041: Trying to claim lock of resource 9 at server 4
-12000: TRANS 3041: Aborting transaction 3041.
-12000: TRANS 3041: Transaction 3041 aborted.
-12000: Transaction 3041 ended.
-12166: Transaction 3042 arrived.
-12166: TRANS 3042: Starting transaction 3042.
-12169: TRANS 3042: Trying to claim lock of resource 1 at server 3
-12169: TRANS 3042: Aborting transaction 3042.
-12169: TRANS 3042: Transaction 3042 aborted.
-12169: Transaction 3042 ended.
-12472: Transaction 3043 arrived.
-12472: TRANS 3043: Starting transaction 3043.
-12472: TRANS 3043: Trying to claim lock of resource 6 at server 4
-12473: TRANS 3043: Aborting transaction 3043.
-12473: TRANS 3043: Transaction 3043 aborted.
-12473: Transaction 3043 ended.
-12649: Transaction 3044 arrived.
-12649: TRANS 3044: Starting transaction 3044.
-12649: TRANS 3044: Trying to claim lock of resource 4 at server 2
-12650: TRANS 3044: Aborting transaction 3044.
-12650: TRANS 3044: Transaction 3044 aborted.
-12650: Transaction 3044 ended.
-12946: Transaction 3045 arrived.
-12946: TRANS 3045: Starting transaction 3045.
-12947: TRANS 3045: Trying to claim lock of resource 3 at server 1
-12947: TRANS 3045: Aborting transaction 3045.
-12947: TRANS 3045: Transaction 3045 aborted.
-12947: Transaction 3045 ended.
-13216: Transaction 3046 arrived.
-13216: TRANS 3046: Starting transaction 3046.
-13216: TRANS 3046: Trying to claim lock of resource 2 at server 3
-13216: TRANS 3046: Aborting transaction 3046.
-13216: TRANS 3046: Transaction 3046 aborted.
-13216: Transaction 3046 ended.
-13404: Transaction 3047 arrived.
-13405: TRANS 3047: Starting transaction 3047.
-13405: TRANS 3047: Trying to claim lock of resource 8 at server 3
-13405: TRANS 3047: Aborting transaction 3047.
-13405: TRANS 3047: Transaction 3047 aborted.
-13405: Transaction 3047 ended.
-13547: Transaction 3048 arrived.
-13547: TRANS 3048: Starting transaction 3048.
-13547: TRANS 3048: Trying to claim lock of resource 5 at server 4
-13548: TRANS 3048: Aborting transaction 3048.
-13548: TRANS 3048: Transaction 3048 aborted.
-13548: Transaction 3048 ended.
-13738: Transaction 3049 arrived.
-13738: TRANS 3049: Starting transaction 3049.
-13738: TRANS 3049: Trying to claim lock of resource 3 at server 3
-13738: TRANS 3049: Aborting transaction 3049.
-13738: TRANS 3049: Transaction 3049 aborted.
-13738: Transaction 3049 ended.
-13965: Transaction 3050 arrived.
-13967: TRANS 3050: Starting transaction 3050.
-13967: TRANS 3050: Trying to claim lock of resource 7 at server 1
-13968: TRANS 3050: Aborting transaction 3050.
-13968: TRANS 3050: Transaction 3050 aborted.
-13968: Transaction 3050 ended.
-14096: Transaction 3051 arrived.
-14096: TRANS 3051: Starting transaction 3051.
-14096: TRANS 3051: Trying to claim lock of resource 1 at server 4
-14097: TRANS 3051: Aborting transaction 3051.
-14097: TRANS 3051: Transaction 3051 aborted.
-14097: Transaction 3051 ended.
-14398: Transaction 3052 arrived.
-14398: TRANS 3052: Starting transaction 3052.
-14398: TRANS 3052: Trying to claim lock of resource 2 at server 3
-14399: TRANS 3052: Aborting transaction 3052.
-14399: TRANS 3052: Transaction 3052 aborted.
-14399: Transaction 3052 ended.
-14586: Transaction 3053 arrived.
-14586: TRANS 3053: Starting transaction 3053.
-14586: TRANS 3053: Trying to claim lock of resource 3 at server 2
-14587: TRANS 3053: Aborting transaction 3053.
-14587: TRANS 3053: Transaction 3053 aborted.
-14587: Transaction 3053 ended.
-14882: Transaction 3054 arrived.
-14882: TRANS 3054: Starting transaction 3054.
-14882: TRANS 3054: Trying to claim lock of resource 3 at server 3
-14882: TRANS 3054: Aborting transaction 3054.
-14882: TRANS 3054: Transaction 3054 aborted.
-14882: Transaction 3054 ended.
-15117: Transaction 3055 arrived.
-15117: TRANS 3055: Starting transaction 3055.
-15117: TRANS 3055: Trying to claim lock of resource 6 at server 1
-15118: TRANS 3055: Aborting transaction 3055.
-15118: TRANS 3055: Transaction 3055 aborted.
-15118: Transaction 3055 ended.
-15213: Transaction 3056 arrived.
-15213: TRANS 3056: Starting transaction 3056.
-15213: TRANS 3056: Trying to claim lock of resource 3 at server 4
-15214: TRANS 3056: Aborting transaction 3056.
-15214: TRANS 3056: Transaction 3056 aborted.
-15214: Transaction 3056 ended.
-15287: Transaction 3057 arrived.
-15287: TRANS 3057: Starting transaction 3057.
-15287: TRANS 3057: Trying to claim lock of resource 4 at server 4
-15288: TRANS 3057: Aborting transaction 3057.
-15288: TRANS 3057: Transaction 3057 aborted.
-15288: Transaction 3057 ended.
-15520: Transaction 3058 arrived.
-15520: TRANS 3058: Starting transaction 3058.
-15520: TRANS 3058: Trying to claim lock of resource 8 at server 2
-15521: TRANS 3058: Aborting transaction 3058.
-15521: TRANS 3058: Transaction 3058 aborted.
-15521: Transaction 3058 ended.
-15819: Transaction 3059 arrived.
-15819: TRANS 3059: Starting transaction 3059.
-15819: TRANS 3059: Trying to claim lock of resource 7 at server 4
-15820: TRANS 3059: Aborting transaction 3059.
-15820: TRANS 3059: Transaction 3059 aborted.
-15820: Transaction 3059 ended.
-15976: Transaction 3060 arrived.
-15976: TRANS 3060: Starting transaction 3060.
-15977: TRANS 3060: Trying to claim lock of resource 8 at server 3
-15977: TRANS 3060: Aborting transaction 3060.
-15977: TRANS 3060: Transaction 3060 aborted.
-15977: Transaction 3060 ended.
-16223: Transaction 3061 arrived.
-16224: TRANS 3061: Starting transaction 3061.
-16224: TRANS 3061: Trying to claim lock of resource 8 at server 1
-16225: TRANS 3061: Aborting transaction 3061.
-16225: TRANS 3061: Transaction 3061 aborted.
-16225: Transaction 3061 ended.
-16328: Transaction 3062 arrived.
-16328: TRANS 3062: Starting transaction 3062.
-16328: TRANS 3062: Trying to claim lock of resource 7 at server 3
-16328: TRANS 3062: Aborting transaction 3062.
-16328: TRANS 3062: Transaction 3062 aborted.
-16328: Transaction 3062 ended.
-16618: Transaction 3063 arrived.
-16618: TRANS 3063: Starting transaction 3063.
-16618: TRANS 3063: Trying to claim lock of resource 0 at server 2
-16619: TRANS 3063: Aborting transaction 3063.
-16619: TRANS 3063: Transaction 3063 aborted.
-16620: Transaction 3063 ended.
-16728: Transaction 3064 arrived.
-16728: TRANS 3064: Starting transaction 3064.
-16728: TRANS 3064: Trying to claim lock of resource 1 at server 3
-16730: TRANS 3064: Aborting transaction 3064.
-16730: TRANS 3064: Transaction 3064 aborted.
-16730: Transaction 3064 ended.
-16849: Transaction 3065 arrived.
-16850: TRANS 3065: Starting transaction 3065.
-16850: TRANS 3065: Trying to claim lock of resource 2 at server 3
-16850: TRANS 3065: Aborting transaction 3065.
-16850: TRANS 3065: Transaction 3065 aborted.
-16850: Transaction 3065 ended.
-16939: Transaction 3066 arrived.
-16940: TRANS 3066: Starting transaction 3066.
-16940: TRANS 3066: Trying to claim lock of resource 5 at server 4
-16941: TRANS 3066: Aborting transaction 3066.
-16941: TRANS 3066: Transaction 3066 aborted.
-16941: Transaction 3066 ended.
-17100: Transaction 3067 arrived.
-17100: TRANS 3067: Starting transaction 3067.
-17100: TRANS 3067: Trying to claim lock of resource 7 at server 3
-17100: TRANS 3067: Aborting transaction 3067.
-17100: TRANS 3067: Transaction 3067 aborted.
-17100: Transaction 3067 ended.
-17252: Transaction 3068 arrived.
-17252: TRANS 3068: Starting transaction 3068.
-17252: TRANS 3068: Trying to claim lock of resource 5 at server 4
-17252: TRANS 3068: Aborting transaction 3068.
-17252: TRANS 3068: Transaction 3068 aborted.
-17252: Transaction 3068 ended.
-17344: Transaction 3069 arrived.
-17344: TRANS 3069: Starting transaction 3069.
-17344: TRANS 3069: Trying to claim lock of resource 2 at server 1
-17345: TRANS 3069: Aborting transaction 3069.
-17345: TRANS 3069: Transaction 3069 aborted.
-17345: Transaction 3069 ended.
-17501: Transaction 3070 arrived.
-17501: TRANS 3070: Starting transaction 3070.
-17501: TRANS 3070: Trying to claim lock of resource 3 at server 3
-17501: TRANS 3070: Aborting transaction 3070.
-17501: TRANS 3070: Transaction 3070 aborted.
-17501: Transaction 3070 ended.
-17784: Transaction 3071 arrived.
-17784: TRANS 3071: Starting transaction 3071.
-17784: TRANS 3071: Trying to claim lock of resource 1 at server 4
-17785: TRANS 3071: Aborting transaction 3071.
-17785: TRANS 3071: Transaction 3071 aborted.
-17785: Transaction 3071 ended.
-17896: Transaction 3072 arrived.
-17896: TRANS 3072: Starting transaction 3072.
-17896: TRANS 3072: Trying to claim lock of resource 9 at server 2
-17897: TRANS 3072: Aborting transaction 3072.
-17897: TRANS 3072: Transaction 3072 aborted.
-17897: Transaction 3072 ended.
-18134: Transaction 3073 arrived.
-18134: TRANS 3073: Starting transaction 3073.
-18134: TRANS 3073: Trying to claim lock of resource 4 at server 2
-18134: TRANS 3073: Aborting transaction 3073.
-18134: TRANS 3073: Transaction 3073 aborted.
-18134: Transaction 3073 ended.
-18383: Transaction 3074 arrived.
-18383: TRANS 3074: Starting transaction 3074.
-18383: TRANS 3074: Trying to claim lock of resource 7 at server 4
-18384: TRANS 3074: Aborting transaction 3074.
-18384: TRANS 3074: Transaction 3074 aborted.
-18384: Transaction 3074 ended.
-18573: Transaction 3075 arrived.
-18573: TRANS 3075: Starting transaction 3075.
-18573: TRANS 3075: Trying to claim lock of resource 3 at server 1
-18575: TRANS 3075: Aborting transaction 3075.
-18575: TRANS 3075: Transaction 3075 aborted.
-18575: Transaction 3075 ended.
-18866: Transaction 3076 arrived.
-18866: TRANS 3076: Starting transaction 3076.
-18866: TRANS 3076: Trying to claim lock of resource 4 at server 3
-18866: TRANS 3076: Aborting transaction 3076.
-18866: TRANS 3076: Transaction 3076 aborted.
-18866: Transaction 3076 ended.
-18987: Transaction 3077 arrived.
-18987: TRANS 3077: Starting transaction 3077.
-18987: TRANS 3077: Trying to claim lock of resource 8 at server 3
-18987: TRANS 3077: Aborting transaction 3077.
-18987: TRANS 3077: Transaction 3077 aborted.
-18987: Transaction 3077 ended.
-19074: Transaction 3078 arrived.
-19074: TRANS 3078: Starting transaction 3078.
-19074: TRANS 3078: Trying to claim lock of resource 9 at server 1
-19075: TRANS 3078: Aborting transaction 3078.
-19075: TRANS 3078: Transaction 3078 aborted.
-19075: Transaction 3078 ended.
-19282: Transaction 3079 arrived.
-19283: TRANS 3079: Starting transaction 3079.
-19283: TRANS 3079: Trying to claim lock of resource 1 at server 2
-19283: TRANS 3079: Aborting transaction 3079.
-19283: TRANS 3079: Transaction 3079 aborted.
-19283: Transaction 3079 ended.
-19548: Transaction 3080 arrived.
-19548: TRANS 3080: Starting transaction 3080.
-19548: TRANS 3080: Trying to claim lock of resource 0 at server 2
-19549: TRANS 3080: Aborting transaction 3080.
-19549: TRANS 3080: Transaction 3080 aborted.
-19549: Transaction 3080 ended.
-19849: Transaction 3081 arrived.
-19849: TRANS 3081: Starting transaction 3081.
-19849: TRANS 3081: Trying to claim lock of resource 6 at server 2
-19850: TRANS 3081: Aborting transaction 3081.
-19850: TRANS 3081: Transaction 3081 aborted.
-19850: Transaction 3081 ended.
-20078: Transaction 3082 arrived.
-20078: TRANS 3082: Starting transaction 3082.
-20078: TRANS 3082: Trying to claim lock of resource 0 at server 4
-20078: TRANS 3082: Aborting transaction 3082.
-20078: TRANS 3082: Transaction 3082 aborted.
-20078: Transaction 3082 ended.
-20208: Transaction 3083 arrived.
-20208: TRANS 3083: Starting transaction 3083.
-20208: TRANS 3083: Trying to claim lock of resource 0 at server 3
-20208: TRANS 3083: Aborting transaction 3083.
-20208: TRANS 3083: Transaction 3083 aborted.
-20208: Transaction 3083 ended.
-20435: Transaction 3084 arrived.
-20435: TRANS 3084: Starting transaction 3084.
-20435: TRANS 3084: Trying to claim lock of resource 3 at server 4
-20436: TRANS 3084: Aborting transaction 3084.
-20436: TRANS 3084: Transaction 3084 aborted.
-20436: Transaction 3084 ended.
-20619: Transaction 3085 arrived.
-20619: TRANS 3085: Starting transaction 3085.
-20619: TRANS 3085: Trying to claim lock of resource 7 at server 3
-20619: TRANS 3085: Aborting transaction 3085.
-20620: TRANS 3085: Transaction 3085 aborted.
-20620: Transaction 3085 ended.
-20868: Transaction 3086 arrived.
-20868: TRANS 3086: Starting transaction 3086.
-20868: TRANS 3086: Trying to claim lock of resource 7 at server 4
-20869: TRANS 3086: Aborting transaction 3086.
-20869: TRANS 3086: Transaction 3086 aborted.
-20869: Transaction 3086 ended.
-21170: Transaction 3087 arrived.
-21170: TRANS 3087: Starting transaction 3087.
-21170: TRANS 3087: Trying to claim lock of resource 4 at server 1
-21171: TRANS 3087: Aborting transaction 3087.
-21171: TRANS 3087: Transaction 3087 aborted.
-21171: Transaction 3087 ended.
-21465: Transaction 3088 arrived.
-21465: TRANS 3088: Starting transaction 3088.
-21465: TRANS 3088: Trying to claim lock of resource 5 at server 1
-21465: TRANS 3088: Aborting transaction 3088.
-21465: TRANS 3088: Transaction 3088 aborted.
-21465: Transaction 3088 ended.
-21580: Transaction 3089 arrived.
-21581: TRANS 3089: Starting transaction 3089.
-21581: TRANS 3089: Trying to claim lock of resource 2 at server 2
-21581: TRANS 3089: Aborting transaction 3089.
-21581: TRANS 3089: Transaction 3089 aborted.
-21581: Transaction 3089 ended.
-21768: Transaction 3090 arrived.
-21768: TRANS 3090: Starting transaction 3090.
-21768: TRANS 3090: Trying to claim lock of resource 8 at server 4
-21768: TRANS 3090: Aborting transaction 3090.
-21768: TRANS 3090: Transaction 3090 aborted.
-21768: Transaction 3090 ended.
-21989: Transaction 3091 arrived.
-21989: TRANS 3091: Starting transaction 3091.
-21989: TRANS 3091: Trying to claim lock of resource 3 at server 3
-21989: TRANS 3091: Aborting transaction 3091.
-21989: TRANS 3091: Transaction 3091 aborted.
-21989: Transaction 3091 ended.
-22093: Transaction 3092 arrived.
-22093: TRANS 3092: Starting transaction 3092.
-22093: TRANS 3092: Trying to claim lock of resource 4 at server 4
-22094: TRANS 3092: Aborting transaction 3092.
-22094: TRANS 3092: Transaction 3092 aborted.
-22094: Transaction 3092 ended.
-22396: Transaction 3093 arrived.
-22396: TRANS 3093: Starting transaction 3093.
-22396: TRANS 3093: Trying to claim lock of resource 7 at server 1
-22397: TRANS 3093: Aborting transaction 3093.
-22397: TRANS 3093: Transaction 3093 aborted.
-22397: Transaction 3093 ended.
-22487: Transaction 3094 arrived.
-22487: TRANS 3094: Starting transaction 3094.
-22487: TRANS 3094: Trying to claim lock of resource 4 at server 3
-22487: TRANS 3094: Aborting transaction 3094.
-22487: TRANS 3094: Transaction 3094 aborted.
-22487: Transaction 3094 ended.
-22547: Transaction 3095 arrived.
-22547: TRANS 3095: Starting transaction 3095.
-22547: TRANS 3095: Trying to claim lock of resource 4 at server 4
-22548: TRANS 3095: Aborting transaction 3095.
-22548: TRANS 3095: Transaction 3095 aborted.
-22548: Transaction 3095 ended.
-22664: Transaction 3096 arrived.
-22664: TRANS 3096: Starting transaction 3096.
-22664: TRANS 3096: Trying to claim lock of resource 2 at server 2
-22665: TRANS 3096: Aborting transaction 3096.
-22666: TRANS 3096: Transaction 3096 aborted.
-22666: Transaction 3096 ended.
-22860: Transaction 3097 arrived.
-22860: TRANS 3097: Starting transaction 3097.
-22861: TRANS 3097: Trying to claim lock of resource 5 at server 3
-22861: TRANS 3097: Aborting transaction 3097.
-22861: TRANS 3097: Transaction 3097 aborted.
-22861: Transaction 3097 ended.
-22949: Transaction 3098 arrived.
-22949: TRANS 3098: Starting transaction 3098.
-22949: TRANS 3098: Trying to claim lock of resource 0 at server 3
-22949: TRANS 3098: Aborting transaction 3098.
-22949: TRANS 3098: Transaction 3098 aborted.
-22949: Transaction 3098 ended.
-23168: Transaction 3099 arrived.
-23168: TRANS 3099: Starting transaction 3099.
-23168: TRANS 3099: Trying to claim lock of resource 5 at server 4
-23169: TRANS 3099: Aborting transaction 3099.
-23169: TRANS 3099: Transaction 3099 aborted.
-23169: Transaction 3099 ended.
-23390: Transaction 3100 arrived.
-23390: TRANS 3100: Starting transaction 3100.
-23390: TRANS 3100: Trying to claim lock of resource 9 at server 3
-23390: TRANS 3100: Aborting transaction 3100.
-23390: TRANS 3100: Transaction 3100 aborted.
-23390: Transaction 3100 ended.
-23441: Server 3 was notified of the departure of server 2 by server 1.
-23628: Transaction 3101 arrived.
-23628: TRANS 3101: Starting transaction 3101.
-23628: TRANS 3101: Trying to claim lock of resource 6 at server 4
-23629: TRANS 3101: Aborting transaction 3101.
-23629: TRANS 3101: Transaction 3101 aborted.
-23629: Transaction 3101 ended.
-23702: Transaction 3102 arrived.
-23702: TRANS 3102: Starting transaction 3102.
-23702: TRANS 3102: Trying to claim lock of resource 9 at server 3
-23702: TRANS 3102: Aborting transaction 3102.
-23702: TRANS 3102: Transaction 3102 aborted.
-23702: Transaction 3102 ended.
-23984: Transaction 3103 arrived.
-23984: TRANS 3103: Starting transaction 3103.
-23984: TRANS 3103: Trying to claim lock of resource 8 at server 4
-23985: TRANS 3103: Aborting transaction 3103.
-23985: TRANS 3103: Transaction 3103 aborted.
-23985: Transaction 3103 ended.
-24267: Transaction 3104 arrived.
-24267: TRANS 3104: Starting transaction 3104.
-24267: TRANS 3104: Trying to claim lock of resource 8 at server 1
-24268: TRANS 3104: Aborting transaction 3104.
-24268: TRANS 3104: Transaction 3104 aborted.
-24268: Transaction 3104 ended.
-24330: Transaction 3105 arrived.
-24330: TRANS 3105: Starting transaction 3105.
-24330: TRANS 3105: Trying to claim lock of resource 7 at server 1
-24331: TRANS 3105: Aborting transaction 3105.
-24331: TRANS 3105: Transaction 3105 aborted.
-24331: Transaction 3105 ended.
-24477: Transaction 3106 arrived.
-24477: TRANS 3106: Starting transaction 3106.
-24477: TRANS 3106: Trying to claim lock of resource 1 at server 3
-24477: TRANS 3106: Aborting transaction 3106.
-24477: TRANS 3106: Transaction 3106 aborted.
-24477: Transaction 3106 ended.
-24727: Transaction 3107 arrived.
-24727: TRANS 3107: Starting transaction 3107.
-24727: TRANS 3107: Trying to claim lock of resource 6 at server 3
-24727: TRANS 3107: Aborting transaction 3107.
-24727: TRANS 3107: Transaction 3107 aborted.
-24727: Transaction 3107 ended.
-24981: Transaction 3108 arrived.
-24981: TRANS 3108: Starting transaction 3108.
-24981: TRANS 3108: Trying to claim lock of resource 4 at server 3
-24982: TRANS 3108: Aborting transaction 3108.
-24982: TRANS 3108: Transaction 3108 aborted.
-24982: Transaction 3108 ended.
-25049: Transaction 3109 arrived.
-25049: TRANS 3109: Starting transaction 3109.
-25049: TRANS 3109: Trying to claim lock of resource 5 at server 4
-25049: TRANS 3109: Aborting transaction 3109.
-25049: TRANS 3109: Transaction 3109 aborted.
-25049: Transaction 3109 ended.
+556: Server 3 started.
+2121: Server 3 was notified of the arrival of server 4
+4884: Server 3 started its transactions.
+4895: Transaction 3000 arrived.
+4896: TRANS 3000: Starting transaction 3000.
+4896: TRANS 3000: Trying to claim lock of resource 3 at server 4
+4898: TRANS 3000: Aborting transaction 3000.
+4899: TRANS 3000: Transaction 3000 aborted.
+4899: Transaction 3000 ended.
+5075: Transaction 3001 arrived.
+5076: TRANS 3001: Starting transaction 3001.
+5076: TRANS 3001: Trying to claim lock of resource 7 at server 3
+5076: TRANS 3001: Aborting transaction 3001.
+5076: TRANS 3001: Transaction 3001 aborted.
+5077: Transaction 3001 ended.
+5291: Transaction 3002 arrived.
+5291: TRANS 3002: Starting transaction 3002.
+5292: TRANS 3002: Trying to claim lock of resource 4 at server 1
+5293: TRANS 3002: Aborting transaction 3002.
+5293: TRANS 3002: Transaction 3002 aborted.
+5293: Transaction 3002 ended.
+5404: Transaction 3003 arrived.
+5404: TRANS 3003: Starting transaction 3003.
+5405: TRANS 3003: Trying to claim lock of resource 2 at server 4
+5406: TRANS 3003: Aborting transaction 3003.
+5406: TRANS 3003: Transaction 3003 aborted.
+5406: Transaction 3003 ended.
+5604: Transaction 3004 arrived.
+5604: TRANS 3004: Starting transaction 3004.
+5604: TRANS 3004: Trying to claim lock of resource 1 at server 1
+5605: TRANS 3004: Aborting transaction 3004.
+5605: TRANS 3004: Transaction 3004 aborted.
+5605: Transaction 3004 ended.
+5816: Transaction 3005 arrived.
+5816: TRANS 3005: Starting transaction 3005.
+5817: TRANS 3005: Trying to claim lock of resource 3 at server 4
+5817: TRANS 3005: Aborting transaction 3005.
+5818: TRANS 3005: Transaction 3005 aborted.
+5818: Transaction 3005 ended.
+6063: Transaction 3006 arrived.
+6063: TRANS 3006: Starting transaction 3006.
+6063: TRANS 3006: Trying to claim lock of resource 0 at server 4
+6065: TRANS 3006: Aborting transaction 3006.
+6065: TRANS 3006: Transaction 3006 aborted.
+6065: Transaction 3006 ended.
+6343: Transaction 3007 arrived.
+6343: TRANS 3007: Starting transaction 3007.
+6344: TRANS 3007: Trying to claim lock of resource 5 at server 2
+6345: TRANS 3007: Aborting transaction 3007.
+6345: TRANS 3007: Transaction 3007 aborted.
+6345: Transaction 3007 ended.
+6641: Transaction 3008 arrived.
+6641: TRANS 3008: Starting transaction 3008.
+6641: TRANS 3008: Trying to claim lock of resource 0 at server 4
+6644: TRANS 3008: Aborting transaction 3008.
+6645: TRANS 3008: Transaction 3008 aborted.
+6645: Transaction 3008 ended.
+6837: Transaction 3009 arrived.
+6838: TRANS 3009: Starting transaction 3009.
+6838: TRANS 3009: Trying to claim lock of resource 0 at server 4
+6838: TRANS 3009: Aborting transaction 3009.
+6838: TRANS 3009: Transaction 3009 aborted.
+6839: Transaction 3009 ended.
+7028: Transaction 3010 arrived.
+7029: TRANS 3010: Starting transaction 3010.
+7029: TRANS 3010: Trying to claim lock of resource 2 at server 4
+7030: TRANS 3010: Aborting transaction 3010.
+7030: TRANS 3010: Transaction 3010 aborted.
+7030: Transaction 3010 ended.
+7238: Transaction 3011 arrived.
+7238: TRANS 3011: Starting transaction 3011.
+7238: TRANS 3011: Trying to claim lock of resource 4 at server 3
+7238: TRANS 3011: Aborting transaction 3011.
+7238: TRANS 3011: Transaction 3011 aborted.
+7238: Transaction 3011 ended.
+7522: Transaction 3012 arrived.
+7522: TRANS 3012: Starting transaction 3012.
+7522: TRANS 3012: Trying to claim lock of resource 7 at server 4
+7523: TRANS 3012: Aborting transaction 3012.
+7523: TRANS 3012: Transaction 3012 aborted.
+7524: Transaction 3012 ended.
+7759: Transaction 3013 arrived.
+7759: TRANS 3013: Starting transaction 3013.
+7760: TRANS 3013: Trying to claim lock of resource 1 at server 1
+7760: TRANS 3013: Aborting transaction 3013.
+7761: TRANS 3013: Transaction 3013 aborted.
+7761: Transaction 3013 ended.
+7953: Transaction 3014 arrived.
+7953: TRANS 3014: Starting transaction 3014.
+7953: TRANS 3014: Trying to claim lock of resource 2 at server 2
+7954: TRANS 3014: Aborting transaction 3014.
+7954: TRANS 3014: Transaction 3014 aborted.
+7954: Transaction 3014 ended.
+8087: Transaction 3015 arrived.
+8087: TRANS 3015: Starting transaction 3015.
+8088: TRANS 3015: Trying to claim lock of resource 0 at server 1
+8088: TRANS 3015: Aborting transaction 3015.
+8088: TRANS 3015: Transaction 3015 aborted.
+8089: Transaction 3015 ended.
+8160: Transaction 3016 arrived.
+8160: TRANS 3016: Starting transaction 3016.
+8161: TRANS 3016: Trying to claim lock of resource 2 at server 1
+8161: TRANS 3016: Aborting transaction 3016.
+8161: TRANS 3016: Transaction 3016 aborted.
+8161: Transaction 3016 ended.
+8332: Transaction 3017 arrived.
+8332: TRANS 3017: Starting transaction 3017.
+8333: TRANS 3017: Trying to claim lock of resource 8 at server 2
+8333: TRANS 3017: Aborting transaction 3017.
+8333: TRANS 3017: Transaction 3017 aborted.
+8334: Transaction 3017 ended.
+8630: Transaction 3018 arrived.
+8630: TRANS 3018: Starting transaction 3018.
+8630: TRANS 3018: Trying to claim lock of resource 4 at server 2
+8631: TRANS 3018: Aborting transaction 3018.
+8631: TRANS 3018: Transaction 3018 aborted.
+8631: Transaction 3018 ended.
+8879: Transaction 3019 arrived.
+8880: TRANS 3019: Starting transaction 3019.
+8880: TRANS 3019: Trying to claim lock of resource 5 at server 4
+8880: TRANS 3019: Aborting transaction 3019.
+8881: TRANS 3019: Transaction 3019 aborted.
+8881: Transaction 3019 ended.
+9144: Transaction 3020 arrived.
+9144: TRANS 3020: Starting transaction 3020.
+9144: TRANS 3020: Trying to claim lock of resource 6 at server 4
+9145: TRANS 3020: Aborting transaction 3020.
+9145: TRANS 3020: Transaction 3020 aborted.
+9145: Transaction 3020 ended.
+9404: Transaction 3021 arrived.
+9405: TRANS 3021: Starting transaction 3021.
+9405: TRANS 3021: Trying to claim lock of resource 6 at server 3
+9405: TRANS 3021: Aborting transaction 3021.
+9405: TRANS 3021: Transaction 3021 aborted.
+9405: Transaction 3021 ended.
+9486: Transaction 3022 arrived.
+9486: TRANS 3022: Starting transaction 3022.
+9486: TRANS 3022: Trying to claim lock of resource 5 at server 2
+9487: TRANS 3022: Aborting transaction 3022.
+9488: TRANS 3022: Transaction 3022 aborted.
+9488: Transaction 3022 ended.
+9728: Transaction 3023 arrived.
+9728: TRANS 3023: Starting transaction 3023.
+9728: TRANS 3023: Trying to claim lock of resource 6 at server 2
+9729: TRANS 3023: Aborting transaction 3023.
+9729: TRANS 3023: Transaction 3023 aborted.
+9729: Transaction 3023 ended.
+10004: Transaction 3024 arrived.
+10004: TRANS 3024: Starting transaction 3024.
+10004: TRANS 3024: Trying to claim lock of resource 1 at server 1
+10006: TRANS 3024: Aborting transaction 3024.
+10006: TRANS 3024: Transaction 3024 aborted.
+10006: Transaction 3024 ended.
+10097: Transaction 3025 arrived.
+10097: TRANS 3025: Starting transaction 3025.
+10097: TRANS 3025: Trying to claim lock of resource 6 at server 2
+10098: TRANS 3025: Aborting transaction 3025.
+10098: TRANS 3025: Transaction 3025 aborted.
+10098: Transaction 3025 ended.
+10165: Transaction 3026 arrived.
+10166: TRANS 3026: Starting transaction 3026.
+10166: TRANS 3026: Trying to claim lock of resource 1 at server 3
+10166: TRANS 3026: Aborting transaction 3026.
+10166: TRANS 3026: Transaction 3026 aborted.
+10166: Transaction 3026 ended.
+10296: Transaction 3027 arrived.
+10296: TRANS 3027: Starting transaction 3027.
+10296: TRANS 3027: Trying to claim lock of resource 8 at server 1
+10297: TRANS 3027: Aborting transaction 3027.
+10297: TRANS 3027: Transaction 3027 aborted.
+10297: Transaction 3027 ended.
+10361: Transaction 3028 arrived.
+10361: TRANS 3028: Starting transaction 3028.
+10362: TRANS 3028: Trying to claim lock of resource 0 at server 2
+10362: TRANS 3028: Aborting transaction 3028.
+10362: TRANS 3028: Transaction 3028 aborted.
+10362: Transaction 3028 ended.
+10495: Transaction 3029 arrived.
+10496: TRANS 3029: Starting transaction 3029.
+10496: TRANS 3029: Trying to claim lock of resource 9 at server 2
+10497: TRANS 3029: Aborting transaction 3029.
+10497: TRANS 3029: Transaction 3029 aborted.
+10497: Transaction 3029 ended.
+10755: Transaction 3030 arrived.
+10755: TRANS 3030: Starting transaction 3030.
+10755: TRANS 3030: Trying to claim lock of resource 0 at server 3
+10755: TRANS 3030: Aborting transaction 3030.
+10755: TRANS 3030: Transaction 3030 aborted.
+10755: Transaction 3030 ended.
+11032: Transaction 3031 arrived.
+11033: TRANS 3031: Starting transaction 3031.
+11033: TRANS 3031: Trying to claim lock of resource 4 at server 3
+11033: TRANS 3031: Aborting transaction 3031.
+11033: TRANS 3031: Transaction 3031 aborted.
+11034: Transaction 3031 ended.
+11312: Transaction 3032 arrived.
+11312: TRANS 3032: Starting transaction 3032.
+11312: TRANS 3032: Trying to claim lock of resource 0 at server 2
+11313: TRANS 3032: Aborting transaction 3032.
+11313: TRANS 3032: Transaction 3032 aborted.
+11313: Transaction 3032 ended.
+11540: Transaction 3033 arrived.
+11540: TRANS 3033: Starting transaction 3033.
+11540: TRANS 3033: Trying to claim lock of resource 0 at server 1
+11542: TRANS 3033: Aborting transaction 3033.
+11542: TRANS 3033: Transaction 3033 aborted.
+11542: Transaction 3033 ended.
+11748: Transaction 3034 arrived.
+11748: TRANS 3034: Starting transaction 3034.
+11748: TRANS 3034: Trying to claim lock of resource 5 at server 4
+11749: TRANS 3034: Aborting transaction 3034.
+11749: TRANS 3034: Transaction 3034 aborted.
+11749: Transaction 3034 ended.
+11930: Transaction 3035 arrived.
+11930: TRANS 3035: Starting transaction 3035.
+11930: TRANS 3035: Trying to claim lock of resource 7 at server 2
+11931: TRANS 3035: Aborting transaction 3035.
+11931: TRANS 3035: Transaction 3035 aborted.
+11931: Transaction 3035 ended.
+12180: Transaction 3036 arrived.
+12181: TRANS 3036: Starting transaction 3036.
+12181: TRANS 3036: Trying to claim lock of resource 1 at server 1
+12182: TRANS 3036: Aborting transaction 3036.
+12182: TRANS 3036: Transaction 3036 aborted.
+12182: Transaction 3036 ended.
+12412: Transaction 3037 arrived.
+12412: TRANS 3037: Starting transaction 3037.
+12412: TRANS 3037: Trying to claim lock of resource 7 at server 4
+12413: TRANS 3037: Aborting transaction 3037.
+12413: TRANS 3037: Transaction 3037 aborted.
+12413: Transaction 3037 ended.
+12627: Transaction 3038 arrived.
+12627: TRANS 3038: Starting transaction 3038.
+12627: TRANS 3038: Trying to claim lock of resource 0 at server 4
+12628: TRANS 3038: Aborting transaction 3038.
+12628: TRANS 3038: Transaction 3038 aborted.
+12628: Transaction 3038 ended.
+12849: Transaction 3039 arrived.
+12850: TRANS 3039: Starting transaction 3039.
+12850: TRANS 3039: Trying to claim lock of resource 1 at server 2
+12851: TRANS 3039: Aborting transaction 3039.
+12851: TRANS 3039: Transaction 3039 aborted.
+12851: Transaction 3039 ended.
+13050: Transaction 3040 arrived.
+13050: TRANS 3040: Starting transaction 3040.
+13050: TRANS 3040: Trying to claim lock of resource 2 at server 2
+13051: TRANS 3040: Aborting transaction 3040.
+13051: TRANS 3040: Transaction 3040 aborted.
+13051: Transaction 3040 ended.
+13169: Transaction 3041 arrived.
+13170: TRANS 3041: Starting transaction 3041.
+13170: TRANS 3041: Trying to claim lock of resource 2 at server 3
+13170: TRANS 3041: Aborting transaction 3041.
+13170: TRANS 3041: Transaction 3041 aborted.
+13170: Transaction 3041 ended.
+13236: Transaction 3042 arrived.
+13236: TRANS 3042: Starting transaction 3042.
+13236: TRANS 3042: Trying to claim lock of resource 4 at server 1
+13237: TRANS 3042: Aborting transaction 3042.
+13237: TRANS 3042: Transaction 3042 aborted.
+13237: Transaction 3042 ended.
+13402: Transaction 3043 arrived.
+13402: TRANS 3043: Starting transaction 3043.
+13402: TRANS 3043: Trying to claim lock of resource 4 at server 3
+13402: TRANS 3043: Aborting transaction 3043.
+13402: TRANS 3043: Transaction 3043 aborted.
+13402: Transaction 3043 ended.
+13662: Transaction 3044 arrived.
+13662: TRANS 3044: Starting transaction 3044.
+13662: TRANS 3044: Trying to claim lock of resource 6 at server 1
+13663: TRANS 3044: Aborting transaction 3044.
+13663: TRANS 3044: Transaction 3044 aborted.
+13663: Transaction 3044 ended.
+13876: Transaction 3045 arrived.
+13876: TRANS 3045: Starting transaction 3045.
+13876: TRANS 3045: Trying to claim lock of resource 5 at server 3
+13876: TRANS 3045: Aborting transaction 3045.
+13876: TRANS 3045: Transaction 3045 aborted.
+13876: Transaction 3045 ended.
+14002: Transaction 3046 arrived.
+14002: TRANS 3046: Starting transaction 3046.
+14002: TRANS 3046: Trying to claim lock of resource 0 at server 3
+14002: TRANS 3046: Aborting transaction 3046.
+14002: TRANS 3046: Transaction 3046 aborted.
+14002: Transaction 3046 ended.
+14143: Transaction 3047 arrived.
+14143: TRANS 3047: Starting transaction 3047.
+14143: TRANS 3047: Trying to claim lock of resource 2 at server 2
+14143: TRANS 3047: Aborting transaction 3047.
+14144: TRANS 3047: Transaction 3047 aborted.
+14144: Transaction 3047 ended.
+14343: Transaction 3048 arrived.
+14344: TRANS 3048: Starting transaction 3048.
+14344: TRANS 3048: Trying to claim lock of resource 9 at server 4
+14345: TRANS 3048: Aborting transaction 3048.
+14345: TRANS 3048: Transaction 3048 aborted.
+14345: Transaction 3048 ended.
+14480: Transaction 3049 arrived.
+14480: TRANS 3049: Starting transaction 3049.
+14480: TRANS 3049: Trying to claim lock of resource 5 at server 4
+14481: TRANS 3049: Aborting transaction 3049.
+14481: TRANS 3049: Transaction 3049 aborted.
+14481: Transaction 3049 ended.
+14705: Transaction 3050 arrived.
+14705: TRANS 3050: Starting transaction 3050.
+14705: TRANS 3050: Trying to claim lock of resource 3 at server 3
+14706: TRANS 3050: Aborting transaction 3050.
+14706: TRANS 3050: Transaction 3050 aborted.
+14706: Transaction 3050 ended.
+14810: Transaction 3051 arrived.
+14810: TRANS 3051: Starting transaction 3051.
+14810: TRANS 3051: Trying to claim lock of resource 6 at server 3
+14810: TRANS 3051: Aborting transaction 3051.
+14810: TRANS 3051: Transaction 3051 aborted.
+14811: Transaction 3051 ended.
+15054: Transaction 3052 arrived.
+15054: TRANS 3052: Starting transaction 3052.
+15055: TRANS 3052: Trying to claim lock of resource 0 at server 2
+15055: TRANS 3052: Aborting transaction 3052.
+15055: TRANS 3052: Transaction 3052 aborted.
+15055: Transaction 3052 ended.
+15173: Transaction 3053 arrived.
+15174: TRANS 3053: Starting transaction 3053.
+15174: TRANS 3053: Trying to claim lock of resource 8 at server 2
+15175: TRANS 3053: Aborting transaction 3053.
+15175: TRANS 3053: Transaction 3053 aborted.
+15175: Transaction 3053 ended.
+15354: Transaction 3054 arrived.
+15355: TRANS 3054: Starting transaction 3054.
+15355: TRANS 3054: Trying to claim lock of resource 6 at server 1
+15382: Contact with server 1 was lost.
+15384: Server 3 was notified of the departure of server 1 by server 4.
+==================================================================
+552: Server 3 started.
+3639: Server 3 was notified of the arrival of server 4
+5591: Server 3 started its transactions.
+5603: Transaction 3000 arrived.
+5604: TRANS 3000: Starting transaction 3000.
+5604: TRANS 3000: Trying to claim lock of resource 2 at server 1
+5605: TRANS 3000: Aborting transaction 3000.
+5605: TRANS 3000: Transaction 3000 aborted.
+5605: Transaction 3000 ended.
+5703: Transaction 3001 arrived.
+5703: TRANS 3001: Starting transaction 3001.
+5704: TRANS 3001: Trying to claim lock of resource 4 at server 1
+5704: TRANS 3001: Aborting transaction 3001.
+5705: TRANS 3001: Transaction 3001 aborted.
+5705: Transaction 3001 ended.
+5839: Transaction 3002 arrived.
+5839: TRANS 3002: Starting transaction 3002.
+5839: TRANS 3002: Trying to claim lock of resource 1 at server 2
+5840: TRANS 3002: Aborting transaction 3002.
+5841: TRANS 3002: Transaction 3002 aborted.
+5841: Transaction 3002 ended.
+6077: Transaction 3003 arrived.
+6077: TRANS 3003: Starting transaction 3003.
+6078: TRANS 3003: Trying to claim lock of resource 1 at server 3
+6078: TRANS 3003: Aborting transaction 3003.
+6078: TRANS 3003: Transaction 3003 aborted.
+6078: Transaction 3003 ended.
+6229: Transaction 3004 arrived.
+6229: TRANS 3004: Starting transaction 3004.
+6229: TRANS 3004: Trying to claim lock of resource 2 at server 2
+6230: TRANS 3004: Aborting transaction 3004.
+6231: TRANS 3004: Transaction 3004 aborted.
+6231: Transaction 3004 ended.
+6299: Transaction 3005 arrived.
+6300: TRANS 3005: Starting transaction 3005.
+6300: TRANS 3005: Trying to claim lock of resource 7 at server 4
+6301: TRANS 3005: Aborting transaction 3005.
+6301: TRANS 3005: Transaction 3005 aborted.
+6301: Transaction 3005 ended.
+6409: Transaction 3006 arrived.
+6409: TRANS 3006: Starting transaction 3006.
+6409: TRANS 3006: Trying to claim lock of resource 1 at server 2
+6410: TRANS 3006: Aborting transaction 3006.
+6410: TRANS 3006: Transaction 3006 aborted.
+6410: Transaction 3006 ended.
+6479: Transaction 3007 arrived.
+6480: TRANS 3007: Starting transaction 3007.
+6480: TRANS 3007: Trying to claim lock of resource 1 at server 1
+6481: TRANS 3007: Aborting transaction 3007.
+6481: TRANS 3007: Transaction 3007 aborted.
+6481: Transaction 3007 ended.
+6704: Transaction 3008 arrived.
+6704: TRANS 3008: Starting transaction 3008.
+6706: TRANS 3008: Trying to claim lock of resource 0 at server 1
+6707: TRANS 3008: Aborting transaction 3008.
+6707: TRANS 3008: Transaction 3008 aborted.
+6708: Transaction 3008 ended.
+6815: Transaction 3009 arrived.
+6816: TRANS 3009: Starting transaction 3009.
+6816: TRANS 3009: Trying to claim lock of resource 9 at server 2
+6817: TRANS 3009: Aborting transaction 3009.
+6817: TRANS 3009: Transaction 3009 aborted.
+6817: Transaction 3009 ended.
+7116: Transaction 3010 arrived.
+7117: TRANS 3010: Starting transaction 3010.
+7117: TRANS 3010: Trying to claim lock of resource 9 at server 2
+7118: TRANS 3010: Aborting transaction 3010.
+7118: TRANS 3010: Transaction 3010 aborted.
+7118: Transaction 3010 ended.
+7182: Transaction 3011 arrived.
+7183: TRANS 3011: Starting transaction 3011.
+7183: TRANS 3011: Trying to claim lock of resource 6 at server 3
+7183: TRANS 3011: Aborting transaction 3011.
+7183: TRANS 3011: Transaction 3011 aborted.
+7183: Transaction 3011 ended.
+7368: Transaction 3012 arrived.
+7368: TRANS 3012: Starting transaction 3012.
+7368: TRANS 3012: Trying to claim lock of resource 7 at server 2
+7369: TRANS 3012: Aborting transaction 3012.
+7369: TRANS 3012: Transaction 3012 aborted.
+7369: Transaction 3012 ended.
+7446: Transaction 3013 arrived.
+7446: TRANS 3013: Starting transaction 3013.
+7446: TRANS 3013: Trying to claim lock of resource 0 at server 2
+7447: TRANS 3013: Aborting transaction 3013.
+7447: TRANS 3013: Transaction 3013 aborted.
+7447: Transaction 3013 ended.
+7748: Transaction 3014 arrived.
+7749: TRANS 3014: Starting transaction 3014.
+7749: TRANS 3014: Trying to claim lock of resource 7 at server 1
+7750: TRANS 3014: Aborting transaction 3014.
+7750: TRANS 3014: Transaction 3014 aborted.
+7750: Transaction 3014 ended.
+7931: Transaction 3015 arrived.
+7931: TRANS 3015: Starting transaction 3015.
+7931: TRANS 3015: Trying to claim lock of resource 1 at server 4
+7932: TRANS 3015: Aborting transaction 3015.
+7933: TRANS 3015: Transaction 3015 aborted.
+7933: Transaction 3015 ended.
+8049: Transaction 3016 arrived.
+8049: TRANS 3016: Starting transaction 3016.
+8049: TRANS 3016: Trying to claim lock of resource 5 at server 3
+8049: TRANS 3016: Aborting transaction 3016.
+8050: TRANS 3016: Transaction 3016 aborted.
+8050: Transaction 3016 ended.
+8240: Transaction 3017 arrived.
+8241: TRANS 3017: Starting transaction 3017.
+8241: TRANS 3017: Trying to claim lock of resource 3 at server 2
+8241: TRANS 3017: Aborting transaction 3017.
+8242: TRANS 3017: Transaction 3017 aborted.
+8242: Transaction 3017 ended.
+8472: Transaction 3018 arrived.
+8472: TRANS 3018: Starting transaction 3018.
+8472: TRANS 3018: Trying to claim lock of resource 9 at server 4
+8473: TRANS 3018: Aborting transaction 3018.
+8473: TRANS 3018: Transaction 3018 aborted.
+8473: Transaction 3018 ended.
+8536: Transaction 3019 arrived.
+8539: TRANS 3019: Starting transaction 3019.
+8539: TRANS 3019: Trying to claim lock of resource 7 at server 1
+8540: TRANS 3019: Aborting transaction 3019.
+8540: TRANS 3019: Transaction 3019 aborted.
+8540: Transaction 3019 ended.
+8787: Transaction 3020 arrived.
+8787: TRANS 3020: Starting transaction 3020.
+8787: TRANS 3020: Trying to claim lock of resource 9 at server 4
+8788: TRANS 3020: Aborting transaction 3020.
+8788: TRANS 3020: Transaction 3020 aborted.
+8788: Transaction 3020 ended.
+8905: Transaction 3021 arrived.
+8905: TRANS 3021: Starting transaction 3021.
+8905: TRANS 3021: Trying to claim lock of resource 8 at server 3
+8905: TRANS 3021: Aborting transaction 3021.
+8905: TRANS 3021: Transaction 3021 aborted.
+8905: Transaction 3021 ended.
+9082: Transaction 3022 arrived.
+9083: TRANS 3022: Starting transaction 3022.
+9083: TRANS 3022: Trying to claim lock of resource 8 at server 3
+9083: TRANS 3022: Aborting transaction 3022.
+9083: TRANS 3022: Transaction 3022 aborted.
+9083: Transaction 3022 ended.
+9357: Transaction 3023 arrived.
+9357: TRANS 3023: Starting transaction 3023.
+9357: TRANS 3023: Trying to claim lock of resource 4 at server 2
+9358: TRANS 3023: Aborting transaction 3023.
+9358: TRANS 3023: Transaction 3023 aborted.
+9358: Transaction 3023 ended.
+9654: Transaction 3024 arrived.
+9654: TRANS 3024: Starting transaction 3024.
+9655: TRANS 3024: Trying to claim lock of resource 4 at server 3
+9655: TRANS 3024: Aborting transaction 3024.
+9655: TRANS 3024: Transaction 3024 aborted.
+9655: Transaction 3024 ended.
+9740: Transaction 3025 arrived.
+9740: TRANS 3025: Starting transaction 3025.
+9740: TRANS 3025: Trying to claim lock of resource 6 at server 3
+9740: TRANS 3025: Aborting transaction 3025.
+9741: TRANS 3025: Transaction 3025 aborted.
+9741: Transaction 3025 ended.
+9951: Transaction 3026 arrived.
+9952: TRANS 3026: Starting transaction 3026.
+9952: TRANS 3026: Trying to claim lock of resource 2 at server 1
+9952: TRANS 3026: Aborting transaction 3026.
+9953: TRANS 3026: Transaction 3026 aborted.
+9953: Transaction 3026 ended.
+10021: Transaction 3027 arrived.
+10021: TRANS 3027: Starting transaction 3027.
+10021: TRANS 3027: Trying to claim lock of resource 8 at server 2
+10022: TRANS 3027: Aborting transaction 3027.
+10022: TRANS 3027: Transaction 3027 aborted.
+10022: Transaction 3027 ended.
+10242: Transaction 3028 arrived.
+10243: TRANS 3028: Starting transaction 3028.
+10243: TRANS 3028: Trying to claim lock of resource 9 at server 2
+10243: TRANS 3028: Aborting transaction 3028.
+10244: TRANS 3028: Transaction 3028 aborted.
+10244: Transaction 3028 ended.
+10429: Transaction 3029 arrived.
+10429: TRANS 3029: Starting transaction 3029.
+10429: TRANS 3029: Trying to claim lock of resource 8 at server 1
+10430: TRANS 3029: Aborting transaction 3029.
+10430: TRANS 3029: Transaction 3029 aborted.
+10430: Transaction 3029 ended.
+10556: Transaction 3030 arrived.
+10557: TRANS 3030: Starting transaction 3030.
+10557: TRANS 3030: Trying to claim lock of resource 7 at server 1
+10558: TRANS 3030: Aborting transaction 3030.
+10558: TRANS 3030: Transaction 3030 aborted.
+10558: Transaction 3030 ended.
+10774: Transaction 3031 arrived.
+10774: TRANS 3031: Starting transaction 3031.
+10774: TRANS 3031: Trying to claim lock of resource 8 at server 3
+10774: TRANS 3031: Aborting transaction 3031.
+10775: TRANS 3031: Transaction 3031 aborted.
+10775: Transaction 3031 ended.
+10961: Transaction 3032 arrived.
+10961: TRANS 3032: Starting transaction 3032.
+10961: TRANS 3032: Trying to claim lock of resource 9 at server 2
+10962: TRANS 3032: Aborting transaction 3032.
+10962: TRANS 3032: Transaction 3032 aborted.
+10962: Transaction 3032 ended.
+11137: Transaction 3033 arrived.
+11137: TRANS 3033: Starting transaction 3033.
+11137: TRANS 3033: Trying to claim lock of resource 1 at server 3
+11138: TRANS 3033: Aborting transaction 3033.
+11138: TRANS 3033: Transaction 3033 aborted.
+11138: Transaction 3033 ended.
+11357: Transaction 3034 arrived.
+11358: TRANS 3034: Starting transaction 3034.
+11358: TRANS 3034: Trying to claim lock of resource 6 at server 3
+11358: TRANS 3034: Aborting transaction 3034.
+11358: TRANS 3034: Transaction 3034 aborted.
+11358: Transaction 3034 ended.
+11486: Transaction 3035 arrived.
+11487: TRANS 3035: Starting transaction 3035.
+11487: TRANS 3035: Trying to claim lock of resource 9 at server 1
+11488: TRANS 3035: Aborting transaction 3035.
+11488: TRANS 3035: Transaction 3035 aborted.
+11488: Transaction 3035 ended.
+11698: Transaction 3036 arrived.
+11698: TRANS 3036: Starting transaction 3036.
+11699: TRANS 3036: Trying to claim lock of resource 5 at server 3
+11699: TRANS 3036: Aborting transaction 3036.
+11699: TRANS 3036: Transaction 3036 aborted.
+11699: Transaction 3036 ended.
+11936: Transaction 3037 arrived.
+11936: TRANS 3037: Starting transaction 3037.
+11936: TRANS 3037: Trying to claim lock of resource 0 at server 1
+11937: TRANS 3037: Aborting transaction 3037.
+11937: TRANS 3037: Transaction 3037 aborted.
+11937: Transaction 3037 ended.
+12219: Transaction 3038 arrived.
+12220: TRANS 3038: Starting transaction 3038.
+12220: TRANS 3038: Trying to claim lock of resource 8 at server 3
+12220: TRANS 3038: Aborting transaction 3038.
+12220: TRANS 3038: Transaction 3038 aborted.
+12220: Transaction 3038 ended.
+12448: Transaction 3039 arrived.
+12448: TRANS 3039: Starting transaction 3039.
+12448: TRANS 3039: Trying to claim lock of resource 9 at server 3
+12449: TRANS 3039: Aborting transaction 3039.
+12449: TRANS 3039: Transaction 3039 aborted.
+12449: Transaction 3039 ended.
+12725: Transaction 3040 arrived.
+12725: TRANS 3040: Starting transaction 3040.
+12725: TRANS 3040: Trying to claim lock of resource 6 at server 1
+12726: TRANS 3040: Aborting transaction 3040.
+12726: TRANS 3040: Transaction 3040 aborted.
+12726: Transaction 3040 ended.
+12973: Transaction 3041 arrived.
+12974: TRANS 3041: Starting transaction 3041.
+12974: TRANS 3041: Trying to claim lock of resource 9 at server 2
+12975: TRANS 3041: Aborting transaction 3041.
+12975: TRANS 3041: Transaction 3041 aborted.
+12975: Transaction 3041 ended.
+13135: Transaction 3042 arrived.
+13135: TRANS 3042: Starting transaction 3042.
+13135: TRANS 3042: Trying to claim lock of resource 0 at server 1
+13135: TRANS 3042: Aborting transaction 3042.
+13136: TRANS 3042: Transaction 3042 aborted.
+13136: Transaction 3042 ended.
+13307: Transaction 3043 arrived.
+13308: TRANS 3043: Starting transaction 3043.
+13308: TRANS 3043: Trying to claim lock of resource 5 at server 3
+13308: TRANS 3043: Aborting transaction 3043.
+13308: TRANS 3043: Transaction 3043 aborted.
+13308: Transaction 3043 ended.
+13431: Transaction 3044 arrived.
+13432: TRANS 3044: Starting transaction 3044.
+13432: TRANS 3044: Trying to claim lock of resource 6 at server 1
+13433: TRANS 3044: Aborting transaction 3044.
+13433: TRANS 3044: Transaction 3044 aborted.
+13433: Transaction 3044 ended.
+13658: Transaction 3045 arrived.
+13658: TRANS 3045: Starting transaction 3045.
+13658: TRANS 3045: Trying to claim lock of resource 1 at server 2
+13659: TRANS 3045: Aborting transaction 3045.
+13659: TRANS 3045: Transaction 3045 aborted.
+13659: Transaction 3045 ended.
+13917: Transaction 3046 arrived.
+13917: TRANS 3046: Starting transaction 3046.
+13917: TRANS 3046: Trying to claim lock of resource 5 at server 2
+13918: TRANS 3046: Aborting transaction 3046.
+13918: TRANS 3046: Transaction 3046 aborted.
+13918: Transaction 3046 ended.
+13978: Transaction 3047 arrived.
+13979: TRANS 3047: Starting transaction 3047.
+13979: TRANS 3047: Trying to claim lock of resource 4 at server 2
+13980: TRANS 3047: Aborting transaction 3047.
+13980: TRANS 3047: Transaction 3047 aborted.
+13980: Transaction 3047 ended.
+14224: Server 3 was notified of the departure of server 1 by server 4.
+14231: Transaction 3048 arrived.
+14231: TRANS 3048: Starting transaction 3048.
+14231: TRANS 3048: Trying to claim lock of resource 7 at server 2
+14232: TRANS 3048: Aborting transaction 3048.
+14232: TRANS 3048: Transaction 3048 aborted.
+14232: Transaction 3048 ended.
+14303: Transaction 3049 arrived.
+14304: TRANS 3049: Starting transaction 3049.
+14304: TRANS 3049: Trying to claim lock of resource 1 at server 2
+14304: TRANS 3049: Aborting transaction 3049.
+14304: TRANS 3049: Transaction 3049 aborted.
+14304: Transaction 3049 ended.
+14426: Transaction 3050 arrived.
+14426: TRANS 3050: Starting transaction 3050.
+14426: TRANS 3050: Trying to claim lock of resource 5 at server 2
+14427: TRANS 3050: Aborting transaction 3050.
+14427: TRANS 3050: Transaction 3050 aborted.
+14427: Transaction 3050 ended.
+14649: Transaction 3051 arrived.
+14649: TRANS 3051: Starting transaction 3051.
+14650: TRANS 3051: Trying to claim lock of resource 5 at server 4
+14650: TRANS 3051: Aborting transaction 3051.
+14650: TRANS 3051: Transaction 3051 aborted.
+14651: Transaction 3051 ended.
+14744: Transaction 3052 arrived.
+14744: TRANS 3052: Starting transaction 3052.
+14744: TRANS 3052: Trying to claim lock of resource 2 at server 2
+14745: TRANS 3052: Aborting transaction 3052.
+14745: TRANS 3052: Transaction 3052 aborted.
+14745: Transaction 3052 ended.
+14963: Transaction 3053 arrived.
+14963: TRANS 3053: Starting transaction 3053.
+14963: TRANS 3053: Trying to claim lock of resource 6 at server 3
+14964: TRANS 3053: Aborting transaction 3053.
+14964: TRANS 3053: Transaction 3053 aborted.
+14964: Transaction 3053 ended.
+15172: Transaction 3054 arrived.
+15172: TRANS 3054: Starting transaction 3054.
+15172: TRANS 3054: Trying to claim lock of resource 7 at server 2
+15172: TRANS 3054: Aborting transaction 3054.
+15172: TRANS 3054: Transaction 3054 aborted.
+15172: Transaction 3054 ended.
+15433: Transaction 3055 arrived.
+15433: TRANS 3055: Starting transaction 3055.
+15433: TRANS 3055: Trying to claim lock of resource 3 at server 2
+15434: TRANS 3055: Aborting transaction 3055.
+15434: TRANS 3055: Transaction 3055 aborted.
+15434: Transaction 3055 ended.
+15618: Transaction 3056 arrived.
+15618: TRANS 3056: Starting transaction 3056.
+15618: TRANS 3056: Trying to claim lock of resource 6 at server 2
+15857: Contact with server 2 was lost.
+15858: TRANS 3056: Aborting transaction 3056.
+15858: TRANS 3056: Transaction 3056 aborted.
+15858: Transaction 3056 ended.
+15916: Transaction 3057 arrived.
+15916: TRANS 3057: Starting transaction 3057.
+15916: TRANS 3057: Trying to claim lock of resource 5 at server 3
+15917: TRANS 3057: Aborting transaction 3057.
+15917: TRANS 3057: Transaction 3057 aborted.
+15917: Transaction 3057 ended.
+16146: Transaction 3058 arrived.
+16146: TRANS 3058: Starting transaction 3058.
+16146: TRANS 3058: Trying to claim lock of resource 0 at server 3
+16147: TRANS 3058: Aborting transaction 3058.
+16147: TRANS 3058: Transaction 3058 aborted.
+16147: Transaction 3058 ended.
+16319: Transaction 3059 arrived.
+16319: TRANS 3059: Starting transaction 3059.
+16319: TRANS 3059: Trying to claim lock of resource 8 at server 4
+16320: TRANS 3059: Aborting transaction 3059.
+16320: TRANS 3059: Transaction 3059 aborted.
+16320: Transaction 3059 ended.
+16521: Transaction 3060 arrived.
+16521: TRANS 3060: Starting transaction 3060.
+16522: TRANS 3060: Trying to claim lock of resource 7 at server 3
+16522: TRANS 3060: Aborting transaction 3060.
+16522: TRANS 3060: Transaction 3060 aborted.
+16522: Transaction 3060 ended.
+16585: Transaction 3061 arrived.
+16585: TRANS 3061: Starting transaction 3061.
+16585: TRANS 3061: Trying to claim lock of resource 9 at server 3
+16585: TRANS 3061: Aborting transaction 3061.
+16585: TRANS 3061: Transaction 3061 aborted.
+16586: Transaction 3061 ended.
+16780: Transaction 3062 arrived.
+16780: TRANS 3062: Starting transaction 3062.
+16780: TRANS 3062: Trying to claim lock of resource 5 at server 4
+16781: TRANS 3062: Aborting transaction 3062.
+16781: TRANS 3062: Transaction 3062 aborted.
+16781: Transaction 3062 ended.
+17004: Transaction 3063 arrived.
+17004: TRANS 3063: Starting transaction 3063.
+17004: TRANS 3063: Trying to claim lock of resource 1 at server 4
+17005: TRANS 3063: Aborting transaction 3063.
+17005: TRANS 3063: Transaction 3063 aborted.
+17005: Transaction 3063 ended.
+17302: Transaction 3064 arrived.
+17302: TRANS 3064: Starting transaction 3064.
+17302: TRANS 3064: Trying to claim lock of resource 4 at server 4
+17303: TRANS 3064: Aborting transaction 3064.
+17303: TRANS 3064: Transaction 3064 aborted.
+17303: Transaction 3064 ended.
+17481: Transaction 3065 arrived.
+17482: TRANS 3065: Starting transaction 3065.
+17482: TRANS 3065: Trying to claim lock of resource 0 at server 3
+17482: TRANS 3065: Aborting transaction 3065.
+17482: TRANS 3065: Transaction 3065 aborted.
+17482: Transaction 3065 ended.
+17758: Transaction 3066 arrived.
+17759: TRANS 3066: Starting transaction 3066.
+17759: TRANS 3066: Trying to claim lock of resource 0 at server 3
+17759: TRANS 3066: Aborting transaction 3066.
+17759: TRANS 3066: Transaction 3066 aborted.
+17759: Transaction 3066 ended.
+17898: Transaction 3067 arrived.
+17898: TRANS 3067: Starting transaction 3067.
+17898: TRANS 3067: Trying to claim lock of resource 3 at server 3
+17898: TRANS 3067: Aborting transaction 3067.
+17898: TRANS 3067: Transaction 3067 aborted.
+17898: Transaction 3067 ended.
+18165: Transaction 3068 arrived.
+18165: TRANS 3068: Starting transaction 3068.
+18165: TRANS 3068: Trying to claim lock of resource 0 at server 3
+18165: TRANS 3068: Aborting transaction 3068.
+18165: TRANS 3068: Transaction 3068 aborted.
+18165: Transaction 3068 ended.
+18292: Transaction 3069 arrived.
+18292: TRANS 3069: Starting transaction 3069.
+18292: TRANS 3069: Trying to claim lock of resource 8 at server 4
+18293: TRANS 3069: Aborting transaction 3069.
+18293: TRANS 3069: Transaction 3069 aborted.
+18293: Transaction 3069 ended.
+18404: Transaction 3070 arrived.
+18404: TRANS 3070: Starting transaction 3070.
+18404: TRANS 3070: Trying to claim lock of resource 2 at server 3
+18404: TRANS 3070: Aborting transaction 3070.
+18404: TRANS 3070: Transaction 3070 aborted.
+18404: Transaction 3070 ended.
+18471: Transaction 3071 arrived.
+18471: TRANS 3071: Starting transaction 3071.
+18471: TRANS 3071: Trying to claim lock of resource 3 at server 4
+18472: TRANS 3071: Aborting transaction 3071.
+18472: TRANS 3071: Transaction 3071 aborted.
+18472: Transaction 3071 ended.
+18754: Transaction 3072 arrived.
+18754: TRANS 3072: Starting transaction 3072.
+18754: TRANS 3072: Trying to claim lock of resource 4 at server 3
+18755: TRANS 3072: Aborting transaction 3072.
+18755: TRANS 3072: Transaction 3072 aborted.
+18755: Transaction 3072 ended.
+19019: Transaction 3073 arrived.
+19019: TRANS 3073: Starting transaction 3073.
+19020: TRANS 3073: Trying to claim lock of resource 0 at server 4
+19020: TRANS 3073: Aborting transaction 3073.
+19020: TRANS 3073: Transaction 3073 aborted.
+19021: Transaction 3073 ended.
+19216: Transaction 3074 arrived.
+19216: TRANS 3074: Starting transaction 3074.
+19216: TRANS 3074: Trying to claim lock of resource 9 at server 4
+19217: TRANS 3074: Aborting transaction 3074.
+19217: TRANS 3074: Transaction 3074 aborted.
+19217: Transaction 3074 ended.
+19324: Transaction 3075 arrived.
+19324: TRANS 3075: Starting transaction 3075.
+19324: TRANS 3075: Trying to claim lock of resource 1 at server 4
+19324: TRANS 3075: Aborting transaction 3075.
+19324: TRANS 3075: Transaction 3075 aborted.
+19324: Transaction 3075 ended.

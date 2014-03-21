@@ -11,6 +11,10 @@ serve:
 run:
 	java ServerImpl localhost:3360
 
+.PHONY: run-probe
+run-probe:
+	java ServerImpl localhost:3360
+
 .PHONY: clean
 clean:
 	rm -f *.class
