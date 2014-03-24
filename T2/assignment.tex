@@ -142,6 +142,7 @@ When 371 connects the following would happen, this is assumes the routing table 
 Firstly 7D9 will go through the table and see if 371 is there. It is not and will continue to check all the nodes in the first column. It will chose that node whichs starts on the same prefix as 371. In this table it is 328 and if one would go into 328, 371 would be in that table. 7D9 can connect to 372.
 
 \question{A node with GUID 0FC contacts node 7D9 with a desire to join the Pastry network. What happens?}
+
 7D9 will answer 0FB's request of joining with the first column of it's routing table. 0FC will add the second column and collects it from it's own routing table. 0FB is numerically the asme as 0FC and will afterwards send the message with the routing table and closest leaf node of 0FC back to 0FC. The whole routing table will get sent back to 0FC when the levels are found.
 
 \question{A node has lost connectivity to the network (i.e. the node is "dead" and is no longer available). Describe the most important things that will now happen.}
